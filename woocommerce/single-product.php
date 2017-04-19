@@ -4,7 +4,12 @@
  *
  * @package FoundationPress
  * @since FoundationPress 1.0.0
+ * @version     1.6.4
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
 get_header(); ?>
 
