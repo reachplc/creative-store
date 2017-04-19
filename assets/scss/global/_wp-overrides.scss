@@ -1,0 +1,156 @@
+.wp-caption > figcaption {
+  max-width: 100%;
+  font-size: 0.8rem;
+  color: #999;
+  padding: 0.25rem 0;
+}
+
+p.wp-caption-text{
+  font-size:90%;
+  color: #666;
+  padding:rem-calc(10) 0;
+}
+
+.alignleft {
+  float: left;
+  padding-right: 1rem;
+  margin: 0;
+}
+
+.alignright {
+  float: right;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.count {
+  display: none;
+}
+
+.post-type-archive-product h1.page-title,.tax-product_cat h1.page-title{
+  display: none;
+}
+
+body > section > div > div > ul > li > a.button.product_type_variable.add_to_cart_button {
+  display: none;
+}
+
+table tfoot {
+  background: none !important;
+}
+
+table thead {
+  background: none !important;
+}
+
+.login-form-popup {
+  padding: 15px 30px;
+  position: absolute;
+  width: 80vw;
+  height: auto;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,0.3);
+  z-index: 3;
+  @include breakpoint(medium) {
+      width: 45vw;
+  }
+
+  article {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    @include breakpoint(xlarge) {
+      max-width: 80%;
+    }
+
+    h1.entry-title {
+      font-size: 1.5rem; 
+
+      @include breakpoint(medium) {
+        font-size: 3.125rem;
+      }
+    }
+
+    .info p {
+      font-size: 1.25rem;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    input {
+      max-width: 80%;
+      margin: 0 auto;
+      outline: 0;
+      border: 1px solid $mainBlue;
+      font-weight: 600;
+      margin-bottom: 1.52rem;
+
+      @include breakpoint(xlarge) {
+        max-width: 40%;
+      }
+    }
+
+    p label {
+      font-weight: 500;
+      font-size: 1.25rem;
+      color: rgba(0,0,0,0.75);
+      line-height: 1.7rem;
+    }
+
+    #wp-submit{
+      font-size: 1.5625rem;
+      font-weight: 700;
+      height: 3rem;
+      line-height: 0;
+      background-color: $mainBlue;
+      width: 26%;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $darkGrey;
+      }
+    }
+
+    section p a {
+      font-weight: 500;
+      font-size: 1.25rem;
+    }
+  } 
+}
+ 
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+.bg-overlay-img {
+  background: url('../images/cs/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 196vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+
+  @media screen and (max-width: 950px) {
+    background-size: contain;
+  }
+}

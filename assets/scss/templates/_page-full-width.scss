@@ -1,0 +1,14 @@
+#page-full-width {
+	padding-top: 65px;
+
+
+	@include grid-row();
+
+
+	.main-content {
+		@include breakpoint(small) {
+	  	@include grid-column(12);
+		}
+	}
+}
+

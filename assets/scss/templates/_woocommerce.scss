@@ -1,0 +1,159 @@
+.woocommerce {
+
+	#tab-description {
+		text-align: left;
+	}
+
+	div.woocommerce-tabs.wc-tabs-wrapper {
+		clear: none;
+	}
+
+	.related.products {
+		clear: both;
+	}
+
+	table.variations {
+		display: none;
+	}
+
+
+	div.product .woocommerce-tabs ul.tabs {
+		display: none !important;
+	}
+
+	#tab-description {
+		width: 48%;
+		float: right;
+
+		h2 {
+			display: none;
+		}
+	}
+
+	.woocommerce-ordering {
+		font-size: 0.8rem;
+			.select {
+				font-size: 0.8rem;
+			}
+	}
+
+	ul.products {
+		li.product {
+			a {
+				img {
+					margin: 0;
+				}
+
+				h3 {
+					text-align: center;
+					color: $darkGrey;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+
+	.similarcollections {
+		padding-top: 50px;
+	}
+
+
+	.related.products {
+		background-color: #eef1f8;
+		box-shadow: 0px -2px 2px rgba(136,136,136,0.3);
+
+		h2 {
+			font-weight: 600;
+			font-size: 2.5rem;
+		}
+
+		ul li a.button {
+			display: none;
+		}
+
+
+	}
+}
+
+
+.post-48 {
+	.checkout.woocommerce-checkout {
+		.woocommerce-billing-fields {
+			display: none;
+		}
+	}
+}
+
+.woocommerce-info {
+	border-top-color: $mainBlue;
+
+	&:before {
+		color: $mainBlue;
+	}
+}
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+	background: none;
+}
+
+.woocommerce-account {
+	.woocommerce-MyAccount-navigation {
+		float: right;
+		padding-top: 40px;
+
+		ul {
+			list-style:none;
+			text-align: right;
+		}
+	}
+
+	.woocommerce-MyAccount-content {
+		float: left;
+		text-align: left;
+		padding-top: 40px;
+	}
+}
+
+.woocommerce table.shop_table {
+	border-radius: 0;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+	text-align: center;
+	font-weight: 600;
+	padding-top: 10px;
+}
+
+.product-category a img, .product-category a h2, ul .product a img, ul .product a h2 {
+	transition: all 0.3s ease;
+}
+
+.product-category:hover:before, ul .product:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	width: 40px;
+	height: 40px;
+	background: $mainBlue url('/app/themes/FoundationPress/assets/images/cs/ico/eye.svg') center center;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+.product-category:hover a img, ul .product:hover a img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.product-category:hover a h2, ul .product:hover a h2 {
+	color: $mainBlue;
+}
+
+div.woocommerce-variation.single_variation > div.woocommerce-variation-availability, div.woocommerce-tabs.wc-tabs-wrapper {
+	display: none;
+}
+
+/* Recent Products Page */
+

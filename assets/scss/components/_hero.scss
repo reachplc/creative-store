@@ -1,0 +1,279 @@
+// Page header
+$hero-padding: 20%;
+
+.hero { 
+  .marketing {
+    .cs_headerbox {
+      width: 16.32%;
+      padding-bottom: 15.15312%;
+      background-color: $mainBlue;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &__big {
+        top: 11%;
+      }
+
+      .title-container {
+        top: 0; bottom: 0; left: 0; right: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      h1 {
+        font-size: 3.3vw;
+        font-weight: 800;
+        text-transform: lowercase;
+        line-height: 90%;
+        max-width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 1vw;
+      }
+
+       &__archive {
+         width: 11.52%;
+         padding-bottom: 10.696%;
+         background-color: #05b23c;
+         -webkit-box-shadow: 0px 0px 80px 4px rgba(0,0,0,.8);
+         -moz-box-shadow: 0px 0px 80px 4px rgba(0,0,0,.8);
+         box-shadow: 0px 0px 80px 4px rgba(0,0,0,.8);
+
+        h1 {
+          font-size: 1.75vw;
+          transform: translateY(180%);
+        }
+      }
+    }
+
+    @include grid-row();
+    max-width: 55rem;
+
+  }
+  
+  @include breakpoint(small) {
+    background: url('../images/cs/head-slide1.jpg') bottom center;
+    background-size: cover;
+    background-position: bottom;
+    // padding: rem-calc(65%) 0;
+    // margin: 0 0 rem-calc(32);
+    // height: full;
+    width: 100%;
+    padding-bottom: $hero-padding;
+    position: relative;
+    text-align: left;
+  }
+
+  @include breakpoint(medium) {
+    background: url('../images/cs/head-slide1.jpg') bottom center;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0 rem-calc(4);
+  }
+
+    &__big {
+    background: url('../images/cs/bg-big.jpg') bottom center;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: 73.66667%;
+    position: relative;
+
+    @media screen and (max-width: 1530px) {
+      padding-bottom: 100vh;
+    }
+  }
+
+  &__archive {
+    background: url('../images/cs/cat-hero.jpg') bottom center;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: 16.66667%;
+    position: relative;
+  }
+
+  &__edu {
+    background: url('../images/cs/cat-heads/education.jpg') bottom center;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: $hero-padding;
+    position: relative;
+    text-align: left;
+  }
+
+  &__legal {
+    background: url('../images/cs/cat-heads/lawfinance.jpg') bottom center;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: $hero-padding;
+    position: relative;
+    text-align: left;
+  }
+
+  &__leisure {
+    background: url('../images/cs/cat-heads/leisure.jpg') bottom center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-bottom: $hero-padding;
+    position: relative;
+    text-align: left;
+  }
+
+  &__motors {
+    background: url('../images/cs/cat-heads/motors.jpg') bottom center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-bottom: $hero-padding;
+    position: relative;
+    text-align: left;
+  }
+
+  &__property {
+    background: url('../images/cs/cat-heads/property.jpg') bottom center;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: $hero-padding;
+    position: relative;
+    text-align: left;
+  }
+
+  &__recruitment {
+    background: url('../images/cs/cat-heads/recruitment.jpg') bottom center;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: $hero-padding;
+    position: relative;
+    text-align: left;
+  }
+
+  &__retail {
+    background: url('../images/cs/cat-heads/retail.jpg') bottom center;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: $hero-padding;
+    position: relative;
+    text-align: left;
+  }
+
+  &__services {
+    background: url('../images/cs/cat-heads/services.jpg') bottom center;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: $hero-padding;
+    position: relative;
+    text-align: left;
+  }
+
+  &__sm {
+    padding-bottom: 20%;
+    margin-bottom: 40px;
+  }
+
+  &__cat {
+    .cat-title {
+      position: absolute;
+      top: 50%; 
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+
+      h2 {
+        text-transform: lowercase;
+        font-size: 5.4vw;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .banner-motors {
+    
+  }
+
+  #watch {
+    @include breakpoint(small) {
+      @include grid-column(7);
+      @include grid-column-position(-5);
+    }
+
+    @include breakpoint(medium) {
+      @include grid-column(12);
+      @include grid-column-position(0);
+    }
+
+    section {
+      display: inline;
+    }
+
+    a {
+      color: #B4C9D1;
+      cursor: pointer;
+      font-weight: 400;
+      margin-right: rem-calc(20);
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+  }
+
+  h1 {
+    color: #fff;
+    font-weight: 500;
+
+    @include breakpoint(small) {
+      font-size: 2.2rem;
+    }
+
+    @include breakpoint(medium) {
+      font-size: 2.875rem;
+    }
+  }
+
+  h4 {
+    color: #fefefe;
+    font-weight: 300;
+    font-size: 1.3125rem;
+  }
+
+  .banner {
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    @include grid-row();
+    max-width: 55rem;
+  }
+}
+
+.orbit-slide {
+  div {
+    .cat-title {
+      transform: translateX(-10000vw);
+      transition: transform 1s ease;
+    }
+  }
+}
+
+.is-active {
+  div {
+    .cat-title {
+      transform: translate(-50%, -50%);
+    }
+  }
+}
