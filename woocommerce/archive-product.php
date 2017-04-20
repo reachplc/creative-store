@@ -44,6 +44,44 @@ get_header(); ?>
 	      	<h2>Leisure</h2>
 	      </div>      
 	</div>
+
+	<div class="hero__property hero__cat">		      
+	      <div class="cat-title">
+	      	<h2>Property</h2>
+	      </div>    
+	</div>
+
+	<div class="hero__recruitment hero__cat">		
+	      <div class="cat-title">
+	      	<h2>Recruitment</h2>
+	      </div>      
+	</div>
+
+	<div class="hero__retail hero__cat">		      
+	      <div class="cat-title">
+	      	<h2>Retail</h2>
+	      </div>    
+	</div>
+
+	<div class="hero__services hero__cat">		
+	      <div class="cat-title">
+	      	<h2>Services</h2>
+	      </div>      
+	</div>
+
+	<div class="hero__edu hero__cat">		
+	      <div class="cat-title">
+	      	<h2>Education</h2>
+	      </div>      
+	</div>
+
+	<div class="hero__legal hero__cat">		
+	      <div class="cat-title">
+	      	<h2>Legal &amp; Finance</h2>
+	      </div>      
+	</div>
+
+
 </div>
 
 
