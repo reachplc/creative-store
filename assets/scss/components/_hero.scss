@@ -277,3 +277,28 @@ $hero-padding: 20%;
     }
   }
 }
+
+
+.owl-carousel {
+  .owl-dots {
+    position: relative;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+
+    .owl-dot {
+      display: inline-block;
+      width: 0.75rem;
+      height: 0.75rem;
+      margin: 0.1rem;
+      border-radius: 50%;
+      background-color: rgba(205, 243, 253, 0.4);
+    }
+
+    .active {    
+      background-color:  #03c3f4
+    }
+
+  }
+}
+

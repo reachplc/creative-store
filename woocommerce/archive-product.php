@@ -22,10 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-  <ul class="orbit-container">
-    <li class="is-active orbit-slide">
-		<div class="hero" role="banner">
+<div class="owl-carousel">	
+	<div class="hero" role="banner">
 			<div class="marketing" id="Parallax">
 				<div class="cs_headerbox" >
 					<div class="title-container">
@@ -34,28 +32,20 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-    </li>
-    <li class="orbit-slide">
-      <div class="hero__motors hero__cat">
+
+	<div class="hero__motors hero__cat">		      
 	      <div class="cat-title">
 	      	<h2>Motors</h2>
-	      </div>
-      </div>
-    </li>
-    <li class="orbit-slide">
-      <div class="hero__leisure hero__cat">
+	      </div>    
+	</div>
+
+	<div class="hero__leisure hero__cat">		
 	      <div class="cat-title">
 	      	<h2>Leisure</h2>
-	      </div>
-      </div>
-    </li>
-  </ul>
-	<nav class="orbit-bullets">
-	   <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-	   <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-	   <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-	</nav>
+	      </div>      
+	</div>
 </div>
+
 
 <section class="container container__med">
 <?php do_action( 'foundationpress_after_header' ); ?>
