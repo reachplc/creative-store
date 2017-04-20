@@ -135,12 +135,16 @@
 	font-weight: 600;
 	padding-top: 10px;
 }
+.product-category a, .product a {
+	position: relative;
+	display: block;
+}
 
 .product-category a img, .product-category a h2, ul .product a img, ul .product a h2 {
 	transition: all 0.3s ease;
 }
 
-.product-category:hover:before, ul .product:hover:before {
+.product-category a:hover:before, ul .product a:hover:before {
 	content: "";
 	display: block;
 	position: absolute;
