@@ -80,7 +80,7 @@ get_header(); ?>
 		<div class="small-12 large-6 columns">
 			<h2>Recently Added</h2>
 			<p style="margin-bottom: 0;">Our most recent adverts to help you keep your advertising needs ahead of the curve.</p>
-			<a class="sites-button">Explore</a>
+			<a src="/recent-products/" class="sites-button">Explore</a>
 			<img class="format-1 drop-shadow" src="app/themes/FoundationPress/assets/images/cs/formats/MPU.jpg">
 			<img class="format-2 drop-shadow" src="app/themes/FoundationPress/assets/images/cs/formats/Halfpage.jpg">
 			<img class="format-3 drop-shadow" src="app/themes/FoundationPress/assets/images/cs/formats/Leaderboard.jpg">
