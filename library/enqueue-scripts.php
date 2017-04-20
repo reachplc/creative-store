@@ -25,6 +25,15 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/javascript/foundation.js', array('jquery'), '2.9.0', true );
 
+	//Orbit slider Stylesheet
+	wp_enqueue_style( 'owl-stylesheet', get_template_directory_uri() . '/assets/stylesheets/owl.carousel.min.css', array(), '2.2.1', 'all' );
+
+	//Orbit slider JS
+	wp_enqueue_script( 'owl-library', get_template_directory_uri() . '/assets/javascript/owl.carousel.min.js', array('jquery'), '2.2.1', true );
+
+	//Init Orbit
+	wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/assets/javascript/custom/init-owl.js', array('jquery'), '1.0', true );
+
 	// Add the comment-reply library on pages where it is necessary
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
