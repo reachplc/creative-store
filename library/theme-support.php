@@ -29,6 +29,11 @@ function foundationpress_theme_support() {
 	// Add post thumbnail support: http://codex.wordpress.org/Post_Thumbnails
 	add_theme_support( 'post-thumbnails' );
 
+	//Enable product galler for woocommerce
+	add_theme_support( 'wc-product-gallery-zoom' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
+
 	// RSS thingy
 	add_theme_support( 'automatic-feed-links' );
 

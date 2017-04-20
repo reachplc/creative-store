@@ -21,7 +21,7 @@ get_header(); ?>
   </div>
 </div>
 
-<?php elseif (has_term( "Legal & Finance", "product_cat" )) : ?>
+<?php elseif (has_term( "legal-finance", "product_cat" )) : ?>
 
 <div class="hero__legal hero__cat hero__sm">
   <div class="cat-title">
