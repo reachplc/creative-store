@@ -76,7 +76,7 @@ table thead {
       font-size: 1.5rem; 
 
       @include breakpoint(medium) {
-        font-size: 3.125rem;
+        font-size: 2.125rem;
       }
     }
 
@@ -112,8 +112,8 @@ table thead {
       height: 3rem;
       line-height: 0;
       background-color: $mainBlue;
-      width: 26%;
       transition: background-color 0.3s ease;
+      text-align: center;
 
       &:hover {
         background-color: $darkGrey;
@@ -172,7 +172,7 @@ table thead {
 }
 
 #post-0 > header > h1, #basic-details-section > h2, #profile-details-section > h2 {
-  font-size: 3.125rem;
+  font-size: 2.125rem;
   font-weight: 800;
 }
 

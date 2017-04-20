@@ -1,5 +1,6 @@
 // Page header
 $hero-padding: 20%;
+$hero-padding-sm: 49%;
 
 .hero { 
   .marketing {
@@ -62,7 +63,10 @@ $hero-padding: 20%;
     // margin: 0 0 rem-calc(32);
     // height: full;
     width: 100%;
-    padding-bottom: $hero-padding;
+    padding-bottom: $hero-padding-sm;
+      @include breakpoint(large) {
+        padding-bottom: $hero-padding;
+      }
     position: relative;
     text-align: left;
   }
@@ -101,7 +105,10 @@ $hero-padding: 20%;
     background-size: cover;
     background-position: bottom;
     width: 100%;
-    padding-bottom: $hero-padding;
+    padding-bottom: $hero-padding-sm;
+    @include breakpoint(large) {
+      padding-bottom: $hero-padding;
+    }
     position: relative;
     text-align: left;
   }
@@ -111,7 +118,10 @@ $hero-padding: 20%;
     background-size: cover;
     background-position: bottom;
     width: 100%;
-    padding-bottom: $hero-padding;
+    padding-bottom: $hero-padding-sm;
+      @include breakpoint(large) {
+        padding-bottom: $hero-padding;
+      }
     position: relative;
     text-align: left;
   }
@@ -121,7 +131,10 @@ $hero-padding: 20%;
     background-size: cover;
     background-position: center;
     width: 100%;
-    padding-bottom: $hero-padding;
+    padding-bottom: $hero-padding-sm;
+      @include breakpoint(large) {
+        padding-bottom: $hero-padding;
+      }
     position: relative;
     text-align: left;
   }
@@ -131,7 +144,10 @@ $hero-padding: 20%;
     background-size: cover;
     background-position: center;
     width: 100%;
-    padding-bottom: $hero-padding;
+    padding-bottom: $hero-padding-sm;
+      @include breakpoint(large) {
+        padding-bottom: $hero-padding;
+      }
     position: relative;
     text-align: left;
   }
@@ -141,7 +157,10 @@ $hero-padding: 20%;
     background-size: cover;
     background-position: bottom;
     width: 100%;
-    padding-bottom: $hero-padding;
+    padding-bottom: $hero-padding-sm;
+      @include breakpoint(large) {
+        padding-bottom: $hero-padding;
+      }
     position: relative;
     text-align: left;
   }
@@ -151,7 +170,10 @@ $hero-padding: 20%;
     background-size: cover;
     background-position: bottom;
     width: 100%;
-    padding-bottom: $hero-padding;
+    padding-bottom: $hero-padding-sm;
+      @include breakpoint(large) {
+        padding-bottom: $hero-padding;
+      }
     position: relative;
     text-align: left;
   }
@@ -161,7 +183,10 @@ $hero-padding: 20%;
     background-size: cover;
     background-position: bottom;
     width: 100%;
-    padding-bottom: $hero-padding;
+    padding-bottom: $hero-padding-sm;
+      @include breakpoint(large) {
+        padding-bottom: $hero-padding;
+      }
     position: relative;
     text-align: left;
   }
@@ -171,13 +196,19 @@ $hero-padding: 20%;
     background-size: cover;
     background-position: bottom;
     width: 100%;
-    padding-bottom: $hero-padding;
+    padding-bottom: $hero-padding-sm;
+      @include breakpoint(large) {
+        padding-bottom: $hero-padding;
+      }
     position: relative;
     text-align: left;
   }
 
   &__sm {
-    padding-bottom: 20%;
+    padding-bottom: $hero-padding-sm;
+      @include breakpoint(large) {
+        padding-bottom: $hero-padding;
+      }
     margin-bottom: 40px;
   }
 
