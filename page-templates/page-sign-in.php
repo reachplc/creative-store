@@ -45,11 +45,14 @@ html {
 						<section class="info">
 
 							<?php printf(
-								'<p>%1$s <a href="%2$s">%3$s</a></p>',
-								esc_html__( 'Not got an account?', 'creative-store' ),
+								'<p><a href="%2$s">%1$s</a> %3$s</p>',
+							esc_html__( 'Create your account', 'creative-store' ),
 								esc_url( wp_registration_url() ),
-								esc_html__( 'Click here to create your account.', 'creative-store' )
+							esc_html__( 'or Sign In', 'creative-store')
 							); ?>
+
+							Create an account or sign in
+							
 
 						</section>
 
