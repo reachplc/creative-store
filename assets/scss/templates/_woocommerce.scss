@@ -51,6 +51,14 @@
 				}
 			}
 		}
+
+		li:first-child {
+			clear: both;
+		}
+
+		li:last-child {
+			margin-right: 0;
+		}
 	}
 
 	.similarcollections {
@@ -112,6 +120,10 @@
 		text-align: left;
 		padding-top: 40px;
 	}
+}
+
+.post-189 {
+	padding-top: 20px;
 }
 
 .woocommerce table.shop_table {
