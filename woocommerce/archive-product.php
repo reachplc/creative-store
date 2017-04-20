@@ -63,11 +63,6 @@ get_header(); ?>
 <section class="intro" role="main">
 	<div class="fp-intro">
 
-		<div class="front-headline">
-			<h2>welcome to the <span class="bluetext">creative store</span></h2>
-			<h3>here you can browse the various creative solutions we offer for all areas of advertising.</h3>
-		</div>
-
 		<?php while ( woocommerce_content() ) : the_post(); ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
