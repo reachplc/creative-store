@@ -40,7 +40,7 @@
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 
 			<?php if (is_product() OR is_account_page() OR is_checkout() OR is_cart() or is_page( 'accounts/create' )) {
-			    ?> <div class="nav-background nav-background-override">  <?php
+			    ?> <div class="nav-background nav-background-override"> <?php 
 			} else {
 			  ?><div class="nav-background">  
 			<?php } ?>
