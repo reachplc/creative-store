@@ -3,6 +3,8 @@
   width: 100%;
   margin: 0 auto;
   // border-top: 1px solid #ccc;
+  background-color: #333333;
+  height: 100%;
 
   box-shadow: 0px -2px 2px rgba(136,136,136,0.3);
 
@@ -10,45 +12,6 @@
   font-weight: 600;
   color: #444444;
 }
-
-  #topfooter {
-
-    @include grid-row();
-    padding: rem-calc(30) 0;
-    padding-bottom: rem-calc(60);
-
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    h4 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      color: $mainBlue;
-    }
-
-    a, p {
-      color: #666666;
-      font-size: .9rem;
-    }
-
-  .footer-widget {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-
-    @include breakpoint(medium) {
-      display: block;
-      padding-left: none;
-      text-align: center;
-
-    }
-  }
-
-  }
 
 .ico {
 
@@ -94,16 +57,57 @@
     height: rem-calc(176);
     font-size: 0.9rem;
     color: #9b9a9a;
+    height: 100%;
+
+    h3 {
+      color: $mainBlue;
+      font-weight: 600;
+      font-size: 1.4rem;
+      padding-top: 3rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #999999;
+      display: inline-block;
+      width: 26%;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+
+    @media screen and (max-width: 1206px) {
+
+      h3 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+
+      h4 {
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    a:first-child, a:nth-child(2) {
+      color: #777777;
+      display: inline-block;
+    }
+
+    a:nth-child(3) {
+  width: 100%;
+    }
 
     .footer-text {
-      transform: translateY(50%);
       width: 100%;
       height: auto;
-      padding-top: 55px;
 
       p {
         text-align: center;
-        transform: translateY(-50px);
+        margin-bottom: 3rem;
       }
 
 
@@ -130,8 +134,28 @@
   }
 }
 
+.contact-details {
+  margin: 0 13.2%;
+
+  a {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1206px) {
+  .contact-details {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
 #topfooter > div > div > span.contact-subheading {
   display: block;
   font-size: 1.3rem;
-  margin-bottom: -10px;
+}
+
+#footer > div > div > p.footer-creative > a {
+  width: initial;
 }

@@ -74,7 +74,7 @@ $hero-padding-sm: 49%;
   @include breakpoint(medium) {
     background: url('../images/cs/head-slide1.jpg') bottom center;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     margin: 0 0 rem-calc(4);
   }
 

@@ -13,21 +13,22 @@
 		</section>
 		<?php do_action( 'foundationpress_before_footer' ); ?>
 		<div id="footer-container">
-			<div id="topfooter">
-				
-
-
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Top Footer Widget") ) : ?>
-				<?php endif;?>
-
-
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
-				
-			</div>
-
-
 			<footer id="footer">
 				<div class="row">
+
+				<h3>Contact</h3>
+
+				<h4>Trinity Mirror Creative Studio</h4>
+
+				<span class="contact-details"><img src="/app/themes/FoundationPress/assets/images/cs/ico/phone.svg" class="ico">
+				 <a href="tel:01614931600">0161 493 1600</a>
+				 </span>
+
+				 <span class="contact-details"><img src="/app/themes/FoundationPress/assets/images/cs/ico/email.svg" class="ico">
+					 <a href="mailto:creativestudio@trinitymirror.com">creativestudio@trinitymirror.com</a>
+					</span>
+
+				<hr>
 					<div class="footer-text">
 						<p class="footer-copyright">Copyright &copy; Trinity Mirror plc 2017</p>
 						<p class="footer-creative">Built by <a class="bluetext">Trinity Mirror Creative Studio <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
