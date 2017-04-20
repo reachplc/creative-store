@@ -54,7 +54,7 @@ table thead {
   position: absolute;
   width: 80vw;
   height: auto;
-  top: 52%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(255,255,255,0.85);
@@ -220,6 +220,10 @@ table thead {
 
 .top-bar-left, .top-bar-right {
   width: auto !important;
+}
+
+body > section > div > div > form.woocommerce-ordering > select {
+  display: none
 }
 
 // #post-26 {

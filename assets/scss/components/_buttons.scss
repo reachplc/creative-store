@@ -1,4 +1,4 @@
-.sites-button {
+.sites-button, #product-80 > div.summary.entry-summary > form > div > div.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled > button {
   background: $mainBlue;
   font-size: 1.2rem;
   color: #fff;
@@ -8,6 +8,7 @@
   border-radius: 0px;
   border: 3px solid $mainBlue;
   transition: all 0.3s ease; 
+  font-family: "Poppins", sans-serif;
 
   &:hover {
   	background-color: rgba(0,0,0,0);
