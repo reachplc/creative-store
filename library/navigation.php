@@ -34,6 +34,21 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 	}
 }
 
+/**
+ * Search bar in nav bar
+ *
+ * @link http://stackoverflow.com/questions/31822842/adding-search-bar-to-the-nav-menu-in-wordpress
+*/
+
+function wpgood_nav_search($items, $args) {
+    // If this isn't the primary menu, do nothing
+    if( !($args->theme_location == 'top-bar-r') ) 
+    return $items;
+    // Otherwise, add search form
+    return '<li>' . get_search_form(false) . $items . '</li>';
+}
+add_filter('wp_nav_menu_items', 'wpgood_nav_search', 10, 2);
+
 
 /**
  * Mobile navigation - topbar (default) or offcanvas
