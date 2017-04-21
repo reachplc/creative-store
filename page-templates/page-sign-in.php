@@ -13,25 +13,24 @@ if ( is_user_logged_in() ) {
 $login_status = ( get_query_var( 'login' ) === 'failed' ? true : false );
 
 get_header(); ?>
-<style>
-html {
-	max-height: 100vh !important;
-	overflow-y: hidden;
-}
 
-#masthead {
-	display: none;		
-}
+<style>
+	#masthead {
+		display: none;		
+	}
 </style>
-<header class="hero hero__big" role="banner">
-	<div class="marketing" id="Parallax">
-		<div class="cs_headerbox cs_headerbox__big" >
-			<div class="title-container">
-				<h1>The Creative Store.</h1>
+
+<div class="sign-in">
+
+	<header class="hero hero__big" role="banner">
+		<div class="marketing" id="Parallax">
+			<div class="cs_headerbox cs_headerbox__big" >
+				<div class="title-container">
+					<h1>The Creative Store.</h1>
+				</div>
 			</div>
 		</div>
-	</div>
-</header>
+	</header>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -93,5 +92,7 @@ html {
 	<!-- <div class="bg-overlay-img"></div> -->
 
 	<div class="bg-overlay"></div>
+
+</div>
 
 <?php get_footer();

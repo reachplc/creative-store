@@ -22,7 +22,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_deregister_script( 'jquery' );
 
 	// CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header.
-	wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), '2.1.0', false );
+	wp_enqueue_script( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '3.2.1', false );
 
 	//owl carousle library
 	wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/assets/javascript/custom/init-owl.js', array('jquery'), '2.2.1', true );
