@@ -61,7 +61,7 @@ table thead {
   border: 1px solid rgba(0,0,0,0.3);
   z-index: 3;
   @include breakpoint(medium) {
-      width: 45vw;
+      width: 35vw;
   }
 
   article {
@@ -95,7 +95,7 @@ table thead {
       margin-bottom: 1.52rem;
 
       @include breakpoint(xlarge) {
-        max-width: 40%;
+        max-width: 60%;
       }
     }
 

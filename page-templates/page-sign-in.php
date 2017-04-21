@@ -51,8 +51,6 @@ html {
 							esc_html__( 'or Sign In', 'creative-store')
 							); ?>
 
-							Create an account or sign in
-							
 
 						</section>
 

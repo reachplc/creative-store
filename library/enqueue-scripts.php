@@ -25,9 +25,6 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), '2.1.0', false );
 
 	//owl carousle library
-	wp_enqueue_script( 'owl-library', get_template_directory_uri() . '/assets/javascript/owl.carousel.min.js', array('jquery'), '2.9.0', true );
-
-	//owl carousle library
 	wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/assets/javascript/custom/init-owl.js', array('jquery'), '2.2.1', true );
 
 	// If you'd like to cherry-pick the foundation components you need in your project, head over to gulpfile.js and see lines 35-54.
