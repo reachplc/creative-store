@@ -40,7 +40,7 @@
 
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 
-			<?php if (is_product() OR is_account_page() OR is_checkout() OR is_cart() or is_page( 'accounts/create' )) {
+			<?php if (is_product() OR is_account_page() OR is_checkout() OR is_cart() or is_page( 'accounts/create' ) or is_search()) {
 			    ?> <div class="nav-background nav-background-override"> <?php 
 			} else {
 			  ?><div class="nav-background">  
@@ -68,6 +68,12 @@
 <style>
 #page-full-width {
 padding-top: 20px;
+}
+</style>
+<?php elseif (is_search()) : ?>
+<style>
+body > div.row > div {
+	margin-top: 100px;
 }
 </style>
 <?php endif; ?>
