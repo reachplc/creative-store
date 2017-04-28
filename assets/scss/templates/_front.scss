@@ -409,3 +409,47 @@
 .sign-in + #footer-container {
   display: none
 }
+
+
+.ico1 {
+  background-image: url('../images/cs2/ico1-off.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 370px;
+  height: 337px;
+  z-index: 3;
+  position: relative;
+
+  &:hover {
+    background-image: url('../images/cs2/ico1.png');
+  }
+}
+
+.ico2 {
+  background-image: url('../images/cs2/ico2-off.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 370px;
+  height: 337px;
+  z-index: 3;
+  position: relative;
+
+  &:hover {
+    background-image: url('../images/cs2/ico2.png');
+  }
+}
+
+.ico3 {
+  background-image: url('../images/cs2/ico3-off.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 370px;
+  height: 337px;
+  z-index: 3;
+  position: relative;
+
+  &:hover {
+    background-image: url('../images/cs2/ico3.png');
+  }
+}
+

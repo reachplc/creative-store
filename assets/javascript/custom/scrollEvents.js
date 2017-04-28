@@ -8,4 +8,9 @@ jQuery(function($){
         	$(".nav-background").removeClass("nav-background-show");
         }
     });
+
+
+    // $(".ico1").hover(function(){
+    // 	$(".ico1").
+    // });
 });

@@ -39,16 +39,16 @@ get_header(); ?>
 
 	<section class="benefits">
 		<div class="semantic mybox">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/cs2/ico1.png" alt="semantic">
+			<div class="ico1"></div>
 			<p>Explore our Library of engaging, bespoke and distinctive design templates.</p>
 		</div>
 		<div class="responsive mybox">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/cs2/ico2.png" alt="responsive">
+			<div class="ico2"></div>
 			<p>Select and reserve the desired artwork to meet your client's requirements.</p>
 
 		</div>
 		<div class="customizable mybox">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/cs2/ico3.png" alt="customizable">
+			<div class="ico3"></div>
 			<p>Our studio team will work with you to tailor artwork to your exact specifications.</p>
 		</div>
 	</section>
