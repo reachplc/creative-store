@@ -9,6 +9,8 @@
 
 #site-navigation {
   display: block !important;
+  position: relative;
+  z-index: 100;
 }
 
 .top-bar {

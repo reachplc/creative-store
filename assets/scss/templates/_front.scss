@@ -161,7 +161,6 @@
 
 
   @include breakpoint(large) {
-<<<<<<< HEAD
     width: 60%;
     float: right;
 
@@ -170,7 +169,6 @@
       max-width: 112%;
       position: relative;
     }
-=======
 	 width: 60%;
 	 float: right;
 
@@ -180,14 +178,13 @@
 		position: relative;
 		top: -40px;
 	 }
->>>>>>> e385988eb5a7d937701a950557ea80e47e339bd9
+
   }
 
 
 }
 
 
-<<<<<<< HEAD
 .intro {
   margin-bottom: 50px;
 
@@ -355,7 +352,6 @@
     padding-left: 4.9375rem;
   }
 }
-=======
 .sign-in {
 
   background: url("../images/cs/bg-big.jpg") bottom center no-repeat;
@@ -413,5 +409,3 @@
 .sign-in + #footer-container {
   display: none
 }
-
->>>>>>> e385988eb5a7d937701a950557ea80e47e339bd9

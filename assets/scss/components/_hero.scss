@@ -4,7 +4,7 @@ $hero-padding-sm: 49%;
 
 .hero { 
   position: relative;
-  top: 50px;
+  top: 30px;
   
   @include breakpoint(small) {
     background: url('../images/cs2/hero.jpg') bottom center;
