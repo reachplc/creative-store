@@ -89,13 +89,27 @@ get_header(); ?>
 
 <div class="greyPage">
 	<div class="row">
-		<div class="small-12 large-6 columns">
+		<div class="small-12 columns">
 			<h2>Recently Added</h2>
-			<p style="margin-bottom: 0;">Our most recent adverts to help you keep your advertising needs ahead of the curve.</p>
-			<a href="/recent-products/" class="sites-button">Explore</a>
-			<img class="format-1 drop-shadow" src="app/themes/FoundationPress/assets/images/cs/formats/MPU.jpg">
-			<img class="format-2 drop-shadow" src="app/themes/FoundationPress/assets/images/cs/formats/Halfpage.jpg">
-			<img class="format-3 drop-shadow" src="app/themes/FoundationPress/assets/images/cs/formats/Leaderboard.jpg">
+			<ul class="products owl-carousel">
+				<?php
+				$args = array(
+				'post_type' => 'product',
+				'stock' => 1,
+				'posts_per_page' => 8,
+				'orderby' =>'date',
+				'order' => 'DESC' );
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+					<li class="product-category product">
+						<a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; ?>
+						<h2 class="woocommerce-loop-category__title"><?php the_title(); ?></h2>
+						</a>
+					</li>
+
+				<?php endwhile; ?>
+			</ul>
 		</div>
 	</div>
 </div>
