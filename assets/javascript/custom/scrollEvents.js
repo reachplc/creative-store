@@ -9,6 +9,11 @@ jQuery(function($){
         }
     });
 
+    $(".menu-item-268, searchbox").hover(function(){
+    	$(".searchbox").addClass('searchboxshow');}, function(){
+    		$(".searchbox").removeClass('searchboxshow');
+    });
+
 
     // $(".ico1").hover(function(){
     // 	$(".ico1").

@@ -45,10 +45,9 @@ function wpgood_nav_search($items, $args) {
     if( !($args->theme_location == 'top-bar-r') ) 
     return $items;
     // Otherwise, add search form
-    return '<li>' . get_search_form(false) . $items . '</li>';
+    return '<li><div class="searchbox">' . get_search_form(false) . $items . '</div></li>';
 }
 add_filter('wp_nav_menu_items', 'wpgood_nav_search', 10, 2);
-
 
 /**
  * Mobile navigation - topbar (default) or offcanvas
@@ -66,7 +65,6 @@ if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
 		));
 	}
 }
-
 
 /**
  * Add support for buttons in the top-bar menu:
