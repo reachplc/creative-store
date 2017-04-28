@@ -48,10 +48,45 @@
 // 0. Creative Store Vars
 // -----------------------
 
-$mainBlue: #03c3f4;
+$mainBlue: #00abed;
 $mainGrey: #444444;
 $darkGrey: #333333;
 $lightGrey: #818283;
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Th.eot');
+  src: url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Th.eot?#iefix') format('embedded-opentype'),
+    url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Th.woff') format('woff'),
+    url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Th.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Md.eot');
+  src: url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'),
+    url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Md.woff') format('woff'),
+    url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Md.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Hv.eot');
+  src: url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Hv.eot?#iefix') format('embedded-opentype'),
+    url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Hv.woff') format('woff'),
+    url('/app/themes/FoundationPress/assets/fonts/HelveticaNeueLTStd-Hv.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body, * {
+  font-family: 'Helvetica Neue LT Std';
+  font-weight: 500;
+  font-style: normal;
+}
 
 
 // 1. Global
@@ -635,4 +670,6 @@ $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
 
+.rad-grad {
 
+}

@@ -14,8 +14,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
-		<script src="/assets/javascript/owl.carousel.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,500" rel="stylesheet">
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -39,20 +38,16 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-
-			<?php if (is_product() OR is_account_page() OR is_checkout() OR is_cart() or is_page( 'accounts/create' ) or is_search()) {
-			    ?> <div class="nav-background nav-background-override"> <?php 
-			} else {
-			  ?><div class="nav-background">  
-			<?php } ?>
-			
+			<div class="nav-background">  
 				<div class="row">
 					<div class="top-bar-left">
 						<ul class="menu">
-							<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+							<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">The Creative <span class="bluetext">Store</span></a></li>
 						</ul>
 					</div>
 					<div class="top-bar-right">
+					<p class="nav-text myuser">Welcome Back: <span class="bluetext">
+					<?php $current_user = wp_get_current_user(); echo $current_user->user_firstname . '</span></p>';?>
 						<?php foundationpress_top_bar_r(); ?>
 
 						<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
@@ -77,6 +72,9 @@ body > div.row > div {
 }
 </style>
 <?php endif; ?>
+
+
+
 
 
 

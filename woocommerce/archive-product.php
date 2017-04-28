@@ -22,88 +22,62 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-<div class="owl-carousel">	
 	<div class="hero" role="banner">
-			<div class="marketing" id="Parallax">
-				<div class="cs_headerbox" >
-					<div class="title-container">
-						<h1>The Creative Store.</h1>
+
+		</div>
+
+	
+
+
+<section class="container container__med rad-grad">
+<?php do_action( 'foundationpress_after_header' ); ?>
+<div class="intro-one">
+<section class="intro intro-one" role="main">
+	<div class="head-intro">
+		<h2 class="bluetext">Selecting artwork is as easy as 1 2 3</h2>
+	</div>
+
+	<section class="benefits">
+		<div class="semantic mybox">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/cs2/ico1.png" alt="semantic">
+			<p>Explore our Library of engaging, bespoke and distinctive design templates.</p>
+		</div>
+		<div class="responsive mybox">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/cs2/ico2.png" alt="responsive">
+			<p>Select and reserve the desired artwork to meet your client's requirements.</p>
+
+		</div>
+		<div class="customizable mybox">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/cs2/ico3.png" alt="customizable">
+			<p>Our studio team will work with you to tailor artwork to your exact specifications.</p>
+		</div>
+	</section>
+</section>
+</div>
+
+<div class="intro-two">
+
+	<section class="intro" role="main">
+		<div class="fp-intro collections-box">
+
+		<span class="coll-b1"></span><span class="coll-b2"></span>
+
+		<h2 class="coll-text">The Collections</h2>
+		<h3 class="coll-text">Browse 100's of beautiful templates designed for every kind of business.</h3>
+
+			<?php while ( woocommerce_content() ) : the_post(); ?>
+				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+					<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
+					<div class="entry-content">
+						<?php the_content(); ?>
 					</div>
-				</div>
+				</article>
+			<?php endwhile;?>
 			</div>
 		</div>
 
-	<div class="hero__motors hero__cat">		      
-	      <div class="cat-title">
-	      	<h2>Motors</h2>
-	      </div>    
-	</div>
-
-	<div class="hero__leisure hero__cat">		
-	      <div class="cat-title">
-	      	<h2>Leisure</h2>
-	      </div>      
-	</div>
-
-	<div class="hero__property hero__cat">		      
-	      <div class="cat-title">
-	      	<h2>Property</h2>
-	      </div>    
-	</div>
-
-	<div class="hero__recruitment hero__cat">		
-	      <div class="cat-title">
-	      	<h2>Recruitment</h2>
-	      </div>      
-	</div>
-
-	<div class="hero__retail hero__cat">		      
-	      <div class="cat-title">
-	      	<h2>Retail</h2>
-	      </div>    
-	</div>
-
-	<div class="hero__services hero__cat">		
-	      <div class="cat-title">
-	      	<h2>Services</h2>
-	      </div>      
-	</div>
-
-	<div class="hero__edu hero__cat">		
-	      <div class="cat-title">
-	      	<h2>Education</h2>
-	      </div>      
-	</div>
-
-	<div class="hero__legal hero__cat">		
-	      <div class="cat-title">
-	      	<h2>Legal &amp; Finance</h2>
-	      </div>      
-	</div>
-
-
+	</section>
 </div>
-
-
-<section class="container container__med">
-<?php do_action( 'foundationpress_after_header' ); ?>
-
-<section class="intro" role="main">
-	<div class="fp-intro">
-
-		<?php while ( woocommerce_content() ) : the_post(); ?>
-			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-				<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-				<div class="entry-content">
-					<?php the_content(); ?>
-				</div>
-			</article>
-		<?php endwhile;?>
-		</div>
-	</div>
-
-</section>
-
 
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">

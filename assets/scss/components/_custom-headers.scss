@@ -1,16 +1,19 @@
 .container {
 	padding-top: 85px;
+	background: url('../images/cs2/bg.jpg');
+	background-size: cover;
+	
 
 	&__none {
 		padding-top: 0px;
 	}
 	
 	&__sm {
-		padding-top: 12px;
+		padding-top: 60px;
 	}
 
 	&__med {
-		padding-top: 25px;
+		padding-top: 75px;
 	}
 
 	&__lg {
