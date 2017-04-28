@@ -61,15 +61,15 @@
 
 <?php if (is_page( 'accounts/create' )): ?>
 <style>
-#page-full-width {
-padding-top: 20px;
-}
+	#page-full-width {
+		padding-top: 20px;
+	}
 </style>
 <?php elseif (is_search()) : ?>
 <style>
-body > div.row > div {
-	margin-top: 100px;
-}
+	body > div.row > div {
+		margin-top: 100px;
+	}
 </style>
 <?php endif; ?>
 

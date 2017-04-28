@@ -197,6 +197,29 @@
       font-weight: 100;
       font-size: 3rem;
     }
+
+    h2:before {
+      content: "";
+      height: 2px;
+      width: 250px;
+      position: relative;
+      top: 30px;
+      left: -80px;
+      display: block;
+      background-color: $mainBlue;
+    }
+
+    h2:after {
+      content: "";
+      height: 2px;
+      width: 250px;
+      position: relative;
+      top: -36px;
+      left: 1000px;
+      display: block;
+      background-color: $mainBlue;
+    }
+
   }
 
   .benefits {
