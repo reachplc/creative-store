@@ -22,14 +22,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-	<div class="hero" role="banner">
+<div role="banner" style="background-color: #000;">
 
-		</div>
+    <div class="vid hp-video">
+        <video autoplay muted style="width:100%; height: 65vh; top: 0; left: 0; right: 0; z-index: -1; object-fit: cover; margin-top: 60px;">
+          <source src="/app/themes/FoundationPress/assets/images/cs2/hero-vid.mp4" type="video/mp4">
+          <img src="../images/cs2/hero-off.jpg">
+        </video>
+    </div>
+
+</div>
+
+
 
 	
 
 
-<section class="container container__med rad-grad">
+<section class="container container__med rad-grad" style="margin-top: -10px;">
 <?php do_action( 'foundationpress_after_header' ); ?>
 <div class="intro-one">
 <section class="intro intro-one" role="main">
