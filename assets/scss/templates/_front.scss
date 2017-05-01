@@ -321,7 +321,7 @@
     height: 2px;
     width: 350px;
     position: relative;
-    top: -816px;
+    top: -835px;
     left: 768px;
     display: block;
     background-color: $mainBlue;
@@ -377,10 +377,12 @@
 }
 .sign-in {
 
-  background: url("../images/cs/bg-big.jpg") bottom center no-repeat;
+  background: url("../images/cs2/login-bg.jpg") no-repeat;
   background-size: cover;
   min-height: 100vh;
   padding-bottom: 7.5vh;
+  position: absolute;
+  width: 100%;
 
   .hero {
 	 background: none;
@@ -417,9 +419,19 @@
   }
 
   .login-form-popup {
-		position: relative;
-		transform: translateX(-50%);
+		position: absolute;
+    top: 50%;
+		transform: translate(-50%, -50%);
 		left: 50%;
+    background-color: rgba(0,0,48,0.82);
+
+    label, p {
+      color: #D2C8D6;
+    }
+
+    a {
+      color: $mainBlue;
+    }
 
 		@media screen and (max-width: 990px) {
 			width: 80vw;

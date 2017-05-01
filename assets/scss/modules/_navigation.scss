@@ -9,11 +9,11 @@
 
 #site-navigation {
   display: block !important;
-  position: relative;
+  position: fixed;
   z-index: 100;
 }
 
-.top-bar {
+.top-bar  {
   background-color: #040428;
   padding: 10px 0;
   z-index: 2;

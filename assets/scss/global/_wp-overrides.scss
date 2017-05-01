@@ -50,7 +50,7 @@ table thead {
 }
 
 .login-form-popup {
-  padding: 15px 30px;
+  padding: 25px;
   position: absolute;
   width: 80vw;
   height: auto;
@@ -61,7 +61,7 @@ table thead {
   border: 1px solid rgba(0,0,0,0.3);
   z-index: 3;
   @include breakpoint(medium) {
-      width: 35vw;
+      width: 32vw;
   }
 
   article {
@@ -70,6 +70,10 @@ table thead {
     margin: 0 auto;
     @include breakpoint(xlarge) {
       max-width: 80%;
+    }
+
+    .login-logo {
+      padding: 10px 0 30px;
     }
 
     h1.entry-title {
@@ -90,14 +94,23 @@ table thead {
       max-width: 80%;
       margin: 0 auto;
       outline: 0;
-      border: 1px solid $mainBlue;
+      border-size: 0px;
+      border-color: rgba(0,0,0,0);
+      border-radius: 4px;
       font-weight: 600;
       margin-bottom: 1.52rem;
+      background-color: #000030;
+      color: #D2C8D6;
 
       @include breakpoint(xlarge) {
         max-width: 60%;
       }
     }
+
+    input:active, input:focus {
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #00ABED;
+      }
 
     p label {
       font-weight: 500;
@@ -107,22 +120,25 @@ table thead {
     }
 
     #wp-submit{
-      font-size: 1.5625rem;
+      font-size: 1rem;
       font-weight: 700;
       height: 3rem;
       line-height: 0;
+      color: #000;
       background-color: $mainBlue;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
       text-align: center;
+      width: 80%;
 
       &:hover {
         background-color: $darkGrey;
+        color: #fff;
       }
     }
 
     section p a {
       font-weight: 500;
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   } 
 }
@@ -224,6 +240,10 @@ table thead {
 
 body > section > div > div > form.woocommerce-ordering > select {
   display: none
+}
+
+#loginform > p.login-username > label, #loginform > p.login-password > label {
+  display: none;
 }
 
 // #post-26 {

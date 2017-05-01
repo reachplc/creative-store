@@ -18,4 +18,7 @@ jQuery(function($){
     // $(".ico1").hover(function(){
     // 	$(".ico1").
     // });
+
+    $('#user').attr( 'placeholder', 'Username' );
+    $('#pass').attr( 'placeholder', 'Password' );
 });

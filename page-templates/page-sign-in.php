@@ -22,14 +22,8 @@ get_header(); ?>
 
 <div class="sign-in">
 
-	<header class="hero hero__big" role="banner">
-		<div class="marketing" id="Parallax">
-			<div class="cs_headerbox cs_headerbox__big" >
-				<div class="title-container">
-					<h1>The Creative Store.</h1>
-				</div>
-			</div>
-		</div>
+	<header class="hero" role="banner">
+
 	</header>
 
 	<div id="primary" class="content-area">
@@ -39,16 +33,11 @@ get_header(); ?>
 					<article class="module login-form drop-shadow">
 
 
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+						<img class="login-logo" src="/app/themes/FoundationPress/assets/images/cs2/sign-in.png">
 
 						<section class="info">
 
-							<?php printf(
-								'<p><a href="%2$s">%1$s</a> %3$s</p>',
-							esc_html__( 'Create your account', 'creative-store' ),
-								esc_url( wp_registration_url() ),
-							esc_html__( 'or Sign In', 'creative-store')
-							); ?>
+
 
 
 						</section>
@@ -82,6 +71,15 @@ get_header(); ?>
 							esc_html__( 'Forgot Password', 'creative-store' ),
 							esc_html__( 'Forgot your Password?' )
 						); ?>
+
+						<hr>
+
+							<?php printf(
+								'<p>%3$s <a href="%2$s">%1$s</a></p>',
+							esc_html__( 'Create Account', 'creative-store' ),
+								esc_url( wp_registration_url() ),
+							esc_html__( 'Not a member? ', 'creative-store')
+							); ?>
 					</section>
 					</article>
 				</div>

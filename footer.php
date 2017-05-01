@@ -15,24 +15,18 @@
 		<div id="footer-container">
 			<footer id="footer">
 				<div class="row">
+				<div class="csfooter">
+				
+				<h4>Trinity Mirror Creative</h4>
 
-				<h3>Contact</h3>
-
-				<h4>Trinity Mirror Creative Studio</h4>
-
-				<span class="contact-details"><img src="/app/themes/FoundationPress/assets/images/cs/ico/phone.svg" class="ico">
+				<span class="contact-details"><img src="/app/themes/FoundationPress/assets/images/cs2/phone.png" class="ico">
 				 <a href="tel:01614931600">0161 493 1600</a>
-				 </span>
+				</span>
 
-				 <span class="contact-details"><img src="/app/themes/FoundationPress/assets/images/cs/ico/email.svg" class="ico">
+				 <span class="contact-details"><img src="/app/themes/FoundationPress/assets/images/cs2/email.png" class="ico">
 					 <a href="mailto:creativestudio@trinitymirror.com">creativestudio@trinitymirror.com</a>
 					</span>
-
-				<hr>
-					<div class="footer-text">
-						<p class="footer-copyright">Copyright &copy; Trinity Mirror plc 2017</p>
-						<p class="footer-creative">Built by <a class="bluetext">Trinity Mirror Creative Studio <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
-					</div>
+				</div>
 				</div>
 			</footer>
 		</div>
