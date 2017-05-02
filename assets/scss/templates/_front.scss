@@ -453,7 +453,7 @@
 
 
 .ico1 {
-  background-image: url('../images/cs2/ico1-off.png');
+  background-image: url('../images/cs2/123/1-off.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 370px;
@@ -462,12 +462,12 @@
   position: relative;
 
   &:hover {
-    background-image: url('../images/cs2/ico1.png');
+    background-image: url('../images/cs2/123/1-on.png');
   }
 }
 
 .ico2 {
-  background-image: url('../images/cs2/ico2-off.png');
+  background-image: url('../images/cs2/123/2-off.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 370px;
@@ -476,7 +476,7 @@
   position: relative;
 
   &:hover {
-    background-image: url('../images/cs2/ico2.png');
+    background-image: url('../images/cs2/123/2-on.png');
   }
 }
 
