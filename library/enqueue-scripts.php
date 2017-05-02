@@ -27,9 +27,12 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/javascript/foundation.js', array('jquery'), '2.9.0', true );
 
 	//Carousel stylesheet
-	wp_enqueue_style( 'carousel-stylesheet', get_template_directory_uri() . '/assets/stylesheets/owl.carousel.min.css', array(), '2.2.1', 'all' );
+	wp_enqueue_style( 'carousel-animation', get_template_directory_uri() . '/assets/stylesheets/animate.css', array(), '3.5.2', 'all');
 
-	wp_enqueue_script( 'carousel-javascript', get_template_directory_uri() .  '/assets/javascript/owl.carousel.min.js', array(), '3.2.1', false );
+	wp_enqueue_style( 'carousel-stylesheet', get_template_directory_uri() . '/assets/stylesheets/owl.carousel.min.css', array(), '2.2.1', 'all');
+	
+
+	wp_enqueue_script( 'carousel-javascript', get_template_directory_uri() .  '/assets/javascript/owl.carousel.min.js', array(), '3.2.1', false);
 	
 
 	// Add the comment-reply library on pages where it is necessary

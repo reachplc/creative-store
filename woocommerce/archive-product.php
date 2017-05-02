@@ -103,12 +103,13 @@ get_header(); ?>
 			<ul class="products owl-carousel">
 				<?php
 				$args = array(
-				'post_type' => 'product',
-				'stock' => 1,
-				'posts_per_page' => 8,
+				'post_type' => 'product',				
+				'posts_per_page' => 10,
+				'sotck' => 1,
 				'orderby' =>'date',
 				'order' => 'DESC' );
 				$loop = new WP_Query( $args );
+
 				while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
 					<li class="product-category product">
 						<a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -116,7 +117,6 @@ get_header(); ?>
 						<h2 class="woocommerce-loop-category__title"><?php the_title(); ?></h2>
 						</a>
 					</li>
-
 				<?php endwhile; ?>
 			</ul>
 		</div>

@@ -519,7 +519,6 @@
 
 		}
 
-
 		.owl-prev { 
 			transform:rotate(45deg);
 			left: -70px;
@@ -530,6 +529,17 @@
 			right: -70px;
 		}
 
+	}
+
+	.owl-item {
+		transform: scale(0.8)!important;
+		opacity: 0.6;
+		transition: .4s ease all;
+	}
+
+	.center {
+		opacity: 1;
+		transform: scale(1.1)!important;
 	}
 
 }

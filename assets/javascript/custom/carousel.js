@@ -1,9 +1,18 @@
 $(document).ready(function(){
-	$(".owl-carousel").owlCarousel({
+
+	var carousel = $('.owl-carousel');
+
+	carousel.owlCarousel({
 		loop:true,
 		nav:true,
-		items:4,
+		items: 5,
+		center: true,
 		dots: false,
-		margin: 15
+		margin: 15,		
+   	smartSpeed:450,
+   	lazyLoad: true
 	});
+
+
 });
+
