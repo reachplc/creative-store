@@ -140,27 +140,33 @@
 	display: block;
 }
 
+.product-category a h2, ul .product a h2  {
+	position: relative;
+	top: 0;
+	transition: top;
+}
+
 .product-category a img, .product-category a h2, ul .product a img, ul .product a h2 {
 	transition: all 0.3s ease;
 }
 
-.product-category a:hover:before, ul .product a:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	transform: translate(-50%, -60%);
-	width: 40px;
-	height: 40px;
-	background: $mainBlue url('/app/themes/FoundationPress/assets/images/cs/ico/eye.svg') center center;
-	background-repeat: no-repeat;
-	z-index: 2;
+.product-category a:hover img, ul .product a:hover img {
+	transform: scale(1.2);
+	// content: "";
+	// display: block;
+	// position: absolute;
+	// top: 45%;
+	// left: 50%;
+	// transform: translate(-50%, -60%);
+	// width: 40px;
+	// height: 40px;
+	// background: $mainBlue url('/app/themes/FoundationPress/assets/images/cs/ico/eye.svg') center center;
+	// background-repeat: no-repeat;
+	// z-index: 2;
 }
 
-.product-category:hover a img, ul .product:hover a img {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+.product-category a:hover h2, ul .product a:hover h2 {
+	top: 40px;
 }
 
 .product-category:hover a h2, ul .product:hover a h2 {
@@ -195,5 +201,83 @@ h1.product_title.entry-title {
 	font-size: 2rem;
 }
 
-/* Recent Products Page */
+body.archive.tax-product_cat {
+	background: url('../images/cs2/bg.jpg');
+	background-size: cover;
 
+	.intro {
+		.fp-intro {
+			.front-headline {
+				h2 {
+					margin-top: 50px;
+					color: $mainBlue;
+
+					&:before {
+						    content: "";
+						    height: 2px;
+						    width: 400px;
+						    position: relative;
+						    top: 34px;
+						    left: -50px;
+						    display: block;
+						    background-color: $mainBlue;
+					}
+
+					&:after {
+						    content: "";
+						    height: 2px;
+						    width: 400px;
+						    position: relative;
+						    top: -24px;
+						    right: -680px;
+						    display: block;
+						    background-color: $mainBlue;
+					}
+				}
+			}
+
+			.entry-content {
+				nav {
+					.breadcrumb {
+						p {
+							color: #fff;
+							font-weight: 400;
+						}
+						nav, nav a {
+							color: #fff;
+							font-weight: 400;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+body > section > div > div > ul > li > a > h2 {
+	color: #fff;
+}
+
+.woocommerce ul.products li.product a img {
+	height: 380px;
+}
+
+body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
+	 div {
+		div {
+			margin-top: 20px;
+			li {
+				a {
+					img {
+						height: auto;
+
+						&:hover {
+							transform: scale(1.05);
+							border-width: 4px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

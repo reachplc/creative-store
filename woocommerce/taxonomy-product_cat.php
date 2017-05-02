@@ -19,7 +19,7 @@ get_header(); ?>
 			</div>
 	
 
-<section class="container container__none" style="position: relative; top: -31px;">
+<section class="container container__none container__nobg" style="position: relative; top: -31px;">
 <?php do_action( 'foundationpress_after_header' ); ?>
 
 <section class="intro" role="main">
@@ -39,7 +39,6 @@ get_header(); ?>
 	</div>
 </section>
 
-<hr>
 
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">

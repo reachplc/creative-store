@@ -27,7 +27,7 @@ get_header(); ?>
     <div class="vid hp-video">
         <video autoplay muted style="width:100%; height: 65vh; top: 0; left: 0; right: 0; z-index: -1; object-fit: cover; margin-top: 60px;">
           <source src="/app/themes/FoundationPress/assets/images/cs2/hero-vid.mp4" type="video/mp4">
-          <img src="../images/cs2/hero-off.jpg">
+          <img src="/app/themes/FoundationPress/assets/images/cs2/hero-off.jpg">
         </video>
     </div>
 
@@ -74,14 +74,72 @@ get_header(); ?>
 		<h2 class="coll-text">The Collections</h2>
 		<h3 class="coll-text">Browse 100's of beautiful templates designed for every kind of business.</h3>
 
-			<?php while ( woocommerce_content() ) : the_post(); ?>
+		<div class="cat-thumb">
+			<a href="/product-category/business/">
+				<img class="ico-business" src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg';">
+				<h2>Business</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
+			<a href="/product-category/leisure/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/leisure_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_off.jpg';">
+				<h2>Leisure</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
+			<a href="/product-category/motors/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/motors_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_off.jpg';">
+				<h2>Motors</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
+			<a href="/product-category/retail/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg';">
+				<h2>Retail</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
+			<a href="/product-category/recruitment/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg">
+				<h2>Business</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
+			<a href="/product-category/recruitment/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg">
+				<h2>Business</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
+			<a href="/product-category/recruitment/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg">
+				<h2>Business</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
+			<a href="/product-category/recruitment/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg">
+				<h2>Business</h2>
+			</a>
+		</div>
+
+
+
+<!-- 			<?php while ( woocommerce_content() ) : the_post(); ?>
 				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 					<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 					<div class="entry-content">
 						<?php the_content(); ?>
 					</div>
 				</article>
-			<?php endwhile;?>
+			<?php endwhile;?> -->
 			</div>
 		</div>
 
@@ -100,6 +158,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="small-12 columns">
 			<h2>Recently Added</h2>
+			<h4>Our most recent adverts to help you keep your advertising needs ahead of the curve</h4>
 			<ul class="products owl-carousel">
 				<?php
 				$args = array(
