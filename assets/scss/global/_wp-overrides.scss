@@ -264,3 +264,24 @@ body > section > div > div > form.woocommerce-ordering > select {
 //   padding-bottom: 73.66667%;
 // }
 
+/* -------------------------- */
+/* -------- 404 Page -------- */
+/* -------------------------- */
+
+.large-8 {
+  width: 100% !important;
+  margin-top: 80px;
+
+  h1 {
+    color: $mainBlue;
+    text-align: center;
+    font-weight: 100 !important;
+  }
+
+  .entry-content, p {
+    color: #fff !important;
+    ul {
+      list-style: none;
+    }
+  }
+}

@@ -18,7 +18,7 @@
 				<div class="csfooter">
 				
 				<!-- <h4>Trinity Mirror Creative</h4> -->
-				<img class="tmc-logo" src="/app/themes/FoundationPress/assets/images/cs2/tmclogo.jpg">
+				<a href="http://digitalhub.trinitymirror.com/tmcreative/"><img class="tmc-logo" src="/app/themes/FoundationPress/assets/images/cs2/tmclogo.jpg"></a>
 
 				<span class="contact-details"><img src="/app/themes/FoundationPress/assets/images/cs2/phone.png" class="ico">
 				 <a href="tel:01614931600">0161 493 1600</a>

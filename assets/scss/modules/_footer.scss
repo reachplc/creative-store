@@ -109,25 +109,20 @@
         margin-bottom: 3rem;
       }
 
-
       @include breakpoint(medium) {
         p {
           text-align: auto;
           transform: none;
         }
-
-      .footer-copyright {
-        float: left;
-        text-align: auto;
-        transform: none;
+        .footer-copyright {
+          float: left;
+          text-align: auto;
+          transform: none;
+        }
+        .footer-creative {
+          float: right;
+        }
       }
-
-      .footer-creative {
-        float: right;
-      }
-    }
-
-
     }
   }
 }
@@ -188,7 +183,6 @@
       height: 40px;
       width: auto;
     }
-
     .contact-details {
       position: relative;
       top: 12px;

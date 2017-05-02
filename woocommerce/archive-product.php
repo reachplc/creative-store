@@ -60,9 +60,14 @@ get_header(); ?>
 			<div class="ico3"></div>
 			<p>Our studio team will work with you to tailor artwork to your exact specifications.</p>
 		</div>
+
+		<!-- <img src="/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg';"> -->
 	</section>
 </section>
 </div>
+
+<!--  Animated Numbers  -->
+<!-- <div class="three-test"></div> -->
 
 <div class="intro-two">
 
