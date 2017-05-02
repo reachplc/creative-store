@@ -321,7 +321,7 @@
     height: 2px;
     width: 350px;
     position: relative;
-    top: -835px;
+    top: -816px;
     left: 768px;
     display: block;
     background-color: $mainBlue;
@@ -475,7 +475,7 @@
 }
 
 .ico3 {
-  background-image: url('../images/cs2/ico3-off.png');
+  background-image: url('../images/cs2/123/3-off.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 370px;
@@ -484,7 +484,7 @@
   position: relative;
 
   &:hover {
-    background-image: url('../images/cs2/ico3.png');
+    background-image: url('../images/cs2/123/3-on.png');
   }
 }
 
@@ -532,4 +532,15 @@
 
 	}
 
+}
+
+.frontpage-caro {
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  img {
+    border: 2px solid $mainBlue;
+  }
 }

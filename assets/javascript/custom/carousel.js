@@ -4,6 +4,6 @@ $(document).ready(function(){
 		nav:true,
 		items:4,
 		dots: false,
-		margin: 15
+		margin: 80
 	});
 });

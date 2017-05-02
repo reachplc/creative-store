@@ -96,7 +96,7 @@ get_header(); ?>
 
 </div>
 
-<div class="greyPage">
+<div class="greyPage frontpage-caro">
 	<div class="row">
 		<div class="small-12 columns">
 			<h2>Recently Added</h2>
@@ -113,7 +113,7 @@ get_header(); ?>
 					<li class="product-category product">
 						<a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 						<?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; ?>
-						<h2 class="woocommerce-loop-category__title"><?php the_title(); ?></h2>
+						<!-- <h2 class="woocommerce-loop-category__title"><?php the_title(); ?></h2> -->
 						</a>
 					</li>
 
