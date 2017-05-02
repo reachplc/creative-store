@@ -75,6 +75,13 @@ get_header(); ?>
 		<h3 class="coll-text">Browse 100's of beautiful templates designed for every kind of business.</h3>
 
 		<div class="cat-thumb">
+			<a href="/product-category/education/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg';">
+				<h2>Education</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
 			<a href="/product-category/business/">
 				<img class="ico-business" src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg';">
 				<h2>Business</h2>
@@ -96,6 +103,20 @@ get_header(); ?>
 		</div>
 
 		<div class="cat-thumb">
+			<a href="/product-category/property/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/property_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/property_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/property_off.jpg';">
+				<h2>Property</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
+			<a href="/product-category/recruitment/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_off.jpg';">
+				<h2>Recruitment</h2>
+			</a>
+		</div>
+
+		<div class="cat-thumb">
 			<a href="/product-category/retail/">
 				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg';">
 				<h2>Retail</h2>
@@ -103,30 +124,9 @@ get_header(); ?>
 		</div>
 
 		<div class="cat-thumb">
-			<a href="/product-category/recruitment/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg">
-				<h2>Business</h2>
-			</a>
-		</div>
-
-		<div class="cat-thumb">
-			<a href="/product-category/recruitment/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg">
-				<h2>Business</h2>
-			</a>
-		</div>
-
-		<div class="cat-thumb">
-			<a href="/product-category/recruitment/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg">
-				<h2>Business</h2>
-			</a>
-		</div>
-
-		<div class="cat-thumb">
-			<a href="/product-category/recruitment/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg">
-				<h2>Business</h2>
+			<a href="/product-category/services/">
+				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/services_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/services_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/services_off.jpg';">
+				<h2>Services</h2>
 			</a>
 		</div>
 
