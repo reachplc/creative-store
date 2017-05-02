@@ -299,33 +299,35 @@
 }
 
 .collections-box {
-  border-left: 2px solid $mainBlue;
-  border-right: 2px solid $mainBlue;
-  border-bottom: 2px solid $mainBlue;
   height: 100%;
   width: 100%;
 
-  &:before {
-    content: "";
-    height: 2px;
-    width: 350px;
-    position: relative;
-    top: 0;
-    left: -80px;
-    display: block;
-    background-color: $mainBlue;
-  }
+  @media screen and (min-width: 1325px) {
+  border-left: 2px solid $mainBlue;
+  border-right: 2px solid $mainBlue;
+  border-bottom: 2px solid $mainBlue;
 
-  &:after {
-    content: "";
-    height: 2px;
-    width: 350px;
-    position: relative;
-    top: -835px;
-    left: 768px;
-    display: block;
-    background-color: $mainBlue;
-  }
+    &:before {
+      content: "";
+      height: 2px;
+      width: 350px;
+      position: relative;
+      top: 0;
+      left: -80px;
+      display: block;
+      background-color: $mainBlue;
+    }
+
+    &:after {
+      content: "";
+      height: 2px;
+      width: 350px;
+      position: relative;
+      top: -150px;
+      left: 769px;
+      display: block;
+      background-color: $mainBlue;
+    }
 
   .coll-b1 {
     width: 10px;
@@ -350,6 +352,10 @@
     left: 767px;
     display: block;
   }
+
+  }
+
+
 
 
   .coll-text {
@@ -447,7 +453,7 @@
 
 
 .ico1 {
-  background-image: url('../images/cs2/ico1-off.png');
+  background-image: url('../images/cs2/123/1-off.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 370px;
@@ -456,12 +462,12 @@
   position: relative;
 
   &:hover {
-    background-image: url('../images/cs2/ico1.png');
+    background-image: url('../images/cs2/123/1-on.png');
   }
 }
 
 .ico2 {
-  background-image: url('../images/cs2/ico2-off.png');
+  background-image: url('../images/cs2/123/2-off.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 370px;
@@ -470,12 +476,12 @@
   position: relative;
 
   &:hover {
-    background-image: url('../images/cs2/ico2.png');
+    background-image: url('../images/cs2/123/2-on.png');
   }
 }
 
 .ico3 {
-  background-image: url('../images/cs2/ico3-off.png');
+  background-image: url('../images/cs2/123/3-off.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 370px;
@@ -484,7 +490,7 @@
   position: relative;
 
   &:hover {
-    background-image: url('../images/cs2/ico3.png');
+    background-image: url('../images/cs2/123/3-on.png');
   }
 }
 
@@ -519,6 +525,7 @@
 
 		}
 
+
 		.owl-prev { 
 			transform:rotate(45deg);
 			left: -70px;
@@ -527,19 +534,84 @@
 		.owl-next {			
 			transform:rotate(225deg);
 			right: -70px;
-		}
+		}   
 
 	}
 
-	.owl-item {
-		transform: scale(0.8)!important;
-		opacity: 0.6;
-		transition: .4s ease all;
-	}
+  .owl-item {
+    transform: scale(0.8)!important;
+    opacity: 0.6;
+    transition: .4s ease all;
+  }
 
-	.center {
-		opacity: 1;
-		transform: scale(1.1)!important;
-	}
+  .center {
+    opacity: 1;
+    transform: scale(1.1)!important;
+  }
+
 
 }
+
+.frontpage-caro {
+  margin-bottom: 100px;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  img {
+  }
+}
+
+.cat-thumb {
+  float: left;
+  margin: 0 3.8% 2.992em 0;
+  padding: 0;
+  position: relative;
+  width: 22.05%;
+
+  img {
+    border: 2px solid $mainBlue;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.cat-thumb:first-child {
+  clear: both;
+}
+
+.cat-thumb:nth-child(4n) {
+  margin-right: 0;
+}
+
+// .three-test {
+//   height: 370px;
+//   width: 336px;
+//   background: url('/app/themes/FoundationPress/assets/images/cs2/123/3-off-foroverlay.png');
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   position: relative;
+
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 336px;
+//     height: 336px;
+//     background: url('/app/themes/FoundationPress/assets/images/cs2/123/3-off-overlay.png');
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     opacity: 1;
+//     transition: 0.6s ease;
+//   }
+// }
+

@@ -44,7 +44,7 @@
     position: absolute;
     left: 30px;
     margin-top: -7px;
-    font-family: Poppins, sans-serif;
+    font-family: 'Helvetica Neue LT Std', sans-serif;
   }
 }
 
@@ -109,25 +109,20 @@
         margin-bottom: 3rem;
       }
 
-
       @include breakpoint(medium) {
         p {
           text-align: auto;
           transform: none;
         }
-
-      .footer-copyright {
-        float: left;
-        text-align: auto;
-        transform: none;
+        .footer-copyright {
+          float: left;
+          text-align: auto;
+          transform: none;
+        }
+        .footer-creative {
+          float: right;
+        }
       }
-
-      .footer-creative {
-        float: right;
-      }
-    }
-
-
     }
   }
 }
@@ -180,5 +175,17 @@
 }
 
 .csfooter {
-  padding: 50px 0;
+  padding: 35px 0 50px;
+}
+.row {
+  .csfooter {
+    .tmc-logo {
+      height: 40px;
+      width: auto;
+    }
+    .contact-details {
+      position: relative;
+      top: 12px;
+    }
+  }
 }
