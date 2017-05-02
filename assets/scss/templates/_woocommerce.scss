@@ -186,7 +186,7 @@ div.woocommerce-variation.single_variation > div.woocommerce-variation-availabil
 }
 
 #place_order {
-	font-family: Poppins, sans-serif;
+	font-family: 'Helvetica Neue LT Std', sans-serif;
 }
 
 #order_review_heading {
@@ -201,7 +201,7 @@ h1.product_title.entry-title {
 	font-size: 2rem;
 }
 
-body.archive.tax-product_cat {
+body {
 	background: url('../images/cs2/bg.jpg');
 	background-size: cover;
 
@@ -280,4 +280,119 @@ body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
 			}
 		}
 	}
+}
+
+.woocommerce-Price-amount {
+	display: none;
+}
+
+.product-total {
+	display: none;
+}
+
+#customer_details > div.col-1 {
+	display: none;
+}
+
+#customer_details > div.col-2 {
+	float: none;
+	clear: both;
+	width: 100%;
+}
+
+#order_review > table > tbody > tr > td.product-name {
+	width: 100%;
+}
+
+#order_review > table > tfoot > tr.cart-subtotal, #order_review > table > tfoot > tr.order-total, #order_review > table > thead {
+	display: none;
+}
+
+#payment > div {
+	margin-bottom: 150px;
+}
+
+#post-24 > header > h1 {
+	color: $mainBlue;
+	text-align: center;
+	font-weight: 200;
+
+		&:before {
+		    content: "";
+		    height: 2px;
+		    width: 400px;
+		    position: relative;
+		    top: 22px;
+		    left: 0;
+		    display: block;
+		    background-color: $mainBlue;
+		}
+
+		&:after {
+		    content: "";
+		    height: 2px;
+		    width: 400px;
+		    position: relative;
+		    top: -33px;
+		    right: -770px;
+		    display: block;
+		    background-color: $mainBlue;
+		}
+}
+
+#post-23 > header > h1 {
+	color: $mainBlue;
+	text-align: center;
+	font-weight: 200;
+}
+
+.woocommerce-message {
+	border-top-color: $mainBlue;
+}
+
+.woocommerce-message::before {
+	color: $mainBlue;
+}
+
+#post-23 > div > div > form > table > thead {
+	display: none;
+}
+
+#customer_details > div.col-2 > div.woocommerce-additional-fields > h3, #order_review_heading, #order_comments_field > label {
+	color: #fff;
+}
+
+#order_comments_field > label {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+#post-23 > div > div > div > div > div > a {
+	width: 300px;
+	font-weight: 300;
+	padding-top: 13px;
+	float: right;
+}
+
+#place_order {
+	font-weight: 300;
+	padding-top: 13px;
+}
+
+div.summary.entry-summary > h1 {
+	color: #fff;
+}
+
+.breadcrumb, .breadcrumb__left {
+	p, nav a, nav {
+		color: #fff !important;
+		font-weight: 500;
+	}
+}
+div.summary.entry-summary > div > span.sku_wrapper {
+	display: none;
+}
+
+div.summary.entry-summary > div > span.posted_in {
+	color: #fff;
 }
