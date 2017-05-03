@@ -136,7 +136,7 @@
   }
 
   .menu .home a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #fff;
     line-height: 1;
     text-transform: uppercase;
@@ -168,7 +168,7 @@
 
   .menu .active > a { background-color: lighten($outer-space, 10%); }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; padding-left: 0; }
+  .menu>li:not(.menu-text)>a { padding: 1rem; padding-right: 0; padding-left: 0; }
   .menu li:not(:last-child) { border-right: none }
 
   .dropdown.menu .submenu { border: 0; }
@@ -271,7 +271,7 @@
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
     display: inline-block;
     position: relative;
@@ -297,4 +297,17 @@
 
 .searchboxshow {
   display: block;
+}
+
+.menu > li > a img, .menu > li > a i, .menu > li > a svg {
+  margin-right: 0;
+}
+
+ul#menu-site-main li a img {
+  width: 1.1rem;
+  margin-left: 0;
+
+  &:last-child {
+    margin-left: 15px;
+  }
 }
