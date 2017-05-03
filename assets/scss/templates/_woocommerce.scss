@@ -20,7 +20,7 @@
 	div.product .woocommerce-tabs ul.tabs {
 		display: none !important;
 	}
-
+ 
 	#tab-description {
 		width: 48%;
 		float: right;
@@ -151,7 +151,7 @@
 }
 
 .product-category a:hover img, ul .product a:hover img {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	// content: "";
 	// display: block;
 	// position: absolute;
@@ -166,7 +166,7 @@
 }
 
 .product-category a:hover h2, ul .product a:hover h2 {
-	top: 40px;
+	top: 20px;
 }
 
 .product-category:hover a h2, ul .product:hover a h2 {
@@ -211,14 +211,16 @@ body {
 				h2 {
 					margin-top: 50px;
 					color: $mainBlue;
+					font-weight: 200;
+					font-size: 2.4rem;
 
 					&:before {
 						    content: "";
 						    height: 2px;
 						    width: 400px;
 						    position: relative;
-						    top: 34px;
-						    left: -50px;
+						    top: 24px;
+						    left: -75px;
 						    display: block;
 						    background-color: $mainBlue;
 					}
@@ -228,8 +230,8 @@ body {
 						    height: 2px;
 						    width: 400px;
 						    position: relative;
-						    top: -24px;
-						    right: -680px;
+						    top: -31px;
+						    right: -725px;
 						    display: block;
 						    background-color: $mainBlue;
 					}
@@ -405,4 +407,18 @@ div.summary.entry-summary > form > div > div.woocommerce-variation-add-to-cart.v
 
 div.summary.entry-summary > h1 {
 	font-weight: 200;
+}
+
+.product-intro {
+	margin-bottom: 10px;
+
+}
+
+div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images > div > figure > div{
+	width: 440px !important;
+	margin-bottom: 40px;
+}
+
+.pswp__bg {
+	opacity: 0.5 !important;
 }

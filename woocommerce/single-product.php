@@ -19,7 +19,7 @@ get_header(); ?>
 <?php do_action( 'foundationpress_after_header' ); ?>
 
 
-<section class="intro" role="main">
+<section class="intro product-intro" role="main">
 	<div class="row">
 			<div class="small-12 large-12 columns" role="main">
 						<nav aria-label="You are here:" role="navigation">
@@ -32,8 +32,6 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-
-<hr>
 
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">

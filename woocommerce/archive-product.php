@@ -127,19 +127,8 @@ get_header(); ?>
 				<h2>Services</h2>
 			</a>
 		</div>
-
-
-
-<!-- 			<?php while ( woocommerce_content() ) : the_post(); ?>
-				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-					<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div>
-				</article>
-			<?php endwhile;?> -->
-			</div>
-		</div>
+	</div>
+</div>
 
 	</section>
 </div>

@@ -91,13 +91,21 @@ table thead {
       max-width: 80%;
       margin: 0 auto;
       outline: 0;
-      border-size: 0px;
-      border-color: rgba(0,0,0,0);
+      border-size: 1px;
+      border-color: rgba(255,255,255,0.2);
       border-radius: 4px;
       font-weight: 500;
       margin-bottom: 1.52rem;
-      background-color: #000030;
+      background-color: rgba(255,255,255,0.1);
       color: #D2C8D6;
+      height: 45px;
+    
+      &#user {
+        padding-bottom: 1px;
+      }
+      &#pass {
+        padding-bottom: 0;
+      }
 
       @include breakpoint(xlarge) {
         max-width: 60%;
@@ -105,7 +113,7 @@ table thead {
     }
 
     input:active, input:focus {
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(255,255,255,0.2);
         border: 2px solid #00ABED;
       }
 
@@ -113,7 +121,6 @@ table thead {
       font-weight: 500;
       font-size: 1.25rem;
       color: rgba(0,0,0,0.75);
-      line-height: 1.7rem;
     }
 
     #wp-submit{
@@ -138,6 +145,12 @@ table thead {
       font-size: 1rem;
     }
   } 
+}
+
+#rememberme{
+  padding-bottom: 0;
+  margin-bottom: 0 !important;
+  height: 22px;
 }
  
 .bg-overlay {
@@ -243,6 +256,19 @@ body > section > div > div > form.woocommerce-ordering > select {
   display: none;
 }
 
+#loginform > p.login-remember, p.login-password,  {
+  margin-bottom: 0 !important;
+}
+
+#pass {
+  margin-bottom: 1rem;
+}
+
+#wp-submit {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
 // #post-26 {
   
 //   background-color: white;
@@ -285,3 +311,43 @@ body > section > div > div > form.woocommerce-ordering > select {
     }
   }
 }
+
+
+
+.pagetp404 {
+background: url('../images/cs2/404.jpg') !important;
+background-size: cover !important;
+background-repeat: no-repeat !important;
+// width: 100vw !important;
+background-position: 0% 50% !important;
+
+overflow: hidden;
+
+  .my404 {
+    .popup-404page {
+      width: 50vw;
+      background-color: rgba(0,0,0,0);
+      border-width: 0px;
+
+      .image404 {
+        width: 90%;
+      }
+
+      .text-404 {
+        width: 80%;
+        height: 100%;
+        background-color: red;
+        margin: 0 auto;
+      }
+
+      .button {
+        margin-top: 30px;
+        color: #fff !important;
+        font-weight: 100;
+        padding-top: 13px;
+      }
+    }
+  }
+}
+
+
