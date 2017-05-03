@@ -107,7 +107,6 @@
 	 margin-top: 0;
 	 font-weight: 700;
 	 text-align: center;
-
   }
 
 }
@@ -180,22 +179,24 @@
 	 }
 
   }
-
-
 }
-
 
 .intro {
   margin-bottom: 50px;
 
   .head-intro {
     text-align: center;
-    padding-top: 50px;
 
     h2 {
       font-family: Helvetica Neue LT Std;
-      font-weight: 100;
-      font-size: 3rem;
+      font-weight: 200;
+      font-size: 2.4rem;
+      color: #fff;
+
+      .my123space {
+        font-weight: 100;
+        letter-spacing: -3px;
+      }
     }
 
     h2:before {
@@ -225,6 +226,7 @@
   .benefits {
     margin-top: 50px;
     margin-bottom: 50px;
+    position: relative;
 
     img {
       z-index: 3;
@@ -240,9 +242,10 @@
       p {
         width: 70%;
         margin: 0 auto;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #fff;
         padding-bottom: 20px;
+        padding-left: 10px;
         z-index: 2;
         position: relative;
       }
@@ -252,16 +255,22 @@
 
   .mybox {
     max-height: 480px;
+
+
+    @media screen and (max-width: 1320px) {
+      p {
+        position: relative;
+        top: -10vh; //Do Dis
+        left: 5px;
+        font-size: .9rem !important;
+      }
+    }
   }
+
   .mybox:after {
     content: "";
     display: block;
-    position: relative;
-    width: 330px;
-    top: -528px;
-    left: 20px;
-    height: 700px;
-    transform: scale(0.85, 1.0);
+    position: absolute;
     background-image: url('../images/cs2/bbox.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -269,23 +278,61 @@
     padding-left: 50px;
     padding-right: 50px;
     z-index: 1;
+    width: 30%;
+    top: -82px;
+    left: 21px;
+    height: 60vh;
+    transform: scale(0.85, 1.0);
+  }
+
+  @media screen and (min-width: 1250px) {
+    .mybox:after {
+      width: 330px;
+      top: -82px;
+      left: 39px;
+      height: 700px;
+      transform: scale(0.85, 1.0);
+    }
   }
 }
+
+@media screen and (min-width: 750px) {
+  .responsive.mybox:after {
+    left: 35vw;
+  }
+
+  .customizable.mybox:after {
+    left: 68vw;
+  }
+}
+
+
+@media screen and (min-width: 1320px) {
+  .responsive.mybox:after {
+    left: 440px;
+  }
+
+  .customizable.mybox:after {
+    left: 840px;
+  }
+}
+
+
 
 .intro-two {
   h2 {
     text-align: center;
-    color: $mainBlue;
     font-family: Helvetica Neue LT Std;
-    font-weight: 100;
-    font-size: 3rem;
+
+    font-weight: 200;
+    font-size: 2.4rem;
+    color: #fff;
   }
 
   h3 {
     text-align: center;
     color: #fff;
     font-size: 1.3rem;
-    margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
@@ -323,7 +370,7 @@
       height: 2px;
       width: 350px;
       position: relative;
-      top: -150px;
+      top: -130.5px;
       left: 769px;
       display: block;
       background-color: $mainBlue;
@@ -348,15 +395,12 @@
     border-radius: 6px;
     position: relative;
     background: $mainBlue;
-    top: -16px;
+    top: -17px;
     left: 767px;
     display: block;
   }
 
   }
-
-
-
 
   .coll-text {
     position: relative;
@@ -451,15 +495,23 @@
   display: none
 }
 
-
-.ico1 {
-  background-image: url('../images/cs2/123/1-off.png');
+.ico123 {
   background-repeat: no-repeat;
   background-size: contain;
-  width: 370px;
+  width: 30vw;
   height: 337px;
   z-index: 3;
   position: relative;
+
+  @media screen and (min-width: 1320px) {
+    width: 370px;
+    height: 337px;
+  }
+}
+
+
+.ico1 {
+  background-image: url('../images/cs2/123/1-off.png');
 
   &:hover {
     background-image: url('../images/cs2/123/1-on.png');
@@ -468,12 +520,6 @@
 
 .ico2 {
   background-image: url('../images/cs2/123/2-off.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 370px;
-  height: 337px;
-  z-index: 3;
-  position: relative;
 
   &:hover {
     background-image: url('../images/cs2/123/2-on.png');
@@ -482,12 +528,6 @@
 
 .ico3 {
   background-image: url('../images/cs2/123/3-off.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 370px;
-  height: 337px;
-  z-index: 3;
-  position: relative;
 
   &:hover {
     background-image: url('../images/cs2/123/3-on.png');
@@ -570,8 +610,22 @@
   position: relative;
   width: 22.05%;
 
+  &:hover img {
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.4);
+  }
+
+  &:hover h2 {
+    letter-spacing: 2px;
+  }
+
   img {
     border: 2px solid $mainBlue;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0);
+    transition: box-shadow 0.4s ease;
   }
 
   h2 {
@@ -581,6 +635,7 @@
     font-weight: 300;
     margin-top: 10px;
     text-transform: uppercase;
+    transition: letter-spacing 0.3s ease;
   }
 }
 
@@ -615,3 +670,17 @@
 //   }
 // }
 
+// .customizable {
+//   position: relative;
+//   left: 50px;
+//   padding-right: 0 !important;
+//   padding-left: 1.875rem !important;
+
+//   .ico123 {
+
+//   }
+
+//   p {
+
+//   }
+// }

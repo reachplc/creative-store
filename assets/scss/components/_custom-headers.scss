@@ -13,7 +13,11 @@
 	}
 
 	&__med {
-		padding-top: 75px;
+		padding-top: 80px;
+
+		@media screen and (min-width: 1850px) {
+			padding-top: 160px;
+		}
 	}
 
 	&__lg {

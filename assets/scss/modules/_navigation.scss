@@ -168,7 +168,7 @@
 
   .menu .active > a { background-color: lighten($outer-space, 10%); }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
+  .menu>li:not(.menu-text)>a { padding: 1rem; padding-left: 0; }
   .menu li:not(:last-child) { border-right: none }
 
   .dropdown.menu .submenu { border: 0; }
