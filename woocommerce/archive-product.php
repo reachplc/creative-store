@@ -162,7 +162,13 @@ get_header(); ?>
 				$args = array(
 				'post_type' => 'product',				
 				'posts_per_page' => 10,
-				'stock' => 1,
+				'meta_query' => array(
+						array(
+							'key' => '_stock_status',
+            			'value' => 'instock',
+            			'compare' => '=',
+							)
+					),
 				'orderby' =>'date',
 				'order' => 'DESC' );
 				$loop = new WP_Query( $args );

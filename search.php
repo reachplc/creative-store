@@ -13,18 +13,24 @@ get_header(); ?>
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
 
-		<h2><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h2>
+		<h2 class="title title--large">
+			<span><?php _e( 'Search result', 'foundationpress' ); ?></span>
+		</h2>
 
-	<?php if ( have_posts() ) : ?>
+		<h4><?php echo get_search_query(); ?></h4>
 
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-		<?php endwhile; ?>
+	<div class="row">
+		<?php if ( have_posts() ) : ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+			<?php endwhile; ?>
 
-	<?php endif;?>
+			<?php else : ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif;?>
+	</div>
 
 	<?php do_action( 'foundationpress_before_pagination' ); ?>
 
