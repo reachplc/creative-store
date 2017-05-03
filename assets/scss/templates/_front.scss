@@ -238,7 +238,7 @@
       width: 33.333%;
 
       p {
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
         font-size: 1.2rem;
         color: #fff;
@@ -251,17 +251,17 @@
   }
 
   .mybox {
-    max-height: 580px;
+    max-height: 480px;
   }
   .mybox:after {
     content: "";
     display: block;
     position: relative;
     width: 330px;
-    top: -530px;
+    top: -528px;
     left: 20px;
     height: 700px;
-    transform: scale(0.9, 1.1);
+    transform: scale(0.85, 1.0);
     background-image: url('../images/cs2/bbox.svg');
     background-size: contain;
     background-repeat: no-repeat;
