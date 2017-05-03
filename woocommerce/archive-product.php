@@ -169,7 +169,7 @@ get_header(); ?>
 				$args = array(
 				'post_type' => 'product',				
 				'posts_per_page' => 10,
-				'sotck' => 1,
+				'stock' => 1,
 				'orderby' =>'date',
 				'order' => 'DESC' );
 				$loop = new WP_Query( $args );

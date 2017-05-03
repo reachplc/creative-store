@@ -9,9 +9,19 @@ jQuery(function($){
     //     }
 
 
-    $(".menu-item-268, searchbox, searchboxshow").hover(function(){
-    	$(".searchbox").addClass('searchboxshow');}, function(){
-    		$(".searchbox").removeClass('searchboxshow');
+    $("#menu-site-main li:nth-child(2)")
+    .on('mouseenter', function(){
+        $(".searchbox").addClass('searchboxshow');
+    });
+
+    $("#menu-site-main li:nth-child(1)")    
+    .on('mouseleave', function(){
+        $(".searchbox").removeClass('searchboxshow');
+    });
+
+     $("#menu-site-main li:nth-child(3), .nav-text .bluetext")  
+    .on('mouseenter', function(){
+        $(".searchbox").removeClass('searchboxshow');
     });
 
 
