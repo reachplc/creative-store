@@ -36,21 +36,21 @@ get_header(); ?>
 <div class="intro-one">
 <section class="intro intro-one" role="main">
 	<div class="head-intro">
-		<h2 class="bluetext">Selecting artwork is as easy as 1 2 3</h2>
+		<h2 class="bluetext">Selecting artwork is as easy as <span class="my123space">1 2</span> 3</h2>
 	</div>
 
 	<section class="benefits">
 		<div class="semantic mybox">
-			<div class="ico1"></div>
+			<div class="ico1 ico123"></div>
 			<p>Explore our Library of engaging, bespoke and distinctive design templates.</p>
 		</div>
 		<div class="responsive mybox">
-			<div class="ico2"></div>
+			<div class="ico2 ico123"></div>
 			<p>Select and reserve the desired artwork to meet your client's requirements.</p>
 
 		</div>
 		<div class="customizable mybox">
-			<div class="ico3"></div>
+			<div class="ico3 ico123"></div>
 			<p>Our studio team will work with you to tailor artwork to your exact specifications.</p>
 		</div>
 
@@ -127,19 +127,8 @@ get_header(); ?>
 				<h2>Services</h2>
 			</a>
 		</div>
-
-
-
-<!-- 			<?php while ( woocommerce_content() ) : the_post(); ?>
-				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-					<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div>
-				</article>
-			<?php endwhile;?> -->
-			</div>
-		</div>
+	</div>
+</div>
 
 	</section>
 </div>

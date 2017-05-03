@@ -27,14 +27,6 @@ function foundationpress_sidebar_widgets() {
 	  'before_title' => '<h6>',
 	  'after_title' => '</h6>',
 	));
-
-  register_sidebar(array(
-	    'name' => 'Top Footer Widget',
-	    'before_widget' => '<div class = "footer-widget">',
-	    'after_widget' => '</div>',
-	    'before_title' => '<h4>',
-	    'after_title' => '</h4>',
-  ));
 }
 
 add_action( 'widgets_init', 'foundationpress_sidebar_widgets' );
