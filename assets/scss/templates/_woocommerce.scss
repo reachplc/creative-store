@@ -535,3 +535,38 @@ div > div > form > table > tbody > tr > td.product-remove {
 #post-24 > div > div > div > section > table > tbody > tr > td.woocommerce-table__product-name.product-name > strong {
 	display: none;
 }
+
+.woocommerce-pagination {
+	display: block;
+	width: 100%;
+	clear: both;
+	
+	ul {
+		border: none!important;
+		margin: 0!important;
+		padding: 0!important;
+
+		li { border: none!important; display: inline-block!important; margin-right: 5px!important; }
+	}
+
+	.page-numbers {
+		a, span {
+			transition: .4s ease all;
+			color: #fff!important;
+			padding: 0 16px!important;
+			line-height: 40px!important;
+			display: block!important;
+			font-size: 0.875rem!important;
+
+			&:hover {
+				background: $mainBlue!important;
+			}
+		}
+
+		.current {
+			background: $mainBlue!important;
+		}
+
+		.next, .prev { font-size: 1.1rem!important; }
+	}	
+}
