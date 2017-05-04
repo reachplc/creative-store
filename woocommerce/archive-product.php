@@ -24,7 +24,7 @@ get_header(); ?>
 
 <div role="banner" style="background-color: #000;">
     <div class="vid hp-video">
-        <video autoplay muted style="padding-top: 50px;width:100%; height: 65vh; top: 0; left: 0; right: 0; z-index: -1; object-fit: cover; margin-top: 60px;">
+        <video autoplay muted style="padding-top: 50px;width:100%; height: 70vh; top: 0; left: 0; right: 0; z-index: -1; object-fit: cover; margin-top: 60px;">
           <source src="/app/themes/FoundationPress/assets/images/cs2/hero-vid.mp4" type="video/mp4">
           <img src="/app/themes/FoundationPress/assets/images/cs2/hero-off.jpg">
         </video>
@@ -41,15 +41,18 @@ get_header(); ?>
 
 	<section class="benefits">
 		<div class="semantic mybox">
+		<div class="test-box-parent"><div class="test-box"></div><div class="test-tri"></div></div>
 			<div class="ico1 ico123"></div>
 			<p>Explore our Library of engaging, bespoke and distinctive design templates.</p>
 		</div>
 		<div class="responsive mybox">
+		<div class="test-box-parent"><div class="test-box"></div><div class="test-tri"></div></div>
 			<div class="ico2 ico123"></div>
 			<p>Select and reserve the desired artwork to meet your client's requirements.</p>
 
 		</div>
 		<div class="customizable mybox">
+			<div class="test-box-parent"><div class="test-box"></div><div class="test-tri"></div></div>
 			<div class="ico3 ico123"></div>
 			<p>Our studio team will work with you to tailor artwork to your exact specifications.</p>
 		</div>
@@ -177,5 +180,8 @@ get_header(); ?>
 
 </div>
 
+<img src="/app/themes/FoundationPress/assets/images/cs2/123/1-on.png" style="display: none;">
+<img src="/app/themes/FoundationPress/assets/images/cs2/123/2-on.png" style="display: none;">
+<img src="/app/themes/FoundationPress/assets/images/cs2/123/3-on.png" style="display: none;">
 
 <?php get_footer();

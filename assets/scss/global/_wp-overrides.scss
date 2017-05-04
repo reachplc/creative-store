@@ -5,7 +5,7 @@
   padding: 0.25rem 0;
 }
 
-p.wp-caption-text{
+p.wp-caption-text {
   font-size:90%;
   color: #666;
   padding:rem-calc(10) 0;
@@ -33,7 +33,7 @@ p.wp-caption-text{
   display: none;
 }
 
-.post-type-archive-product h1.page-title,.tax-product_cat h1.page-title{
+.post-type-archive-product h1.page-title,.tax-product_cat h1.page-title {
   display: none;
 }
 
@@ -345,6 +345,172 @@ overflow: hidden;
         color: #fff !important;
         font-weight: 100;
         padding-top: 13px;
+      }
+    }
+  }
+}
+
+.bp_register {
+  header {
+    h1.entry-title {
+      text-align: center;
+      font-family: Helvetica Neue LT Std;
+      font-weight: 100 !important;
+      font-size: 2.4rem;
+      color: $mainBlue;
+
+      &:before {
+      content: "";
+      height: 2px;
+      width: 350px;
+      position: relative;
+      top: 20px;
+      left: 0;
+      display: block;
+      background-color: $mainBlue;
+    }
+
+    &:after {
+      content: "";
+      height: 2px;
+      width: 350px;
+      position: relative;
+      top: -29px;
+      left: 850px;
+      display: block;
+      background-color: $mainBlue;
+    }
+    }
+  }
+
+  .entry-content {
+    #buddypress {
+      .page {
+        .standard-form {
+          p {
+            color: #fff;
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+          }
+
+          .register-section {
+            h2 {
+              text-align: left;
+              font-family: Helvetica Neue LT Std;
+              font-weight: 100 !important;
+              font-size: 1.6rem;
+              color: $mainBlue;
+              margin: 0;
+            }
+
+            label {
+              margin: 5px 0;
+              color: #fff;
+            }
+
+            div {
+              .description{
+                display: none;
+              }
+            }
+          }
+            .submit {
+              #signup_submit {
+                border: 3px solid $mainBlue;
+                font-weight: 100;
+                font-size: 1.2rem !important;
+                font-family: Helvetica Neue LT Std;
+                transition: all 0.3s ease;
+                padding-bottom: 2px;
+                text-transform: uppercase;
+
+                &:hover {
+                  background-color: rgba(0,0,0,0) !important;
+                  color: $mainBlue !important;
+                }
+              }
+            }
+        }
+      }
+    }
+  }
+}
+
+body.woocommerce-lost-password {
+  .container {
+    #page-full-width {
+      article {
+        header {
+          h1 {
+            text-align: center;
+            font-family: Helvetica Neue LT Std;
+            font-weight: 100 !important;
+            font-size: 2.4rem;
+            color: $mainBlue;
+
+            &:before {
+            content: "";
+            height: 2px;
+            width: 400px;
+            position: relative;
+            top: 22px;
+            left: 0;
+            display: block;
+            background-color: $mainBlue;
+          }
+
+          &:after {
+            content: "";
+            height: 2px;
+            width: 400px;
+            position: relative;
+            top: -33px;
+            left: 800px;
+            display: block;
+            background-color: $mainBlue;
+          }
+          }
+        }
+
+        .entry-content {
+          p {
+            text-align: center;
+            color: #fff;
+          }
+
+          .woocommerce-form-row--first {
+            margin-bottom: 20px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+            text-align: center;
+
+            label {
+              color: #fff;
+            }
+          }
+
+          .woocommerce-Button {
+            border: 3px solid $mainBlue;
+            border-radius: 0;
+            text-align: center;
+            font-weight: 100;
+            font-size: 1.2rem !important;
+            font-family: Helvetica Neue LT Std;
+            background-color: $mainBlue;
+            color: #fff;
+            transition: all 0.3s ease;
+            // padding-bottom: 2px;
+            text-transform: uppercase;
+
+            &:hover {
+              background-color: rgba(0,0,0,0) !important;
+              color: $mainBlue !important;
+            }
+          }
+        }
       }
     }
   }

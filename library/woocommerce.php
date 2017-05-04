@@ -48,3 +48,6 @@ function my_woocommerce_add_to_cart_fragments( $fragments ) {
 	$fragments['li.menu-item-type-woocommerce-cart'] = my_wp_nav_menu_items( '', new stdClass(), true );
 	return $fragments;
 }
+
+// Display 12 products per page. Goes in functions.php
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
