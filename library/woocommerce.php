@@ -66,3 +66,18 @@ add_filter('pre_get_posts','searchfilter');
 // Display 12 products per page. Goes in functions.php
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
 
+add_filter( 'woocommerce_checkout_fields', 'webendev_woocommerce_checkout_fields' );
+/**
+ * Change Order Notes Placeholder Text - WooCommerce
+ * 
+ */
+function webendev_woocommerce_checkout_fields( $fields ) {
+
+	$fields['order']['order_comments']['placeholder'] = 'Use this field to enter any additional notes regarding your order. For Example, if your order is related to an existing request, insert your URN.';
+	return $fields;
+}
+
+function my_woocommerce_continue_shopping_redirect( $return_to ) {
+	return get_permalink( wc_get_page_id( 'shop' ) );
+}
+add_filter( 'woocommerce_continue_shopping_redirect', 'my_woocommerce_continue_shopping_redirect', 20 );

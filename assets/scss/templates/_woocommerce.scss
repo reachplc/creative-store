@@ -217,10 +217,10 @@ body {
 					&:before {
 						    content: "";
 						    height: 2px;
-						    width: 400px;
+						    width: 460px;
 						    position: relative;
 						    top: 24px;
-						    left: -75px;
+						    left: -80px;
 						    display: block;
 						    background-color: $mainBlue;
 					}
@@ -228,14 +228,42 @@ body {
 					&:after {
 						    content: "";
 						    height: 2px;
-						    width: 400px;
+						    width: 460px;
 						    position: relative;
 						    top: -31px;
-						    right: -725px;
+						    right: -665px;
 						    display: block;
 						    background-color: $mainBlue;
 					}
 				}
+
+		      .balls {
+			    position: relative;
+			    
+			    .coll-b1 {
+			      width: 10px;
+			      height: 10px;
+			      border: 2px solid $mainBlue;
+			      border-radius: 6px;
+			      position: absolute;
+			      background: $mainBlue;
+			      top: -53px;
+			      left: 378px;
+			      display: block;
+			    }
+
+			    .coll-b2 {
+			      width: 10px;
+			      height: 10px;
+			      border: 2px solid $mainBlue;
+			      border-radius: 6px;
+			      position: absolute;
+			      background: $mainBlue;
+			      top: -53px;
+			      left: 655px;
+			      display: block;
+			    }
+			  }
 			}
 
 			.entry-content {
@@ -324,7 +352,7 @@ body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
 		&:before {
 		    content: "";
 		    height: 2px;
-		    width: 400px;
+		    width: 450px;
 		    position: relative;
 		    top: 22px;
 		    left: 0;
@@ -335,10 +363,10 @@ body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
 		&:after {
 		    content: "";
 		    height: 2px;
-		    width: 400px;
+		    width: 450px;
 		    position: relative;
-		    top: -33px;
-		    right: -770px;
+		    top: -36px;
+		    right: -748px;
 		    display: block;
 		    background-color: $mainBlue;
 		}
@@ -491,6 +519,51 @@ div > div > form > table > tbody > tr > td.product-remove {
 	padding-bottom: 10px;
 }
 
+#post-24 > div > div > div > p {
+	color: #fff;
+}
+
+#post-24 > div > div > div > ul {
+	width: 242px;
+	margin: 30px auto;
+	color: #fff;
+}
+
+#post-24 > div > div > div > ul > li.woocommerce-order-overview__date.date {
+	border: none;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+#post-24 > div > div > div > ul > li.woocommerce-order-overview__total.total {
+	display: none;
+}
+
+#post-24 > div > div > div > section > table > tfoot, #post-24 > div > div > div > section > table > thead {
+	display: none;
+}
+.woocommerce-order-details h2 {
+	margin-top: 20px;
+	font-size: 1.5rem;
+	font-weight: 100;
+	color: $mainBlue;
+}
+#post-24 > div > div > div > section > section > h3, #post-24 > div > div > div > section > section > address {
+	display: none;
+}
+
+#post-24 > div > div > div > section > table > tbody > tr > td.woocommerce-table__product-name.product-name{
+	padding: 10px 10px;
+}
+
+#post-24 > div > div > div > section > table > tbody > tr > td.woocommerce-table__product-name.product-name > ul {
+	display: none;
+}
+
+#post-24 > div > div > div > section > table > tbody > tr > td.woocommerce-table__product-name.product-name > strong {
+	display: none;
+}
+
 .woocommerce-pagination {
 	display: block;
 	width: 100%;
@@ -526,6 +599,173 @@ div > div > form > table > tbody > tr > td.product-remove {
 	}	
 }
 
+h2.woocommerce-loop-product__title, .search-query .results h2 {
+	font-weight: 100 !important;
+}
 
+.woocommerce-cart > section > div > article > header {
 
+	.entry-title {
+				span {
+				display: inline-block;
+				position: relative; 
+				font-weight: 200;
+			}
 
+			span:before,
+			span:after {
+				content: "";
+				position: absolute;
+				height: 5px;				
+				border-top: 2px solid #00abed;
+				top: 44%;
+				transform: translateY(-50%);
+				width: 722.5%;
+			}
+
+			span:before {
+				right: 100%;
+				margin-right: 60px;
+			}
+
+			span:after {
+				left: 100%;
+				margin-left: 60px;
+			}
+		}
+
+			      .balls {
+    position: relative;
+    
+    .coll-b1 {
+      width: 10px;
+      height: 10px;
+      border: 2px solid $mainBlue;
+      border-radius: 6px;
+      position: absolute;
+      background: $mainBlue;
+      top: -62px;
+      left: 500px;
+      display: block;
+    }
+
+    .coll-b2 {
+      width: 10px;
+      height: 10px;
+      border: 2px solid $mainBlue;
+      border-radius: 6px;
+      position: absolute;
+      background: $mainBlue;
+      top: -62px;
+      left: 690px;
+      display: block;
+    }
+  }
+}
+
+// .registration > section > div > article > header {
+
+//   .balls {
+//     position: relative;
+    
+//     .coll-b1 {
+//       width: 10px;
+//       height: 10px;
+//       border: 2px solid $mainBlue;
+//       border-radius: 6px;
+//       position: absolute;
+//       background: $mainBlue;
+//       top: -59px;
+//       left: 350px;
+//       display: block;
+//     }
+
+//     .coll-b2 {
+//       width: 10px;
+//       height: 10px;
+//       border: 2px solid $mainBlue;
+//       border-radius: 6px;
+//       position: absolute;
+//       background: $mainBlue;
+//       top: -59px;
+//       left: 840px;
+//       display: block;
+//     }
+//   }
+// }
+
+.woocommerce-lost-password > section > div > article > header {
+
+  .balls {
+    position: relative;
+    
+    .coll-b1 {
+      width: 10px;
+      height: 10px;
+      border: 2px solid $mainBlue;
+      border-radius: 6px;
+      position: absolute;
+      background: $mainBlue;
+      top: -63px;
+      left: 400px;
+      display: block;
+    }
+
+    .coll-b2 {
+      width: 10px;
+      height: 10px;
+      border: 2px solid $mainBlue;
+      border-radius: 6px;
+      position: absolute;
+      background: $mainBlue;
+      top: -63px;
+      left: 790px;
+      display: block;
+    }
+  }
+}
+
+.woocommerce-checkout {
+	header {
+		.balls {
+			position: relative;
+			
+		    .coll-b1 {
+		      width: 10px;
+		      height: 10px;
+		      border: 2px solid $mainBlue;
+		      border-radius: 6px;
+		      position: absolute;
+		      background: $mainBlue;
+		      top: -65px;
+		      left: 450px;
+		      display: block;
+		    }
+
+		    .coll-b2 {
+		      width: 10px;
+		      height: 10px;
+		      border: 2px solid $mainBlue;
+		      border-radius: 6px;
+		      position: absolute;
+		      background: $mainBlue;
+		      top: -65px;
+		      left: 740px;
+		      display: block;
+		    }
+		}
+	}
+}
+
+#wp-submit {
+	font-family: 'Helvetica Neue LT Std' !important;
+	color: #fff !important;
+	font-size: 1.2rem !important;
+	border: 3px solid $mainBlue;
+	padding-top: 22px !important;
+
+	&:hover {
+		background-color: rgba(0,0,0,0) !important;
+		color: $mainBlue !important;
+	}
+}

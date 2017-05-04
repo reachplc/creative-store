@@ -26,10 +26,11 @@ get_header(); ?>
 	<div class="fp-intro">
 			<div class="front-headline">
 				<h2><?php woocommerce_page_title(); ?></h2>
+				<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
 			</div>
 			<div class="entry-content">
 						<nav aria-label="You are here:" role="navigation">
-							<div class="breadcrumb">
+							<div class="breadcrumb" style="display: none;">
 								<p>You are here:</p><?php woocommerce_breadcrumb() ?>
 							</div>
 						</nav>

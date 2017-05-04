@@ -64,6 +64,7 @@ table thead {
       width: 22vw;
   }
 
+
   article {
     text-align: center;
     max-width: 100%;
@@ -359,27 +360,27 @@ overflow: hidden;
       font-size: 2.4rem;
       color: $mainBlue;
 
-      &:before {
-      content: "";
-      height: 2px;
-      width: 350px;
-      position: relative;
-      top: 20px;
-      left: 0;
-      display: block;
-      background-color: $mainBlue;
-    }
+    //   &:before {
+    //   content: "";
+    //   height: 2px;
+    //   width: 350px;
+    //   position: relative;
+    //   top: 20px;
+    //   left: 0;
+    //   display: block;
+    //   background-color: $mainBlue;
+    // }
 
-    &:after {
-      content: "";
-      height: 2px;
-      width: 350px;
-      position: relative;
-      top: -29px;
-      left: 850px;
-      display: block;
-      background-color: $mainBlue;
-    }
+    // &:after {
+    //   content: "";
+    //   height: 2px;
+    //   width: 350px;
+    //   position: relative;
+    //   top: -29px;
+    //   left: 850px;
+    //   display: block;
+    //   background-color: $mainBlue;
+    // }
     }
   }
 
