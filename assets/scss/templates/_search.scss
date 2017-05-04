@@ -128,11 +128,17 @@
 
 .search-no-results {
 	
-	.page-content { text-align: center; }
+	.page-content { 
+		text-align: center;
+		
+		#searchform {
+			margin-top: 50px;
+		}
+
+	}
 	
 	#searchform {
-		
-		margin-top: 50px;
+	
 
 		input {		
 			height: 34px;

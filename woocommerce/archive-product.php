@@ -148,19 +148,28 @@ get_header(); ?>
 	<div class="row">
 		<div class="small-12 columns">
 			<h2>Recently Added</h2>
+
 			<h4>Our most recent adverts to help you keep your advertising needs ahead of the curve</h4>
+
+			<pre>
+				<?php 
+
+					/** Get users region. */
+					$user_region = tm_get_user_region();
+
+					/** Get products regions. */
+					$product_region = $variation['attributes']['attribute_pa_regions'];
+
+				?>
+			</pre>
+
+
 			<ul class="products owl-carousel">
 				<?php
 				$args = array(
 				'post_type' => 'product',				
 				'posts_per_page' => 10,
-				'meta_query' => array(
-						array(
-							'key' => '_stock_status',
-            			'value' => 'instock',
-            			'compare' => '=',
-							)
-					),
+			
 				'orderby' =>'date',
 				'order' => 'DESC' );
 				$loop = new WP_Query( $args );
