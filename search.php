@@ -9,17 +9,16 @@
 get_header(); ?>
 
 <div class="row">
-	<div class="small-12 large-8 columns" role="main">
+	<div class="small-12 large-12 columns search-query" role="main">
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
 
 		<h2 class="title title--large">
-			<span><?php _e( 'Search result', 'foundationpress' ); ?></span>
+			<span><?php _e( 'Search Results', 'foundationpress' ); ?></span>
 		</h2>
 
-		<h4><?php echo get_search_query(); ?></h4>
-
-	<div class="row">
+		<h4>Results for: <?php echo get_search_query(); ?></h4>
+	
 		<?php if ( have_posts() ) : ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -30,8 +29,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif;?>
-	</div>
-
+	
 	<?php do_action( 'foundationpress_before_pagination' ); ?>
 
 	<?php

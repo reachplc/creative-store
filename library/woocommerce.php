@@ -48,3 +48,16 @@ function my_woocommerce_add_to_cart_fragments( $fragments ) {
 	$fragments['li.menu-item-type-woocommerce-cart'] = my_wp_nav_menu_items( '', new stdClass(), true );
 	return $fragments;
 }
+
+
+/**
+ * Limits search result to a specific post type.
+ */
+function searchfilter($query) { 
+   if ($query->is_search && !is_admin() ) {
+      $query->set('post_type',array('product'));
+   }
+   return $query;
+}
+
+add_filter('pre_get_posts','searchfilter');

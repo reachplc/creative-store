@@ -10,16 +10,14 @@
 
 ?>
 
-	<div class="columns small-3">
+	<div class="results">
 		
-		<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-		<?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array('295', '390')); else echo '<img src="'. wc_placeholder_img_src(array('295', '390')).'" alt="My Image Placeholder" />'; ?>
+		<a href="<?php the_permalink(); ?>">
+			<?php if (has_post_thumbnail( $loop->post->ID )) the_post_thumbnail($loop->post->ID, 'thumbnail-size'); else echo '<img src="'. wc_placeholder_img_src('thumbnail-size').'" alt="My Image Placeholder" />'; ?>
 		
-		<div class="extract">
-			<?php echo wp_trim_words(get_the_content('Continue reading...', 'foundationpress' ), 30) ?>
-		</div>
-
+		<h2><?php the_title(); ?></h2>
+		</a>
+				
 		<?php //foundationpress_entry_meta(); ?>
 	
 	</div>
