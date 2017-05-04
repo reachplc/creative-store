@@ -42,7 +42,11 @@ a {
 	overflow: hidden;
 	position: relative;
 	padding-top: 20px;
-	top: -25px
+	top: -25px;
+
+	@media screen and (max-height: 880px) {
+		padding-top: 50px;
+	}
 }
 
 .intro-two {

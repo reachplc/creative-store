@@ -29,7 +29,7 @@ if ( $related_products ) : ?>
 
 				<div class="similarcollections">
 
-				<h2><span class="bluetext">Similar</span> Templates</h2>
+				<h2 style="font-weight: 100; font-size: 2.4rem;"><span class="bluetext" style="font-weight: 100; font-size: 2.4rem;">Similar</span> Templates</h2>
 
 				<?php woocommerce_product_loop_start(); ?>
 

@@ -50,6 +50,7 @@ function my_woocommerce_add_to_cart_fragments( $fragments ) {
 }
 
 
+
 /**
  * Limits search result to a specific post type.
  */
@@ -61,3 +62,7 @@ function searchfilter($query) {
 }
 
 add_filter('pre_get_posts','searchfilter');
+
+// Display 12 products per page. Goes in functions.php
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
+
