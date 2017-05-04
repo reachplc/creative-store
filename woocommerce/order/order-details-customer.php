@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <section class="woocommerce-customer-details">
 
-	<h2><?php _e( 'Customer details', 'woocommerce' ); ?></h2>
+	<h2><?php _e( 'Your details', 'woocommerce' ); ?></h2>
 
 	<table class="woocommerce-table woocommerce-table--customer-details shop_table customer_details">
 

@@ -217,7 +217,7 @@ body {
 					&:before {
 						    content: "";
 						    height: 2px;
-						    width: 400px;
+						    width: 460px;
 						    position: relative;
 						    top: 24px;
 						    left: -75px;
@@ -228,10 +228,10 @@ body {
 					&:after {
 						    content: "";
 						    height: 2px;
-						    width: 400px;
+						    width: 460px;
 						    position: relative;
 						    top: -31px;
-						    right: -725px;
+						    right: -665px;
 						    display: block;
 						    background-color: $mainBlue;
 					}
@@ -324,7 +324,7 @@ body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
 		&:before {
 		    content: "";
 		    height: 2px;
-		    width: 400px;
+		    width: 450px;
 		    position: relative;
 		    top: 22px;
 		    left: 0;
@@ -335,10 +335,10 @@ body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
 		&:after {
 		    content: "";
 		    height: 2px;
-		    width: 400px;
+		    width: 450px;
 		    position: relative;
-		    top: -33px;
-		    right: -770px;
+		    top: -36px;
+		    right: -748px;
 		    display: block;
 		    background-color: $mainBlue;
 		}
@@ -489,4 +489,49 @@ div > div > form > table > tbody > tr > td.product-remove {
 #order_review > table > tbody > tr > td.product-name {
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+#post-24 > div > div > div > p {
+	color: #fff;
+}
+
+#post-24 > div > div > div > ul {
+	width: 242px;
+	margin: 30px auto;
+	color: #fff;
+}
+
+#post-24 > div > div > div > ul > li.woocommerce-order-overview__date.date {
+	border: none;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+#post-24 > div > div > div > ul > li.woocommerce-order-overview__total.total {
+	display: none;
+}
+
+#post-24 > div > div > div > section > table > tfoot, #post-24 > div > div > div > section > table > thead {
+	display: none;
+}
+.woocommerce-order-details h2 {
+	margin-top: 20px;
+	font-size: 1.5rem;
+	font-weight: 100;
+	color: $mainBlue;
+}
+#post-24 > div > div > div > section > section > h3, #post-24 > div > div > div > section > section > address {
+	display: none;
+}
+
+#post-24 > div > div > div > section > table > tbody > tr > td.woocommerce-table__product-name.product-name{
+	padding: 10px 10px;
+}
+
+#post-24 > div > div > div > section > table > tbody > tr > td.woocommerce-table__product-name.product-name > ul {
+	display: none;
+}
+
+#post-24 > div > div > div > section > table > tbody > tr > td.woocommerce-table__product-name.product-name > strong {
+	display: none;
 }

@@ -34,10 +34,15 @@ a.button, .woocommerce a.button, .woocommerce a.button.alt, .woocommerce input.b
   border-radius: 0px;
   border: 3px solid $mainBlue;
   transition: all 0.3s ease; 
+  padding-top: 10px;
 
     &:hover {
     background-color: rgba(0,0,0,0);
     color: $mainBlue;
     border: 3px solid $mainBlue;
   }
+}
+
+.button.wc-forward {
+  padding-top: 12px !important;
 }

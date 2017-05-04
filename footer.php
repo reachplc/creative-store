@@ -20,11 +20,11 @@
 				<!-- <h4>Trinity Mirror Creative</h4> -->
 				<a href="http://digitalhub.trinitymirror.com/tmcreative/"><img class="tmc-logo" src="/app/themes/FoundationPress/assets/images/cs2/tmclogo.jpg"></a>
 
-				<span class="contact-details" style="margin-top: 2px;"><span class="bluetext" style="font-size: 1.2rem;">t: </span>
+				<span class="contact-details"><span class="bluetext" style="font-size: 1.2rem;">t: </span>
 				 <a href="tel:01614931600">0161 493 1600</a> 
 				</span>
 
-				 <span class="contact-details" style="margin-right: 20px;"><span class="bluetext" style="font-size: 1.4rem;">e: </span>
+				 <span class="contact-details" style="margin-right: 20px;"><span class="bluetext" style="font-size: 1.2rem;">e: </span>
 					 <a href="mailto:creativestudio@trinitymirror.com">creativestudio@trinitymirror.com</a>
 				</span>
 				</div>
