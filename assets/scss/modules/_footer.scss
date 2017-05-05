@@ -2,10 +2,15 @@
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
+  height: 100%;
   // border-top: 1px solid #ccc;
   background-color: #000033;
   height: 100%;
   box-shadow: 0px -2px 2px rgba(136,136,136,0.3);
+
+  @media screen and (max-width: 1206px) {
+    padding-bottom: 50px;
+  }
 
 .footer-bold {
   font-weight: 600;
@@ -148,12 +153,28 @@
   }
 }
 
+.tmc-logo {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media screen and (max-width: 1206px) {
+
+  .tmc-logo {
+    position: relative;
+    left: 50vw;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+  }
+
   .contact-details {
+    top: 50px;
     margin: 0 auto;
     width: 100%;
     display: block;
     text-align: center;
+    margin-right: 0 !important;
   }
 
   .ico {

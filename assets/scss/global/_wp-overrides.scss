@@ -321,13 +321,13 @@ body > section > div > div > form.woocommerce-ordering > select {
 
 
 .pagetp404 {
-background: url('../images/cs2/404.jpg') !important;
-background-size: cover !important;
-background-repeat: no-repeat !important;
-// width: 100vw !important;
-background-position: 0% 50% !important;
+  background: url('../images/cs2/404.jpg') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  // width: 100vw !important;
+  background-position: 0% 50% !important;
 
-overflow: hidden;
+  overflow: hidden;
 
   .my404 {
     .popup-404page {
@@ -563,6 +563,7 @@ h1.entry-title {
     position: relative;
     top: 65px;
   } 
+  
   p.login-submit {
     position: relative;
     bottom: 40px;
