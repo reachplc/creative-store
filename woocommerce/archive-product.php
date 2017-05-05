@@ -151,12 +151,13 @@ get_header(); ?>
 			<h4>Our most recent adverts to help you keep your advertising needs ahead of the curve</h4>
 			<ul class="products owl-carousel">
 				<?php
+						
 				$args = array(
-				'post_type' => 'product',				
-				'posts_per_page' => 10,
-				'stock' => 1,
-				'orderby' =>'date',
-				'order' => 'DESC' );
+					'post_type' => 'product',				
+					'posts_per_page' => 10,
+					'stock' => 1,
+					'orderby' =>'date',
+					'order' => 'DESC' );
 				$loop = new WP_Query( $args );
 
 				while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
