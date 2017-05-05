@@ -534,7 +534,6 @@ body.woocommerce-lost-password {
           right: -798px !important;
         }
       }
-
       .balls {
         .coll-b1 {
           left: 398px;
@@ -547,4 +546,15 @@ body.woocommerce-lost-password {
   }
 }
 
+h1.entry-title {
+  font-weight: 100 !important;
+
+  span {
+    font-weight: 100 !important;
+  }
+}
+
+#order_comments_field > label, #order_review_heading {
+  font-weight: 100;
+}
 
