@@ -177,8 +177,18 @@ get_header(); ?>
 
 </div>
 
-<img src="/app/themes/FoundationPress/assets/images/cs2/123/1-on.png" style="display: none;">
-<img src="/app/themes/FoundationPress/assets/images/cs2/123/2-on.png" style="display: none;">
-<img src="/app/themes/FoundationPress/assets/images/cs2/123/3-on.png" style="display: none;">
+<div class="assetpreload">
+	<img src="/app/themes/FoundationPress/assets/images/cs2/123/1-on.png" style="display: none;">
+	<img src="/app/themes/FoundationPress/assets/images/cs2/123/2-on.png" style="display: none;">
+	<img src="/app/themes/FoundationPress/assets/images/cs2/123/3-on.png" style="display: none;">
+	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif' style="display:none;">
+	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif' style="display:none;">
+	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_on.gif' style="display:none;">
+	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_on.gif' style="display:none;">
+	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/property_on.gif' style="display:none;">
+	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_on.gif' style="display:none;">
+	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_on.gif' style="display:none;">
+	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/services_on.gif' style="display:none;">
+</div>
 
 <?php get_footer();

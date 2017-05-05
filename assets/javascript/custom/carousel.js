@@ -10,9 +10,17 @@ $(document).ready(function(){
 		dots: false,
 		margin: 15,		
    	smartSpeed:450,
-   	lazyLoad: true
+   	lazyLoad: true,
+   	responsive: {
+   		0:{
+   				items: 3
+   		},
+   		750: {
+   			items: 4
+   		},
+   		1000: {
+   			items: 6
+   		}
+   	}
 	});
-
-
 });
-
