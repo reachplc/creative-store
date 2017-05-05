@@ -769,3 +769,7 @@ h2.woocommerce-loop-product__title, .search-query .results h2 {
 		color: $mainBlue !important;
 	}
 }
+
+div.summary.entry-summary > form > div > div.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled > button {
+	padding-top: 12px;
+}

@@ -181,6 +181,14 @@
   }
 }
 
+div.summary.entry-summary > form > div > div.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled > button {
+  font-family: Helvetica Neue LT Std;
+}
+
+div.summary.entry-summary > div {
+  display: none;
+}
+
 .intro {
   margin-bottom: 50px;
 
@@ -459,7 +467,7 @@
     &:before {
       content: "";
       height: 2px;
-      width: 400px;
+      width: 430px;
       position: relative;
       top: 0;
       left: -80px;
@@ -470,10 +478,10 @@
     &:after {
       content: "";
       height: 2px;
-      width: 400px;
+      width: 430px;
       position: relative;
-      top: -137.5px;
-      left: 719px;
+      top: -138px;
+      left: 689px;
       display: block;
       background-color: $mainBlue;
     }
@@ -486,7 +494,7 @@
     position: relative;
     background: $mainBlue;
     top: -6px;
-    left: 315px;
+    left: 345px;
     display: block;
   }
 
@@ -498,7 +506,7 @@
     position: relative;
     background: $mainBlue;
     top: -15px;
-    left: 710px;
+    left: 680px;
     display: block;
   }
 
@@ -590,12 +598,20 @@
     background-color: rgba(0,0,48,0.82);
     width: 22vw;
 
+    .login-remember {
+      margin-top: 30px;
+    }
+
     label, p {
       color: #D2C8D6;
     }
 
     a {
       color: $mainBlue;
+    }
+
+    @media screen and (max-width: 1500px) {
+      width: 24vw;
     }
 
     @media screen and (max-width: 1350px) {

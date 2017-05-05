@@ -37,6 +37,7 @@ get_header(); ?>
 <section class="intro intro-one" role="main">
 	<div class="head-intro">
 		<h2 class="bluetext">Selecting artwork is as easy as <span class="my123space">1 2</span> 3</h2>
+		<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
 	</div>
 
 	<section class="benefits">
@@ -148,6 +149,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="small-12 columns">
 			<h2>Recently Added</h2>
+			<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
 			<h4>Our most recent adverts to help you keep your advertising needs ahead of the curve</h4>
 			<ul class="products owl-carousel">
 				<?php

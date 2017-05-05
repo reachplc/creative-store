@@ -120,8 +120,13 @@ table thead {
 
     p label {
       font-weight: 500;
-      font-size: 1.25rem;
+      font-size: 1rem;
       color: rgba(0,0,0,0.75);
+
+      input {
+        position: relative;
+        top: 3px;
+      }
     }
 
     #wp-submit{
@@ -516,5 +521,54 @@ body.woocommerce-lost-password {
     }
   }
 }
+
+.woocommerce-order-received {
+  #post-24 {
+    header {
+      h1 {
+        &:before {
+          width: 400px !important;
+        } 
+        &:after {
+          width: 400px !important;
+          right: -798px !important;
+        }
+      }
+      .balls {
+        .coll-b1 {
+          left: 398px;
+        }
+        .coll-b2 {
+          left: 790px;
+        }
+      }
+    }
+  }
+}
+
+h1.entry-title {
+  font-weight: 100 !important;
+
+  span {
+    font-weight: 100 !important;
+  }
+}
+
+#order_comments_field > label, #order_review_heading {
+  font-weight: 100;
+}
+
+#loginform {
+  p.login-remember {
+    position: relative;
+    top: 65px;
+  } 
+  p.login-submit {
+    position: relative;
+    bottom: 40px;
+  }
+}
+
+
 
 
