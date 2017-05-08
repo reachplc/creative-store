@@ -52,7 +52,11 @@ table thead {
 .login-form-popup {
   padding: 25px 0;
   position: absolute;
-  width: 80vw;
+  width: 100vw;
+  @media screen and (min-width: 550px){
+    width: 100%;
+    max-width: 480px;
+  }
   height: auto;
   top: 56%;
   left: 50%;
@@ -60,10 +64,6 @@ table thead {
   background: rgba(255,255,255,0.85);
   border: 1px solid rgba(0,0,0,0.3);
   z-index: 3;
-  @include breakpoint(medium) {
-      width: 22vw;
-  }
-
 
   article {
     text-align: center;
@@ -107,10 +107,7 @@ table thead {
       &#pass {
         padding-bottom: 0;
       }
-
-      @include breakpoint(xlarge) {
-        max-width: 60%;
-      }
+     
     }
 
     input:active, input:focus {
