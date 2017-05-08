@@ -93,11 +93,15 @@
 
   h2 {
 	 text-align: center;
-	 font-size: 2.5rem;
+	 font-size: 1.7rem;
 	 font-weight: 700;
 	 color: $mainGrey;
 	 margin-bottom: 1rem;
 	 padding-bottom: 0;
+
+   @media screen and (min-width: 800px) {
+      font-size: 2.4rem;
+    }
 
 	 .our-collections {
   		text-transform: lowercase;
@@ -136,11 +140,15 @@
 
   .front-headline {
 	 h2 {
-		  font-size: 3.4375rem;
+		  font-size: 1.7rem;
 		  font-weight: 700;
 		  text-align: left;
 		  line-height: 95%;
 		  letter-spacing: -2px;
+
+              @media screen and (min-width: 800px) {
+          font-size: 2.4rem;
+        }
 
 	 }
 
@@ -204,7 +212,7 @@ div.summary.entry-summary > div {
     h2 {
       font-family: Helvetica Neue LT Std;
       font-weight: 200;
-      font-size: 2.4rem;
+      font-size: 1.7rem;
       color: #fff;
       margin: 0 auto;
       width: 60%;
@@ -214,6 +222,10 @@ div.summary.entry-summary > div {
           margin: inherit;
         }
 
+        @media screen and (min-width: 800px) {
+          font-size: 2.4rem;
+        }
+
       .my123space {
         font-weight: 100;
         letter-spacing: -3px;
@@ -221,7 +233,7 @@ div.summary.entry-summary > div {
     }
 
     h2:before {
-      @media screen and (min-width: 867px){
+      @media screen and (min-width: 900px){
         content: "";
         height: 2px;
         position: absolute;
@@ -241,7 +253,7 @@ div.summary.entry-summary > div {
       }
     }
     h2:after {
-      @media screen and (min-width: 867px){
+      @media screen and (min-width: 900px){
         content: "";
         height: 2px;
         position: absolute;
@@ -262,7 +274,7 @@ div.summary.entry-summary > div {
 
     .balls {
       position: relative;
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 900px) {
         display: none;
       }
     
@@ -416,7 +428,7 @@ div.summary.entry-summary > div {
       }
     }
 
-    @media screen and (min-width: 1220px) {
+    @media screen and (min-width: 1100px) {
       .test-box {
         left: 50px;
         top: 137px;
@@ -506,8 +518,11 @@ div.summary.entry-summary > div {
     font-family: Helvetica Neue LT Std;
 
     font-weight: 200;
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     color: #fff;
+            @media screen and (min-width: 800px) {
+          font-size: 2.4rem;
+        }
   }
 
   h3 {
