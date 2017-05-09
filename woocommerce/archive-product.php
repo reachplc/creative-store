@@ -36,7 +36,7 @@ get_header(); ?>
 <div class="intro-one">
 <section class="intro intro-one" role="main">
 	<div class="head-intro">
-		<h2 class="bluetext">Selecting artwork is as easy as <span class="my123space">1 2</span> 3</h2>
+		<h2 class="bluetext">Selecting artwork is as easy as <span class="my123space">1-2</span>-3</h2>
 		<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
 	</div>
 
@@ -44,18 +44,18 @@ get_header(); ?>
 		<div class="semantic mybox">
 		<div class="test-box-parent"><div class="test-box"></div><div class="test-tri"></div></div>
 			<div class="ico1 ico123"></div>
-			<p>Explore our Library of engaging, bespoke and distinctive design templates.</p>
+			<p>Browse our huge library of eye-catching design templates</p>
 		</div>
 		<div class="responsive mybox">
 		<div class="test-box-parent"><div class="test-box"></div><div class="test-tri"></div></div>
 			<div class="ico2 ico123"></div>
-			<p>Select and reserve the desired artwork to meet your client's requirements.</p>
+			<p>Pick the style that’s a perfect match for your client’s business</p>
 
 		</div>
 		<div class="customizable mybox">
 			<div class="test-box-parent"><div class="test-box"></div><div class="test-tri"></div></div>
 			<div class="ico3 ico123"></div>
-			<p>Our studio team will work with you to tailor artwork to your exact specifications.</p>
+			<p>Add your copy &amp; images to create a masterpiece exclusive in your region</p>
 		</div>
 
 		<!-- <img src="/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg';"> -->
@@ -73,8 +73,8 @@ get_header(); ?>
 
 		<span class="coll-b1"></span><span class="coll-b2"></span>
 
-		<h2 class="coll-text">The Collections</h2>
-		<h3 class="coll-text">Browse 100's of beautiful templates designed for every kind of business.</h3>
+		<h2 class="coll-text">The Store</h2>
+		<h3 class="coll-text">We’ve got spectacular advertising templates for every kind of business. Time to choose a sector…</h3>
 
 		<div class="cat-thumb">
 			<a href="/product-category/education/">
@@ -150,7 +150,7 @@ get_header(); ?>
 		<div class="small-12 columns">
 			<h2>Recently Added</h2>
 			<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
-			<h4>Our most recent adverts to help you keep your advertising needs ahead of the curve</h4>
+			<h4>We add brand new templates every week but remember it’s first come first served, so check back regularly!</h4>
 			<ul class="products owl-carousel">
 				<?php
 				$args = array(

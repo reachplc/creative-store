@@ -246,8 +246,8 @@ div.summary.entry-summary > div {
       @media screen and (min-width: 1220px){
         width: 15vw;
         position: relative;
-        top: 17px;
-        left: 0;
+        top: 19px;
+        left: 10px !important;
         width: 270px;
         left: 0;
       }
@@ -266,7 +266,7 @@ div.summary.entry-summary > div {
         width: 270px;
         position: relative;
         top: -36px;
-        left: 930px;
+        left: 920px;
         display: block; 
         width: 400px;
       }
@@ -291,8 +291,8 @@ div.summary.entry-summary > div {
         left: 15%;
       }
       @media screen and (min-width: 1220px){
-        top: -45px;
-        left: 265px;
+        top: -43px;
+        left: 275px;
       }
     }
 
@@ -553,7 +553,7 @@ div.summary.entry-summary > div {
     &:before {
       content: "";
       height: 2px;
-      width: 430px;
+      width: 470px;
       position: relative;
       top: 0;
       left: -80px;
@@ -564,10 +564,10 @@ div.summary.entry-summary > div {
     &:after {
       content: "";
       height: 2px;
-      width: 430px;
+      width: 470px;
       position: relative;
       top: -138px;
-      left: 689px;
+      left: 649px;
       display: block;
       background-color: $mainBlue;
     }
@@ -580,7 +580,7 @@ div.summary.entry-summary > div {
     position: relative;
     background: $mainBlue;
     top: -6px;
-    left: 345px;
+    left: 385px;
     display: block;
   }
 
@@ -592,7 +592,7 @@ div.summary.entry-summary > div {
     position: relative;
     background: $mainBlue;
     top: -15px;
-    left: 680px;
+    left: 640px;
     display: block;
   }
 
