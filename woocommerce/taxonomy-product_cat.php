@@ -25,8 +25,7 @@ get_header(); ?>
 <section class="intro" role="main">
 	<div class="fp-intro">
 			<div class="front-headline">
-				<h2><?php woocommerce_page_title(); ?></h2>
-				<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
+				<h2 class="coll-text"><span><?php woocommerce_page_title(); ?></span></h2>		
 			</div>
 			<div class="entry-content">
 						<nav aria-label="You are here:" role="navigation">

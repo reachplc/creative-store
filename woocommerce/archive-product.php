@@ -70,67 +70,67 @@ get_header(); ?>
 
 	<section class="intro" role="main">
 		<div class="fp-intro collections-box">
-
-		<span class="coll-b1"></span><span class="coll-b2"></span>
-
-		<h2 class="coll-text">The Store</h2>
+		<h2 class="coll-text"><span>The Store</span></h2>
 		<h3 class="coll-text">We’ve got spectacular advertising templates for every kind of business. Time to choose a sector…</h3>
 
-		<div class="cat-thumb">
-			<a href="/product-category/education/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg';">
-				<h2>Education</h2>
-			</a>
+		<div class="inner-wrap">
+			<div class="cat-thumb">
+				<a href="/product-category/education/">
+					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg';">
+					<h2>Education</h2>
+				</a>
+			</div>
+
+			<div class="cat-thumb">
+				<a href="/product-category/business/">
+					<img class="ico-business" src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg';">
+					<h2>Business</h2>
+				</a>
+			</div>
+
+			<div class="cat-thumb">
+				<a href="/product-category/leisure/">
+					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/leisure_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_off.jpg';">
+					<h2>Leisure</h2>
+				</a>
+			</div>
+
+			<div class="cat-thumb">
+				<a href="/product-category/motors/">
+					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/motors_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_off.jpg';">
+					<h2>Motors</h2>
+				</a>
+			</div>
+
+			<div class="cat-thumb">
+				<a href="/product-category/property/">
+					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/property_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/property_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/property_off.jpg';">
+					<h2>Property</h2>
+				</a>
+			</div>
+
+			<div class="cat-thumb">
+				<a href="/product-category/recruitment/">
+					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_off.jpg';">
+					<h2>Recruitment</h2>
+				</a>
+			</div>
+
+			<div class="cat-thumb">
+				<a href="/product-category/retail/">
+					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg';">
+					<h2>Retail</h2>
+				</a>
+			</div>
+
+			<div class="cat-thumb">
+				<a href="/product-category/services/">
+					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/services_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/services_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/services_off.jpg';">
+					<h2>Services</h2>
+				</a>
+			</div>
 		</div>
 
-		<div class="cat-thumb">
-			<a href="/product-category/business/">
-				<img class="ico-business" src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg';">
-				<h2>Business</h2>
-			</a>
-		</div>
-
-		<div class="cat-thumb">
-			<a href="/product-category/leisure/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/leisure_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_off.jpg';">
-				<h2>Leisure</h2>
-			</a>
-		</div>
-
-		<div class="cat-thumb">
-			<a href="/product-category/motors/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/motors_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_off.jpg';">
-				<h2>Motors</h2>
-			</a>
-		</div>
-
-		<div class="cat-thumb">
-			<a href="/product-category/property/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/property_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/property_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/property_off.jpg';">
-				<h2>Property</h2>
-			</a>
-		</div>
-
-		<div class="cat-thumb">
-			<a href="/product-category/recruitment/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_off.jpg';">
-				<h2>Recruitment</h2>
-			</a>
-		</div>
-
-		<div class="cat-thumb">
-			<a href="/product-category/retail/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg';">
-				<h2>Retail</h2>
-			</a>
-		</div>
-
-		<div class="cat-thumb">
-			<a href="/product-category/services/">
-				<img src="/app/themes/FoundationPress/assets/images/cs2/ico/services_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/services_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/services_off.jpg';">
-				<h2>Services</h2>
-			</a>
-		</div>
 	</div>
 </div>
 
@@ -148,8 +148,8 @@ get_header(); ?>
 <div class="greyPage frontpage-caro">
 	<div class="row">
 		<div class="small-12 columns">
-			<h2>Recently Added</h2>
-			<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
+			<h2 class="coll-text"><span>Recently Added</span></h2>
+		<!-- 	<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div> -->
 			<h4>We add brand new templates every week but remember it’s first come first served, so check back regularly!</h4>
 			<ul class="products owl-carousel">
 				<?php

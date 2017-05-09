@@ -13,10 +13,10 @@ get_header(); ?>
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
 
-		<h2 class="title title--large">
+		<h2 class="title title--large coll-text">
 			<span><?php _e( 'Search Results', 'foundationpress' ); ?></span>
 		</h2>
-		<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
+		<!-- <div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div> -->
 		<h4>Results for: <?php echo get_search_query(); ?></h4>
 	
 		<?php if ( have_posts() ) : ?>

@@ -357,6 +357,7 @@ div.summary.entry-summary > div {
     }
   }
 
+
   .mybox {
     max-height: 480px;
 
@@ -394,6 +395,8 @@ div.summary.entry-summary > div {
       }
     }
   }
+
+   
   .test-box-parent {
     position: relative;
 
@@ -403,9 +406,7 @@ div.summary.entry-summary > div {
           position: absolute;
           background-color: #002451;
           border-radius: 14px;
-          z-index: 2;
-          -webkit-box-shadow: 0px 0px 28px -1px rgba(255,255,255,0);
-          -moz-box-shadow: 0px 0px 28px -1px rgba(255,255,255,0);
+          z-index: 2;       
           box-shadow: 0px 0px 28px -1px rgba(255,255,255,0);
           transition: box-shadow 0.3s ease;
           left: 13%;
@@ -413,18 +414,19 @@ div.summary.entry-summary > div {
           width: 80%;
           height: 300px;
         }
+
       .test-tri {
           background-color: #002451;
           position: absolute;
-          transform: rotateZ(45deg);
-          -webkit-box-shadow: 0px 0px 28px -1px rgba(255,255,255,0);
-          -moz-box-shadow: 0px 0px 28px -1px rgba(255,255,255,0);
+          transform: rotateZ(45deg);   
           box-shadow: 0px 0px 28px -1px rgba(255,255,255,0);
           transition: box-shadow 0.3s ease;
           width: 17vw;
           height: 17vw;
-          top: 55px;
-          left: 23%;
+          top: 46px;
+          left: 8vw;
+          z-index: 2;
+          
       }
     }
 
@@ -436,9 +438,10 @@ div.summary.entry-summary > div {
         height: 322px;
       }
       .test-tri {
+      	z-index: 2;
         width: 190px;
         height: 190px;
-        top: 55px;
+        top: 68px;
         left: 95px;
       }
     }
@@ -516,13 +519,15 @@ div.summary.entry-summary > div {
   h2 {
     text-align: center;
     font-family: Helvetica Neue LT Std;
-
-    font-weight: 200;
     font-size: 1.7rem;
     color: #fff;
             @media screen and (min-width: 800px) {
           font-size: 2.4rem;
         }
+
+    span {
+      font-weight: 200;
+    }
   }
 
   h3 {
@@ -544,63 +549,21 @@ div.summary.entry-summary > div {
 .collections-box {
   height: 100%;
   width: 100%;
+  position: relative;
+  overflow: visible!important;
+  padding: 0!important;
 
+  
   @media screen and (min-width: 1325px) {
-  border-left: 2px solid $mainBlue;
-  border-right: 2px solid $mainBlue;
-  border-bottom: 2px solid $mainBlue;
-
-    &:before {
-      content: "";
-      height: 2px;
-      width: 470px;
-      position: relative;
-      top: 0;
-      left: -80px;
-      display: block;
-      background-color: $mainBlue;
-    }
-
-    &:after {
-      content: "";
-      height: 2px;
-      width: 470px;
-      position: relative;
-      top: -138px;
-      left: 649px;
-      display: block;
-      background-color: $mainBlue;
-    }
-
-  .coll-b1 {
-    width: 10px;
-    height: 10px;
-    border: 2px solid $mainBlue;
-    border-radius: 6px;
-    position: relative;
-    background: $mainBlue;
-    top: -6px;
-    left: 385px;
-    display: block;
-  }
-
-  .coll-b2 {
-    width: 10px;
-    height: 10px;
-    border: 2px solid $mainBlue;
-    border-radius: 6px;
-    position: relative;
-    background: $mainBlue;
-    top: -15px;
-    left: 640px;
-    display: block;
-  }
-
-  }
+			border-left: 2px solid $mainBlue;
+  		border-right: 2px solid $mainBlue;
+  		border-bottom: 2px solid $mainBlue;
+  }  
 
   h2.coll-text {
     margin-top: 6px;
   }
+
 
   h3.coll-text {
     top: -30px;
@@ -610,31 +573,18 @@ div.summary.entry-summary > div {
 
   .coll-text {
     position: relative;
-    top: -50px;
-
-
+    top: -29px;
   }
-
-  // h2.coll-text:before {
-  //   content: "";
-  //   height: 2px;
-  //   width: 20vw;
-  //   position: relative;
-  //   top: 30px;
-  //   left: -3.8vw;
-  //   display: block;
-  //   background-color: $mainBlue;
-  // }
+	
 }
 
-@media screen and (min-width: 40em) {
-  .intro .fp-intro {
-    padding-right: 4.9375rem;
-    padding-left: 4.9375rem;
-  }
+.inner-wrap {
+  padding-right: 4.9375rem;
+  padding-left: 4.9375rem;
 }
+
+
 .sign-in {
-
   background: url("../images/cs2/login-bg.jpg") no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -643,10 +593,10 @@ div.summary.entry-summary > div {
   width: 100%;
 
   .hero {
-	 background: none;
-	 padding: 0;
-	 margin: 0;
-	 z-index: 3
+    background: none;
+    padding: 0;
+    margin: 0;
+    z-index: 3
   }
 
   .bg-overlay {
@@ -708,12 +658,12 @@ div.summary.entry-summary > div {
 
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
+  width: 32vw;
   height: 30vw;
-  z-index: 3;
-  position: relative;
+   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
 
   @media screen and (min-width: 640px) {
     left: auto;
@@ -806,18 +756,20 @@ div.summary.entry-summary > div {
     transform: scale(1.1)!important;
   }
 
-
 }
 
 .frontpage-caro {
   margin-bottom: 100px;
 
-  h2 {
-    margin-bottom: 40px;
-  }
+  .coll-text {
 
-  img {
+    span { 
+    	font-weight: 200; 
+			&:after, &:before {  width: 130%; }
+    }
+
   }
+  
 }
 
 .owl-carousel {
@@ -886,7 +838,7 @@ div.summary.entry-summary > div {
   clear: both;
 }
 
-.cat-thumb:nth-child(4n) {
+.collections-box div:nth-of-type(4n) {
   margin-right: 0;
 }
 
@@ -933,6 +885,12 @@ div.summary.entry-summary > div {
 
 //   }
 // }
+
+	@media screen and (max-width: 1015px) {
+		.intro .benefits .mybox p{
+			font-size: 0.9375rem;
+		}
+	}
 
 
 @media print, screen and (min-width: 40em) {

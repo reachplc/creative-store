@@ -12,7 +12,7 @@
 
 get_header(); ?>
 
-<div class="nav-background"></div>
+<!-- <div class="nav-background"></div> -->
 
 <section class="container">
 <?php do_action( 'foundationpress_after_header' );
@@ -25,8 +25,7 @@ get_template_part( 'template-parts/featured-image' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
  <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
      <header>
-         <h1 class="entry-title"><span><?php the_title(); ?></span></h1>
-         <div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
+         <h1 class="entry-title coll-text"><span><?php the_title(); ?></span></h1>        
      </header>
      <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
      <div class="entry-content">

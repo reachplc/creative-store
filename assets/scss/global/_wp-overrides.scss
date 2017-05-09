@@ -201,7 +201,7 @@ table thead {
 }
 
 #post-0 > header > h1, #basic-details-section > h2, #profile-details-section > h2 {
-  font-size: 2.125rem;
+  // font-size: 2.125rem;
   font-weight: 800;
 }
 
@@ -360,29 +360,7 @@ body > section > div > div > form.woocommerce-ordering > select {
       font-family: Helvetica Neue LT Std;
       font-weight: 100 !important;
       font-size: 2.4rem;
-      color: $mainBlue;
-
-    //   &:before {
-    //   content: "";
-    //   height: 2px;
-    //   width: 350px;
-    //   position: relative;
-    //   top: 20px;
-    //   left: 0;
-    //   display: block;
-    //   background-color: $mainBlue;
-    // }
-
-    // &:after {
-    //   content: "";
-    //   height: 2px;
-    //   width: 350px;
-    //   position: relative;
-    //   top: -29px;
-    //   left: 850px;
-    //   display: block;
-    //   background-color: $mainBlue;
-    // }
+      color: $mainBlue;   
     }
   }
 
@@ -450,29 +428,7 @@ body.woocommerce-lost-password {
             font-family: Helvetica Neue LT Std;
             font-weight: 100 !important;
             font-size: 2.4rem;
-            color: $mainBlue;
-
-            &:before {
-            content: "";
-            height: 2px;
-            width: 400px;
-            position: relative;
-            top: 22px;
-            left: 0;
-            display: block;
-            background-color: $mainBlue;
-          }
-
-          &:after {
-            content: "";
-            height: 2px;
-            width: 400px;
-            position: relative;
-            top: -33px;
-            left: 800px;
-            display: block;
-            background-color: $mainBlue;
-          }
+            color: $mainBlue;       
           }
         }
 
@@ -565,6 +521,51 @@ h1.entry-title {
     position: relative;
     bottom: 40px;
   }
+}
+
+@media screen and (min-width: 867px) {
+
+    h1.coll-text, h2.coll-text {
+      position: relative;
+      overflow: hidden;
+      color: $mainBlue;
+      text-align: center;
+      
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        top: 19px;
+        width: 10px;
+        height: 10px;
+        background-color: $mainBlue;
+        border-radius: 10px;
+      }
+
+
+      span {
+        display: inline-block;
+        padding: 0 40px;
+        position: relative;
+        font-weight: 200;
+
+        &:before, &:after {
+          border-top: 2px solid $mainBlue;
+          content: "";
+          position: absolute;
+          top: 50%;
+          width: 204%;
+          margin-top: -4px;
+        }
+
+        &:before {right: 100%;}
+
+        &:after {left: 100%;}
+
+      }
+
+   }
+
+
 }
 
 
