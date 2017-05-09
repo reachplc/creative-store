@@ -570,33 +570,47 @@ div > div > form > table > tbody > tr > td.product-remove {
 	clear: both;
 	
 	ul {
+
 		border: none!important;
 		margin: 0!important;
 		padding: 0!important;
 
-		li { border: none!important; display: inline-block!important; margin-right: 5px!important; }
+		li { 
+			border: none!important;
+
+			span, a {
+				display: none!important
+			}
+
+			.next, .prev { display: block!important }
+		}
+	}
+	
+	.next, .prev { 
+		padding: 1rem!important;
+		box-shadow: 1px -1px 0 1px $mainBlue inset;  
+		border: solid transparent;
+		border-width: 0 0 2rem 2rem;
+		transition: 0.2s;
+		font-size: 0!important;		
+		
+		&:hover, &:visited, &:focus {
+			box-shadow: 2px -2px 0 2px $mainBlue inset;
+			background: none!important;
+		}
 	}
 
-	.page-numbers {
-		a, span {
-			transition: .4s ease all;
-			color: #fff!important;
-			padding: 0 16px!important;
-			line-height: 40px!important;
-			display: block!important;
-			font-size: 0.875rem!important;
+		
+	.next {
+		transform:rotate(225deg);
+		right: -70px;
+	}
 
-			&:hover {
-				background: $mainBlue!important;
-			}
-		}
+	.prev {
+		transform:rotate(45deg);
+		left: -70px;
+	}
 
-		.current {
-			background: $mainBlue!important;
-		}
-
-		.next, .prev { font-size: 1.1rem!important; }
-	}	
 }
 
 h2.woocommerce-loop-product__title, .search-query .results h2 {

@@ -153,12 +153,13 @@ get_header(); ?>
 			<h4>We add brand new templates every week but remember it’s first come first served, so check back regularly!</h4>
 			<ul class="products owl-carousel">
 				<?php
+						
 				$args = array(
-				'post_type' => 'product',				
-				'posts_per_page' => 10,
-				'stock' => 1,
-				'orderby' =>'date',
-				'order' => 'DESC' );
+					'post_type' => 'product',				
+					'posts_per_page' => 10,
+					'stock' => 1,
+					'orderby' =>'date',
+					'order' => 'DESC' );
 				$loop = new WP_Query( $args );
 
 				while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
