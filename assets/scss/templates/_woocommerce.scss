@@ -558,42 +558,7 @@ h2.woocommerce-loop-product__title, .search-query .results h2 {
 }
 
 .woocommerce-cart > section > div > article > header {
-
-	.entry-title {
-				span {
-				display: inline-block;
-				position: relative; 
-				font-weight: 200;
-			}
-
-			@media screen and (min-width: 768px){
-
-			
-
-			span:before,
-			span:after {
-				content: "";
-				position: absolute;
-				height: 5px;				
-				border-top: 2px solid #00abed;
-				top: 44%;
-				transform: translateY(-50%);
-				width: 722.5%;
-			}
-
-			span:before {
-				right: 100%;
-				margin-right: 60px;
-			}
-
-			span:after {
-				left: 100%;
-				margin-left: 60px;
-			}
-
-			}
-		}
-
+	
 		// 	      .balls {
   //   position: relative;
     
