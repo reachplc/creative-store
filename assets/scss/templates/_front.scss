@@ -93,11 +93,12 @@
 
   h2 {
 	 text-align: center;
-	 font-size: 1.7rem;
+	 font-size: 1.9rem;
 	 font-weight: 700;
 	 color: $mainGrey;
 	 margin-bottom: 1rem;
 	 padding-bottom: 0;
+   white-space: pre-break;
 
    @media screen and (min-width: 800px) {
       font-size: 2.4rem;
@@ -140,7 +141,7 @@
 
   .front-headline {
 	 h2 {
-		  font-size: 1.7rem;
+		  font-size: 1.9rem;
 		  font-weight: 700;
 		  text-align: left;
 		  line-height: 95%;
@@ -212,7 +213,7 @@ div.summary.entry-summary > div {
     h2 {
       font-family: Helvetica Neue LT Std;
       font-weight: 200;
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       color: #fff;
       margin: 0 auto;
       width: 60%;
@@ -519,7 +520,7 @@ div.summary.entry-summary > div {
   h2 {
     text-align: center;
     font-family: Helvetica Neue LT Std;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: #fff;
             @media screen and (min-width: 800px) {
           font-size: 2.4rem;
@@ -568,7 +569,15 @@ div.summary.entry-summary > div {
   h3.coll-text {
     top: -30px;
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+
+    @media screen and (max-width: 530px) {
+      padding: 0 10px;
+    }
+
+    @media screen and (min-width: 530px) {
+      font-size: 1.5rem;
+    }
   }
 
   .coll-text {
@@ -579,8 +588,12 @@ div.summary.entry-summary > div {
 }
 
 .inner-wrap {
-  padding-right: 4.9375rem;
-  padding-left: 4.9375rem;
+
+
+  @media screen and (min-width: 530px) {
+    padding-right: 4.9375rem;
+    padding-left: 4.9375rem;
+  }
 }
 
 
@@ -664,6 +677,11 @@ div.summary.entry-summary > div {
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
+
+  @media screen and (max-width: 640px) {
+    width: 60vw;
+    height: 60vw;
+  }
 
   @media screen and (min-width: 640px) {
     left: auto;
@@ -892,6 +910,13 @@ div.summary.entry-summary > div {
 		}
 	}
 
+  @media screen and (max-width: 640px) {
+    .intro .benefits .mybox p{
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+  }
+
 
 @media print, screen and (min-width: 40em) {
   .column, .columns {
@@ -917,4 +942,18 @@ div.summary.entry-summary > div {
 
 .hp-video {
   overflow: hidden;
+}
+
+.iosvideo {
+  .videoheader {
+    display: none;
+  }
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+  background-image: url('../images/cs2/mobhead.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vw;
 }

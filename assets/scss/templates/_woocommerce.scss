@@ -1,4 +1,4 @@
-.woocommerce {
+	.woocommerce {
 
 	#tab-description {
 		text-align: left;
@@ -245,10 +245,13 @@ body > section > div > div > ul > li > a > h2 {
 }
 
 .woocommerce ul.products li.product a img {
-	height: 339px;
 	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.23);
 	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.23);
 	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.23);
+
+	@media screen and (min-width: 768px) {
+		height: 339px;
+	}
 }
 
 body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
@@ -305,27 +308,6 @@ body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
 	text-align: center;
 	font-weight: 200;
 
-		&:before {
-		    content: "";
-		    height: 2px;
-		    width: 450px;
-		    position: relative;
-		    top: 22px;
-		    left: 0;
-		    display: block;
-		    background-color: $mainBlue;
-		}
-
-		&:after {
-		    content: "";
-		    height: 2px;
-		    width: 450px;
-		    position: relative;
-		    top: -36px;
-		    right: -748px;
-		    display: block;
-		    background-color: $mainBlue;
-		}
 }
 
 #post-23 > header > h1 {
@@ -399,8 +381,10 @@ div.summary.entry-summary > h1 {
 }
 
 div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images > div > figure > div{
-	width: 440px !important;
-	margin-bottom: 40px;
+	@media screen and (min-width: 530px) {
+		width: 440px !important;
+		margin-bottom: 40px;
+	}
 }
 
 .pswp__bg {
@@ -582,6 +566,10 @@ h2.woocommerce-loop-product__title, .search-query .results h2 {
 				font-weight: 200;
 			}
 
+			@media screen and (min-width: 768px){
+
+			
+
 			span:before,
 			span:after {
 				content: "";
@@ -602,35 +590,37 @@ h2.woocommerce-loop-product__title, .search-query .results h2 {
 				left: 100%;
 				margin-left: 60px;
 			}
+
+			}
 		}
 
-			      .balls {
-    position: relative;
+		// 	      .balls {
+  //   position: relative;
     
-    .coll-b1 {
-      width: 10px;
-      height: 10px;
-      border: 2px solid $mainBlue;
-      border-radius: 6px;
-      position: absolute;
-      background: $mainBlue;
-      top: -62px;
-      left: 500px;
-      display: block;
-    }
+  //   .coll-b1 {
+  //     width: 10px;
+  //     height: 10px;
+  //     border: 2px solid $mainBlue;
+  //     border-radius: 6px;
+  //     position: absolute;
+  //     background: $mainBlue;
+  //     top: -62px;
+  //     left: 500px;
+  //     display: block;
+  //   }
 
-    .coll-b2 {
-      width: 10px;
-      height: 10px;
-      border: 2px solid $mainBlue;
-      border-radius: 6px;
-      position: absolute;
-      background: $mainBlue;
-      top: -62px;
-      left: 690px;
-      display: block;
-    }
-  }
+  //   .coll-b2 {
+  //     width: 10px;
+  //     height: 10px;
+  //     border: 2px solid $mainBlue;
+  //     border-radius: 6px;
+  //     position: absolute;
+  //     background: $mainBlue;
+  //     top: -62px;
+  //     left: 690px;
+  //     display: block;
+  //   }
+  // }
 }
 
 // .registration > section > div > article > header {
@@ -742,4 +732,78 @@ h2.woocommerce-loop-product__title, .search-query .results h2 {
 
 div.summary.entry-summary > form > div > div.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled > button {
 	padding-top: 12px;
+}
+
+.woocommerce div.product div.images img {
+	@media screen and (max-width: 530px) {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+.woocommerce-product-gallery__wrapper {
+	@media screen and (max-width: 530px) {
+		width: 100% !important;
+	}
+}
+
+div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images > div > figure > div {
+
+	@media screen and (max-width: 530px) {
+		min-height: 100px !important;
+	}
+}
+
+.woocommerce table.shop_table {
+	@media screen and (max-width: 530px){
+		width: 90% !important;
+		margin: 0 auto;
+	}
+}
+
+div > div > form > table > tbody > tr > td.product-name {
+	@media screen and (max-width: 769px){
+		left: 0 !important;
+	}
+}
+
+div > div > div > div > div > a.checkout-button.wc-forward {
+
+	@media screen and (max-width: 530px){
+		margin: 0 auto;
+		float: none !important;
+		left: 1%;
+	}
+	@media screen and (max-width: 768px){
+		position: relative;
+		right: 5vw;
+	}
+}
+@media screen and (max-width: 530px) {
+	.woocommerce-error {
+		padding: 1em 5px;
+
+		&:before {
+			display: none;
+		}
+
+		a {
+			padding-left: 10px;
+		}
+	}
+	.woocommerce {
+		.woocommerce-message {
+			padding: 1em 5px;
+
+			&:before {
+				display: none;
+			}
+
+			a {
+				padding-left: 10px;
+				width: 142px;
+			    white-space: pre-line;
+			}
+		}
+	}
 }

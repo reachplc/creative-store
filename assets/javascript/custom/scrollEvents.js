@@ -26,4 +26,10 @@ jQuery(function($){
 
     $('#user').attr( 'placeholder', 'Username' );
     $('#pass').attr( 'placeholder', 'Password' );
+
+    jQuery(function($){
+      if (navigator.userAgent.match(/(\(iPod|\(iPhone|\(iPad)/)) { 
+        $(".hp-video").addClass("iosvideo");
+      }
+    });
 });

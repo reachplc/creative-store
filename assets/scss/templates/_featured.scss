@@ -11,12 +11,12 @@
 
 	h2 {
 		font-weight: 200;
-		font-size: 1.7rem;
+		font-size: 1.9rem;
 		color: #fff;
 		font-family: 'Helvetica Neue LT Std';
 		text-align: center;
 		margin-bottom: 0;
-		        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 800px) {
           font-size: 2.4rem;
         }
 	}
@@ -24,10 +24,18 @@
 	h4 {
 		color: #fff;
 		text-align: center;
-		font-size: 1.5rem;
+		font-size: 1.1rem;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		font-weight: 100;
+
+	    @media screen and (max-width: 530px) {
+	      padding: 0 10px;
+	    }
+
+		@media screen and (min-width: 530px) {
+			font-size: 1.5rem;
+		}
 	}
 
 	p {
