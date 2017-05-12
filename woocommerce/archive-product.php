@@ -35,9 +35,9 @@ get_header(); ?>
 <?php do_action( 'foundationpress_after_header' ); ?>
 <div class="intro-one">
 <section class="intro intro-one" role="main">
-	<div class="head-intro">
-		<h2 class="bluetext">Selecting artwork is as easy as <span style="white-space: nowrap; font-weight: 200;"><span class="my123space">1-2</span>-3</span></h2>
-		<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div>
+
+	<div class="head-intro">	
+		<h2 class="coll-text"><span>Selecting artwork is as easy as <em>1-2-3</em></span></h2>
 	</div>
 
 	<section class="benefits">

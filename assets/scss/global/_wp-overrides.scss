@@ -541,7 +541,6 @@ h1.entry-title {
         border-radius: 10px;
       }
 
-
       span {
         display: inline-block;
         padding: 0 40px;
@@ -561,6 +560,12 @@ h1.entry-title {
 
         &:after {left: 100%;}
 
+      }
+
+      em {
+        letter-spacing: -3px; 
+        font-weight: 100; 
+        font-style: normal;
       }
 
    }
