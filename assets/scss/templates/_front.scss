@@ -210,7 +210,12 @@ div.summary.entry-summary > div {
   .head-intro {
     text-align: center;
 
-    h2 {
+    h2 span em {
+      white-space: nowrap;
+      font-style: normal;
+    }
+
+    h2, h2 span, h2 span em {
       font-family: Helvetica Neue LT Std;
       font-weight: 200;
       font-size: 1.9rem;

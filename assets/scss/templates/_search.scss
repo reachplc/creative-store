@@ -23,34 +23,6 @@
 
 	}
 
-	.balls {
-	    position: relative;
-	    
-	    .coll-b1 {
-	      width: 10px;
-	      height: 10px;
-	      border: 2px solid $mainBlue;
-	      border-radius: 6px;
-	      position: absolute;
-	      background: $mainBlue;
-	      top: -53px;
-	      left: 415px;
-	      display: block;
-	    }
-
-	    .coll-b2 {
-	      width: 10px;
-	      height: 10px;
-	      border: 2px solid $mainBlue;
-	      border-radius: 6px;
-	      position: absolute;
-	      background: $mainBlue;
-	      top: -53px;
-	      left: 770px;
-	      display: block;
-	    }
-	  }
-
 	h4 {
 		color: #fff;
 		text-align: center;
@@ -151,11 +123,31 @@
 	}
 
 	.results {
+
+		@media screen and (max-width: 768px){
+		
+		float: right;
+		width: 48%;
+		margin: 0 0 2.992em;
+
+		&:nth-of-type(2n-1){
+			float: left;
+		}
+
+
+		&:nth-of-type(2){
+			float: right;
+		}
+
+		}
+
+		@media screen and (min-width: 769px){
 		float: left;
 		margin: 0 3.8% 0.75em 0;
 		padding: 0;
 		position: relative;
 		width: 22%;
+		}
 	}
 
 }
@@ -177,7 +169,6 @@
 	}
 	
 	#searchform {
-	
 
 		input {		
 			height: 34px;
