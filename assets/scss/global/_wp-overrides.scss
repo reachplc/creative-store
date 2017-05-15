@@ -475,30 +475,6 @@ body.woocommerce-lost-password {
   }
 }
 
-.woocommerce-order-received {
-  #post-24 {
-    header {
-      h1 {
-        &:before {
-          width: 400px !important;
-        } 
-        &:after {
-          width: 400px !important;
-          right: -798px !important;
-        }
-      }
-      .balls {
-        .coll-b1 {
-          left: 398px;
-        }
-        .coll-b2 {
-          left: 790px;
-        }
-      }
-    }
-  }
-}
-
 h1.entry-title {
   font-weight: 100 !important;
 
@@ -543,7 +519,7 @@ h1.entry-title {
 
       span {
         display: inline-block;
-        padding: 0 40px;
+        padding: 0 40px 0 50px;
         position: relative;
         font-weight: 200;
 
