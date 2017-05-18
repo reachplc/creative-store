@@ -25,7 +25,11 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php _e( "Your order has been received and is now being processed. Your order details are shown below for your reference:", 'woocommerce' ); ?></p>
+<p><?php _e( "Thanks for using The Creative Store - easy wasn’t it?", 'woocommerce' ); ?></p>
+
+<p><?php _e( "Your chosen artwork has now been reserved exclusively for your client in your region and has been removed from the library. ", 'woocommerce' ); ?></p>
+
+<p><?php _e( "Make a note of the order number below so you can include it when you book your advert on the system.", 'woocommerce' ); ?></p>
 
 <?php
 

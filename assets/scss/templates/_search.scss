@@ -44,7 +44,10 @@
 		img {
 			transition: all 0.6s ease;
 			border: 2px solid #00abed;
-			min-height: 348px; 
+
+			@media screen and (min-width: 769px) {
+				min-height: 348px; 
+			}
 		}
 
 		h2 {
@@ -126,17 +129,16 @@
 
 		@media screen and (max-width: 768px){
 		
-		float: right;
+		float: left;
 		width: 48%;
 		margin: 0 0 2.992em;
-
-		&:nth-of-type(2n-1){
-			float: left;
-		}
+		height: auto;
+		clear: both;
 
 
-		&:nth-of-type(2){
+		&:nth-of-type(2n){
 			float: right;
+			clear: none;
 		}
 
 		}
@@ -151,9 +153,10 @@
 	}
 
 }
-
-.search-query .results:nth-of-type(4n) {
-	 margin-right: 0;
+@media screen and (min-width: 769px){
+	.search-query .results:nth-of-type(4n) {
+		 margin-right: 0;
+	}
 }
 
 

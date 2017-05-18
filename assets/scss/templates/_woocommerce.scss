@@ -772,3 +772,18 @@ div > div > div > div > div > a.checkout-button.wc-forward {
 		}
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce-page[class*=columns-] ul.products li.product, .woocommerce[class*=columns-] ul.products li.product {
+		height: auto;
+	}
+
+}
+
+#post-23 > div > div > form > table > tbody > tr:nth-child(2) {
+	display: none;
+}
+
+div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images > div {
+    width: 440px !important;
+}

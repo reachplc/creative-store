@@ -13,13 +13,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-
-			<div class="title-container">
-				<h1 class="entry-title"><?php woocommerce_page_title(); ?></h1>
-			</div>
 	
 
-<section class="container container__none container__nobg" style="position: relative; top: -31px;">
+<section class="container container__none container__nobg" style="position: relative; top: 38px">
 <?php do_action( 'foundationpress_after_header' ); ?>
 
 <section class="intro" role="main">
@@ -40,7 +36,7 @@ get_header(); ?>
 </section>
 
 
-<div class="row">
+<div class="row" style="margin-bottom: 60px;">
 	<div class="small-12 large-12 columns" role="main">
 	<?php do_action( 'foundationpress_before_content' ); ?>
 	<?php while ( woocommerce_content() ) : the_post(); ?>
@@ -54,6 +50,5 @@ get_header(); ?>
 	<?php do_action( 'foundationpress_after_content' ); ?>
 
 	</div>
-
 </div>
 <?php get_footer();

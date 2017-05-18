@@ -13,7 +13,7 @@ do_action( 'foundationpress_before_searchform' ); ?>
 		<input type="text" class="input-group-field" value="" name="s" id="s" placeholder="<?php esc_attr_e( 'Search', 'foundationpress' ); ?>">
 		<?php do_action( 'foundationpress_searchform_before_search_button' ); ?>
 		<div class="input-group-button">
-			<button type="submit" class="search-submit"><span class="fa fa-lg fa-search"></span></button>
+			<button type="submit" class="search-submit"><img src="/app/themes/FoundationPress/assets/images/cs2/search_icon.png" id="menusearch" class="ico ico-nav" style="width: 18px; max-width: 18px; margin-right: 0px;"></img></button>
 		</div>
 	</div>
 	<?php do_action( 'foundationpress_searchform_after_search_button' ); ?>
