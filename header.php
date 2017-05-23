@@ -18,7 +18,9 @@
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 		<?php wp_head(); ?>
 	</head>
+
 	<body <?php body_class(); ?>>
+
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
@@ -39,7 +41,7 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-			<div class="nav-background">  
+			<div class="nav-background">
 				<div class="row">
 					<div class="top-bar-left">
 						<ul class="menu">

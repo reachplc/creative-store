@@ -36,7 +36,7 @@ get_header(); ?>
 <div class="intro-one">
 <section class="intro intro-one" role="main">
 
-	<div class="head-intro">	
+	<div class="head-intro">
 		<h2 class="coll-text"><span>Selecting artwork is as easy as <em>1-2-3</em></span></h2>
 	</div>
 
@@ -149,28 +149,10 @@ get_header(); ?>
 	<div class="row">
 		<div class="small-12 columns">
 			<h2 class="coll-text"><span>Recently Added</span></h2>
-		<!-- 	<div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div> -->
 			<h4>We add brand new templates every week but remember it’s first come first served, so check back regularly!</h4>
-			<ul class="products owl-carousel">
-				<?php
-						
-				$args = array(
-					'post_type' => 'product',				
-					'posts_per_page' => 10,
-					'stock' => 1,
-					'orderby' =>'date',
-					'order' => 'DESC' );
-				$loop = new WP_Query( $args );
 
-				while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-					<li class="product-category product">
-						<a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; ?>
-						
-						</a>
-					</li>
-				<?php endwhile; ?>
-			</ul>
+			<?php echo do_shortcode('[recent_products per_page="12" price=""]'); ?>
+
 		</div>
 	</div>
 </div>
