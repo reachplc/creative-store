@@ -732,3 +732,43 @@ div > div > div > div > div > a.checkout-button.wc-forward {
 div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images > div {
     width: 440px !important;
 }
+
+.woocommerce {
+	div.product {
+		div.woocommerce-product-gallery.images {
+
+			.flex-viewport {
+				width: 440px !important;
+
+				figure.woocommerce-product-gallery__wrapper {
+					div {
+						a {
+							img {
+								border: none !important;
+							}
+						}
+					}
+					div:first-child {
+						a{
+							img{
+								border: 2px solid #00abed !important;
+							}
+						}
+					}
+				}
+			}
+
+			ol.flex-control-nav.flex-control-thumbs {
+				width: 440px;
+
+				li {
+					width: 20% !important;
+					margin: 0 2.5% !important;
+				}
+			}
+
+
+		}
+	}
+}
+
