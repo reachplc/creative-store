@@ -146,23 +146,13 @@
 	transition: top;
 }
 
-.product-category a img, .product-category a h2, ul .product a img, ul .product a h2 {
+.product-category a h2, ul .product a h2 {
 	transition: all 0.6s ease;
 }
 
-.product-category a:hover img, ul .product a:hover img {
-	transform: scale(1.1);
-	// content: "";
-	// display: block;
-	// position: absolute;
-	// top: 45%;
-	// left: 50%;
-	// transform: translate(-50%, -60%);
-	// width: 40px;
-	// height: 40px;
-	// background: $mainBlue url('/app/themes/FoundationPress/assets/images/cs/ico/eye.svg') center center;
-	// background-repeat: no-repeat;
-	// z-index: 2;
+ul.products li.product a img {
+	transform-style: preserve-3d;
+	transition: transform .4s cubic-bezier(0, 0, .2, 1);
 }
 
 .product-category a:hover h2, ul .product a:hover h2 {
@@ -556,68 +546,6 @@ div > div > form > table > tbody > tr > td.product-remove {
 h2.woocommerce-loop-product__title, .search-query .results h2 {
 	font-weight: 100 !important;
 }
-
-.woocommerce-cart > section > div > article > header {
-	
-		// 	      .balls {
-  //   position: relative;
-    
-  //   .coll-b1 {
-  //     width: 10px;
-  //     height: 10px;
-  //     border: 2px solid $mainBlue;
-  //     border-radius: 6px;
-  //     position: absolute;
-  //     background: $mainBlue;
-  //     top: -62px;
-  //     left: 500px;
-  //     display: block;
-  //   }
-
-  //   .coll-b2 {
-  //     width: 10px;
-  //     height: 10px;
-  //     border: 2px solid $mainBlue;
-  //     border-radius: 6px;
-  //     position: absolute;
-  //     background: $mainBlue;
-  //     top: -62px;
-  //     left: 690px;
-  //     display: block;
-  //   }
-  // }
-}
-
-// .registration > section > div > article > header {
-
-//   .balls {
-//     position: relative;
-    
-//     .coll-b1 {
-//       width: 10px;
-//       height: 10px;
-//       border: 2px solid $mainBlue;
-//       border-radius: 6px;
-//       position: absolute;
-//       background: $mainBlue;
-//       top: -59px;
-//       left: 350px;
-//       display: block;
-//     }
-
-//     .coll-b2 {
-//       width: 10px;
-//       height: 10px;
-//       border: 2px solid $mainBlue;
-//       border-radius: 6px;
-//       position: absolute;
-//       background: $mainBlue;
-//       top: -59px;
-//       left: 840px;
-//       display: block;
-//     }
-//   }
-// }
 
 .woocommerce-lost-password > section > div > article > header {
 
