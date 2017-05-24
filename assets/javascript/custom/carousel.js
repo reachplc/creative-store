@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+   $('.frontpage-caro .products').addClass('owl-carousel');
+   $('.frontpage-caro .products').find('li').removeClass().addClass('product-category product');
+
 	var carousel = $('.owl-carousel');
 
 	carousel.owlCarousel({
@@ -7,8 +10,8 @@ $(document).ready(function(){
 		nav:true,
 		items: 5,
 		center: true,
-		dots: false,
-		margin: 15,		
+      dots: false,
+		margin: 15,
    	smartSpeed:450,
    	lazyLoad: true,
    	responsive: {

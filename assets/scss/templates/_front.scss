@@ -847,15 +847,8 @@ div.summary.entry-summary > div {
   border: 2px solid $mainBlue;
 }
 
-
-.products {
-  li {
-    a {
-      img {
-        border: 2px solid $mainBlue;
-      }
-    }
-  }
+.products a img {
+  border: 2px solid $mainBlue;
 }
 
 .hp-video {

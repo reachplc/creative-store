@@ -20,7 +20,7 @@
 	div.product .woocommerce-tabs ul.tabs {
 		display: none !important;
 	}
- 
+
 	#tab-description {
 		width: 48%;
 		float: right;
@@ -207,7 +207,7 @@ body {
 					font-size: 2.4rem;
 
 					span { font-weight: 200; }
-		
+
 				}
 
 			}
@@ -242,6 +242,11 @@ body > section > div > div > ul > li > a > h2 {
 	@media screen and (min-width: 768px) {
 		height: 339px;
 	}
+
+}
+
+.frontpage-caro .woocommerce ul.products li.product a img  {
+	height: auto;
 }
 
 body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
@@ -498,14 +503,14 @@ div > div > form > table > tbody > tr > td.product-remove {
 	display: block;
 	width: 100%;
 	clear: both;
-	
+
 	ul {
 
 		border: none!important;
 		margin: 0!important;
 		padding: 0!important;
 
-		li { 
+		li {
 			border: none!important;
 
 			span, a {
@@ -515,22 +520,22 @@ div > div > form > table > tbody > tr > td.product-remove {
 			.next, .prev { display: block!important }
 		}
 	}
-	
-	.next, .prev { 
+
+	.next, .prev {
 		padding: 1rem!important;
-		box-shadow: 1px -1px 0 1px $mainBlue inset;  
+		box-shadow: 1px -1px 0 1px $mainBlue inset;
 		border: solid transparent;
 		border-width: 0 0 2rem 2rem;
 		transition: 0.2s;
-		font-size: 0!important;		
-		
+		font-size: 0!important;
+
 		&:hover, &:visited, &:focus {
 			box-shadow: 2px -2px 0 2px $mainBlue inset;
 			background: none!important;
 		}
 	}
 
-		
+
 	.next {
 		transform:rotate(225deg);
 		right: -70px;
@@ -551,7 +556,7 @@ h2.woocommerce-loop-product__title, .search-query .results h2 {
 
   .balls {
     position: relative;
-    
+
     .coll-b1 {
       width: 10px;
       height: 10px;
@@ -582,7 +587,7 @@ h2.woocommerce-loop-product__title, .search-query .results h2 {
 	header {
 		.balls {
 			position: relative;
-			
+
 		    .coll-b1 {
 		      width: 10px;
 		      height: 10px;
@@ -626,6 +631,8 @@ h2.woocommerce-loop-product__title, .search-query .results h2 {
 div.summary.entry-summary > form > div > div.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled > button {
 	padding-top: 12px;
 }
+
+.woocommerce ul.products li.product .button { display: none; }
 
 .woocommerce div.product div.images img {
 	@media screen and (max-width: 530px) {

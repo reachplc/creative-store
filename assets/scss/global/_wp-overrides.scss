@@ -438,13 +438,13 @@ body.woocommerce-lost-password {
             color: #fff;
           }
 
-          .woocommerce-form-row--first {
+          .woocommerce-form-row--first, .woocommerce-form-row--last {
             margin-bottom: 20px;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
+            position: relative;            
             width: 400px;
             text-align: center;
+            float: none;
+            margin: 0 auto 20px;
 
             label {
               color: #fff;
