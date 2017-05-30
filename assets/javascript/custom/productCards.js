@@ -22,7 +22,7 @@ $(".cat-page ul.products li.product a img")
     const posX = clientX - left;
     const posY = (clientY - top);
 
-    const x = getCoordinate.call(this, "width", posY, true);  
+    const x = getCoordinate.call(this, "width", posY, true);
     const y = getCoordinate.call(this, "height", posX); // inverse is `true` because Y is top-down
 
     requestAnimationFrame(() => {
