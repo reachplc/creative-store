@@ -9,17 +9,17 @@
 		transition: all 0.6s ease;
 		margin: 0 0 1rem;
 
-		&.title--large {			
-			
+		&.title--large {
+
 			font-size: 2.4rem;
 
 			span {
 				display: inline-block;
-				position: relative; 
+				position: relative;
 				font-weight: 200;
 			}
 
-		}		
+		}
 
 	}
 
@@ -35,7 +35,7 @@
 
 		a {
 
-			&:hover img {				
+			&:hover img {
 				box-shadow: 0px 0px 28px -1px rgba(255, 255, 255, 0.65);
 			}
 
@@ -46,7 +46,7 @@
 			border: 2px solid #00abed;
 
 			@media screen and (min-width: 769px) {
-				min-height: 348px; 
+				min-height: 348px;
 			}
 		}
 
@@ -55,80 +55,19 @@
 			font-weight: 600;
 			font-size: 1rem;
 			padding: 10px 0 .5em;
-			margin: 0;			
+			margin: 0;
 		}
-				
+
 	}
-	
-	.results:last-child:not(:first-child), 
+
+	.results:last-child:not(:first-child),
 	.results:last-child:not(:first-child) {
 		float: left;
 	}
 
-	.pagination-centered{
-		display: block;
-		width: 100%;
-		clear: both;
-		text-align: center;
-	}
-
-	.pagination {
-		overflow: hidden;
-
-		li { 
-			border: none!important;
-			margin-right: 0;
-
-			span, a {
-				display: none!important
-			}
-
-			.next, .prev { display: block!important }
-		}
-		
-
-		a {
-			transition: .4s ease all;
-			color: #fff;
-		
-			&:hover {
-				background: $mainBlue;
-			}
-		}
-
-		.next, .prev { 
-			padding: 1rem!important;
-			box-shadow: 1px -1px 0 1px $mainBlue inset;  
-			border: solid transparent;
-			border-width: 0 0 2rem 2rem;
-			transition: 0.2s;
-			backface-visibility: hidden;
-			font-size: 0;
-						
-			&:hover, &:visited, &:focus {
-				box-shadow: 2px -2px 0 2px $mainBlue inset;
-				background: none!important;
-			}
-		}
-
-		.current { display: none; }
-
-		.next {
-			transform:rotate(225deg);
-			right: -70px;
-		}
-
-		.prev {
-			transform:rotate(45deg);
-			left: -70px;
-		}
-
-	}
-
 	.results {
-
 		@media screen and (max-width: 768px){
-		
+
 		float: left;
 		width: 48%;
 		margin: 0 0 2.992em;
@@ -153,6 +92,11 @@
 	}
 
 }
+
+
+
+
+
 @media screen and (min-width: 769px){
 	.search-query .results:nth-of-type(4n) {
 		 margin-right: 0;
@@ -161,22 +105,22 @@
 
 
 .search-no-results {
-	
-	.page-content { 
+
+	.page-content {
 		text-align: center;
-		
+
 		#searchform {
 			margin-top: 50px;
 		}
 
 	}
-	
+
 	#searchform {
 
-		input {		
+		input {
 			height: 34px;
 			background-color: transparent;
-			border-bottom: 1px solid #fff;    
+			border-bottom: 1px solid #fff;
 			box-shadow: none;
 			outline: none;
 			border: 0;
@@ -186,7 +130,7 @@
 			font-weight: 100;
 			background-color: #040428;
 			padding: 1.5rem;
-			font-size: 1rem; 
+			font-size: 1rem;
 		}
 	}
 
@@ -198,7 +142,7 @@
 
 	p { color: #fff; }
 
-	
-	
+
+
 }
 

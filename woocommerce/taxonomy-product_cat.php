@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-	
+
 
 <section class="container container__none container__nobg" style="position: relative; top: 38px">
 <?php do_action( 'foundationpress_after_header' ); ?>
@@ -21,7 +21,7 @@ get_header(); ?>
 <section class="intro" role="main">
 	<div class="fp-intro">
 			<div class="front-headline">
-				<h2 class="coll-text"><span><?php woocommerce_page_title(); ?></span></h2>		
+				<h2 class="coll-text"><span><?php woocommerce_page_title(); ?></span></h2>
 			</div>
 			<div class="entry-content">
 						<nav aria-label="You are here:" role="navigation">
@@ -29,7 +29,6 @@ get_header(); ?>
 								<p>You are here:</p><?php woocommerce_breadcrumb() ?>
 							</div>
 						</nav>
-					
 			</div>
 		</div>
 	</div>

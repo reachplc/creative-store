@@ -3,7 +3,7 @@
  * These functions will add WooCmmerce or Easy Digital Downloads cart icons/menu items to the "top_nav" WordPress menu area (if it exists).
  * Please customize the following code to fit your needs.
  */
- 
+
 /**
  * This function adds the WooCommerce or Easy Digital Downloads cart icons/items to the top_nav menu area as the last item.
  */
@@ -54,7 +54,7 @@ function my_woocommerce_add_to_cart_fragments( $fragments ) {
 /**
  * Limits search result to a specific post type.
  */
-function searchfilter($query) { 
+function searchfilter($query) {
    if ($query->is_search && !is_admin() ) {
       $query->set('post_type',array('product'));
    }
@@ -63,13 +63,13 @@ function searchfilter($query) {
 
 add_filter('pre_get_posts','searchfilter');
 
-// Display 12 products per page. Goes in functions.php
-add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
+// Display 12 products per page.
+// add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
 
 add_filter( 'woocommerce_checkout_fields', 'webendev_woocommerce_checkout_fields' );
 /**
  * Change Order Notes Placeholder Text - WooCommerce
- * 
+ *
  */
 function webendev_woocommerce_checkout_fields( $fields ) {
 

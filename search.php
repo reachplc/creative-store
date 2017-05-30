@@ -18,7 +18,7 @@ get_header(); ?>
 		</h2>
 		<!-- <div class="balls"><span class="coll-b1"></span><span class="coll-b2"></span></div> -->
 		<h4>Results for: <?php echo get_search_query(); ?></h4>
-	
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -29,7 +29,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif;?>
-	
+
 	<?php do_action( 'foundationpress_before_pagination' ); ?>
 
 	<?php
