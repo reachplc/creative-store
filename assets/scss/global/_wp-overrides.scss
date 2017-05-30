@@ -499,6 +499,10 @@ h1.entry-title {
   }
 }
 
+h1.coll-text, h2.coll-text {
+  color: $mainBlue;
+}
+
 @media screen and (min-width: 867px) {
 
     h1.coll-text, h2.coll-text {
