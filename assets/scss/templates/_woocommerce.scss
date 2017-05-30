@@ -149,16 +149,13 @@
 .product-category a h2, ul .product a h2 {
 	transition: all 0.6s ease;
 }
-
 ul.products li.product a img {
 	transform-style: preserve-3d;
 	transition: transform .4s cubic-bezier(0, 0, .2, 1);
 }
-
 .product-category a:hover h2, ul .product a:hover h2 {
 	top: 20px;
 }
-
 .product-category:hover a h2, ul .product:hover a h2 {
 	color: $mainBlue;
 }
@@ -249,10 +246,10 @@ body > section > div > div > ul > li > a > h2 {
 	height: auto;
 }
 
-body > div.greyPage.frontpage-caro > div > div > ul > div.owl-stage-outer {
+body > div.greyPage.frontpage-caro > div > div > div > ul > div.owl-stage-outer {
 	 div {
 		div {
-			margin-top: 20px;
+			margin-top: 34px;
 			li {
 				a {
 					img {
@@ -535,7 +532,6 @@ div > div > form > table > tbody > tr > td.product-remove {
 		}
 	}
 
-
 	.next {
 		transform:rotate(225deg);
 		right: -70px;
@@ -548,7 +544,12 @@ div > div > form > table > tbody > tr > td.product-remove {
 
 }
 
+.woocommerce-ordering .orderby {
+	display: none;
+}
+
 h2.woocommerce-loop-product__title, .search-query .results h2 {
+	color: #fff;
 	font-weight: 100 !important;
 }
 

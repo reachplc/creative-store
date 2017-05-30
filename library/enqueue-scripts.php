@@ -33,7 +33,6 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	
 
 	wp_enqueue_script( 'carousel-javascript', get_template_directory_uri() .  '/assets/javascript/owl.carousel.min.js', array(), '3.2.1', false);
-	
 
 	// Add the comment-reply library on pages where it is necessary
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

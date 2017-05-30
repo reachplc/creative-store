@@ -1,4 +1,4 @@
-const MAX_DEGREES = 4;
+const MAX_DEGREES = 3;
 
 function getCoordinate(dimension, position, inverse = false) {
   const halfDimension = $(this)[dimension]() / 2;
@@ -7,9 +7,8 @@ function getCoordinate(dimension, position, inverse = false) {
   return (inverse ? sign : -sign) * (percentDimension * MAX_DEGREES);
 }
 
-$("ul.products li.product a img")
+$(".cat-page ul.products li.product a img")
   .on("mouseenter", function() {
-    // GPU acceleration: https://developer.mozilla.org/en-US/docs/Web/CSS/will-change
     $(this).css({ "will-change": "transform" });
   })
   .on("mouseleave", function() {
@@ -21,10 +20,10 @@ $("ul.products li.product a img")
   .on("mousemove", function({ clientX, clientY }) {
     const { left, top } = $(this).offset();
     const posX = clientX - left;
-    const posY = clientY - top;
+    const posY = (clientY - top);
 
-    const x = getCoordinate.call(this, "width", posX);  
-    const y = getCoordinate.call(this, "height", posY, true); // inverse is `true` because Y is top-down
+    const x = getCoordinate.call(this, "width", posY, true);  
+    const y = getCoordinate.call(this, "height", posX); // inverse is `true` because Y is top-down
 
     requestAnimationFrame(() => {
       $(this).css(
