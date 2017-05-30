@@ -81,3 +81,9 @@ function my_woocommerce_continue_shopping_redirect( $return_to ) {
 	return get_permalink( wc_get_page_id( 'shop' ) );
 }
 add_filter( 'woocommerce_continue_shopping_redirect', 'my_woocommerce_continue_shopping_redirect', 20 );
+
+
+// Add the img wrap
+// add_action( 'woocommerce_before_shop_loop_item_title', create_function('', 'echo "<figure class=\"tilter__figure\">";'), 5, 2);
+// add_action( 'woocommerce_after_shop_loop_item_title',create_function('', 'echo "</figure>";'), 12, 2);
+
