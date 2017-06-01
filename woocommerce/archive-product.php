@@ -57,8 +57,6 @@ get_header(); ?>
 			<div class="ico3 ico123"></div>
 			<p>Add your copy &amp; images to create a masterpiece exclusive in your region</p>
 		</div>
-
-		<!-- <img src="/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg';"> -->
 	</section>
 </section>
 </div>
@@ -151,7 +149,7 @@ get_header(); ?>
 			<h2 class="coll-text"><span>Recently Added</span></h2>
 			<h4>We add brand new templates every week but remember it’s first come first served, so check back regularly!</h4>
 
-			<?php echo do_shortcode('[recent_products per_page="12" price=""]'); ?>
+			<?php echo do_shortcode('[recent_products per_page="12"]'); ?>
 
 		</div>
 	</div>
