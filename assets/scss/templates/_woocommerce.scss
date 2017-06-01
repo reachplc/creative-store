@@ -136,6 +136,16 @@
 	padding-top: 10px;
 }
 
+body > section > div.related.products ul li a.woocommerce-LoopProduct-link {
+	h2 {
+		color: #444;
+	}
+
+	&:hover h2{
+		color: $mainBlue;
+	}
+}
+
 .product-category a, .product a {
 	position: relative;
 	display: block;
@@ -159,7 +169,7 @@ ul.products li.product a img {
 	top: 20px;
 }
 
-.tax-product_cat a:hover img, .similarcollections ul.products li a:hover img {
+.tax-product_cat .cat-page .products a:hover img, .similarcollections ul.products li a:hover img {
 	transform: scale(1.1);
 }
 
@@ -719,7 +729,7 @@ div > div > div > div > div > a.checkout-button.wc-forward {
 
 }
 
-#post-23 > div > div > form > table > tbody > tr:nth-child(2) {
+#post-23 > div > div > form > table > tbody > tr .actions {
 	display: none;
 }
 
