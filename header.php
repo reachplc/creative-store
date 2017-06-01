@@ -51,7 +51,7 @@
 					<div class="top-bar-right">
 					<p class="nav-text myuser">Welcome Back <span class="bluetext">
 					<a href="/accounts">
-					<?php $current_user = wp_get_current_user(); echo $current_user->user_firstname ;?>
+					<?php $current_user = wp_get_current_user(); echo $current_user->user_firstname ;?></a></span></p>
 						<?php foundationpress_top_bar_r(); ?>
 
 						<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
