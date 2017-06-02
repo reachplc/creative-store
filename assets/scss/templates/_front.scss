@@ -6,6 +6,9 @@
 	 @include breakpoint(small) {
 		@include grid-column(12);
 
+    padding-left: 0!important;
+    padding-right: 0!important;
+
 	 }
 
 		h4 {
