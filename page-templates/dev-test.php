@@ -33,7 +33,7 @@
 							array(
 							'taxonomy' => 'product_cat',
 							'field' => 'slug',
-							'terms' => $product_category->slug
+							'terms' => $product_category->slug,
 							)
 						),
 						'post_type' => 'product',

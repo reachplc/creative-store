@@ -14,12 +14,6 @@ $login_status = ( get_query_var( 'login' ) === 'failed' ? true : false );
 
 get_header(); ?>
 
-<style>
-	#masthead {
-		display: none;		
-	}
-</style>
-
 <div class="sign-in">
 
 	<header class="hero" role="banner">
@@ -59,7 +53,7 @@ get_header(); ?>
 							    'id_username' => 'user',
 							    'id_password' => 'pass',
 							    'label_username' => __( 'Username' )
-							   ) 
+							   )
 							;?>
 						<?php wp_login_form( $args ); ?>
 

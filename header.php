@@ -31,7 +31,6 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-
 	<header id="masthead" class="site-header" role="banner">
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
@@ -63,8 +62,9 @@
 		</nav>
 	</header>
 
-<?php if (is_page( 'accounts/create' )): ?>
+<?php if (is_page( 'accounts/create')): ?>
 <style>
+
 	#page-full-width {
 		padding-top: 20px;
 	}

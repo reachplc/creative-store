@@ -59,6 +59,10 @@
 		li:last-child {
 			margin-right: 0;
 		}
+
+		h2 {
+			color: #fff;
+		}
 	}
 
 	.similarcollections {
@@ -179,6 +183,17 @@ ul.products li.product a img {
 
 div.woocommerce-variation.single_variation > div.woocommerce-variation-availability, div.woocommerce-tabs.wc-tabs-wrapper {
 	display: none;
+}
+
+.shop_table {
+	.product-price, .product-quantity, .product-subtotal { display: none!important; }
+}
+
+.woocommerce-additional-fields__field-wrapper {
+	@media only screen and (max-width: 530px) {
+		width: 90%;
+   	margin: 0 auto;
+	}
 }
 
 #customer_details > div.col-1 > div > h3 {
@@ -323,6 +338,12 @@ body > div.greyPage.frontpage-caro > div > div > div > ul > div.owl-stage-outer 
 
 .woocommerce-message {
 	border-top-color: $mainBlue;
+
+	@media only screen and (max-width: 768px) {
+		width: 90%;
+    	margin: 0 auto 1em;
+	}
+
 }
 
 .woocommerce-message::before {
@@ -668,10 +689,16 @@ div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocomm
 	}
 }
 
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+	@media only screen and (max-width: 768px) {
+		max-width: 300px;
+	}
+}
+
 .woocommerce table.shop_table {
 	@media screen and (max-width: 530px){
 		width: 90% !important;
-		margin: 0 auto;
+		margin: 0 auto 1em;
 	}
 }
 
@@ -734,7 +761,9 @@ div > div > div > div > div > a.checkout-button.wc-forward {
 }
 
 div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images > div {
-    width: 440px !important;
+    @media only screen and (min-width: 530px) {
+    	width: 440px !important;
+    }
 }
 
 .woocommerce {
@@ -742,7 +771,10 @@ div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocomm
 		div.woocommerce-product-gallery.images {
 
 			.flex-viewport {
-				width: 440px !important;
+
+				@media only screen and (min-width: 530px) {
+					width: 440px !important;
+				}
 
 				figure.woocommerce-product-gallery__wrapper {
 					div {
@@ -763,7 +795,10 @@ div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocomm
 			}
 
 			ol.flex-control-nav.flex-control-thumbs {
-				width: 440px;
+
+				@media only screen and (min-width: 530px) {
+					width: 440px;
+				}
 
 				li {
 					width: 20% !important;
@@ -814,13 +849,13 @@ div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocomm
 			h3, address, tfoot {
 				display:none;
 			}
-			
+
 			thead {
 				tr {
 					th {
 						display: none;
 					}
-				}	
+				}
 			}
 
 			ul.wc-item-meta {
