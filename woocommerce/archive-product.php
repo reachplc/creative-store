@@ -148,6 +148,7 @@ get_header(); ?>
 		<div class="small-12 columns">
 			<h2 class="coll-text"><span>Recently Added</span></h2>
 			<h4>We add brand new templates every week but remember it’s first come first served, so check back regularly!</h4>
+			<h4 class="temp-instruct">Select a design theme below to view digital and print templates.</h4>
 
 			<?php echo do_shortcode('[recent_products per_page="12"]'); ?>
 

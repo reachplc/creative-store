@@ -22,6 +22,8 @@ get_header(); ?>
 				<h2 class="coll-text"><span><?php woocommerce_page_title(); ?></span></h2>
 			</div>
 			<div class="entry-content">
+
+				<p class="temp-instruct">Select a design theme below to view digital and print templates</p>
 						<nav aria-label="You are here:" role="navigation">
 							<div class="breadcrumb" style="display: none;">
 								<p>You are here:</p><?php woocommerce_breadcrumb() ?>

@@ -26,4 +26,20 @@ $(document).ready(function(){
    		}
    	}
 	});
+
+
+   // $(".owl-item > li > a").on('click', function(){
+   //    event.preventDefault();
+   // })
+
+  
+
+
+
+
 });
+
+
+// $(document).on('click', '.owl-item', function() {
+//   $owl.trigger('to.owl.carousel', $(this).data( 'position' ) ); 
+// });
