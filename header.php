@@ -31,36 +31,50 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="title-bar" data-responsive-toggle="site-navigation">
-			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			</div>
-		</div>
-
-		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-			<div class="nav-background">
-				<div class="row">
-					<div class="top-bar-left">
-						<ul class="menu">
-							<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">The Creative <span class="bluetext">Store</span></a></li>
-						</ul>
-					</div>
-					<div class="top-bar-right">
-					<p class="nav-text myuser">Welcome Back <span class="bluetext">
-					<a href="/accounts">
-					<?php $current_user = wp_get_current_user(); echo $current_user->user_firstname ;?></a></span></p>
-						<?php foundationpress_top_bar_r(); ?>
-
-						<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-							<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-						<?php endif; ?>
+	<?php
+		if ( is_user_logged_in() ) {
+		    ?> 
+		    <header id="masthead" class="site-header" role="banner">
+				<div class="title-bar" data-responsive-toggle="site-navigation">
+					<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+					<div class="title-bar-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</div>
 				</div>
-			</div>
-		</nav>
-	</header>
+
+				<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
+					<div class="nav-background">
+						<div class="row">
+							<div class="top-bar-left">
+								<ul class="menu">
+									<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">The Creative <span class="bluetext">Store</span></a></li>
+								</ul>
+							</div>
+							<div class="top-bar-right">
+							<p class="nav-text myuser">Welcome Back <span class="bluetext">
+							<a href="/accounts">
+							<?php $current_user = wp_get_current_user(); echo $current_user->user_firstname ;?></a></span></p>
+								<?php foundationpress_top_bar_r(); ?>
+
+								<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
+									<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+								<?php endif; ?>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+		    <?php
+		} 
+		else {
+		    ?> 
+
+		    <?php
+		}
+
+		?>
+
 
 <?php if (is_page( 'accounts/create')): ?>
 <style>
@@ -75,6 +89,7 @@
 		margin-top: 100px;
 	}
 </style>
+
 <?php endif; ?>
 
 
