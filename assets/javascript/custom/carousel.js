@@ -28,11 +28,25 @@ $(document).ready(function(){
 	});
 
 
-   // $(".owl-item > li > a").on('click', function(){
-   //    event.preventDefault();
-   // })
+   $(".owl-item:not(.center)").on('click', function(){
+       var target = jQuery(this).index();
+       event.preventDefault();
+    //    $(this).next('div').slideToggle(200);
+      // $('.owl-carousel').goTo(this);
+      $('.owl-carousel').trigger('to.owl.carousel', target)
+      return false;
 
-  
+    //   event.preventDefault();
+    //   .owlCarousel.goTo(3);
+    //   console.log("hello");
+
+   })
+
+
+
+
+
+
 
 
 
@@ -41,5 +55,5 @@ $(document).ready(function(){
 
 
 // $(document).on('click', '.owl-item', function() {
-//   $owl.trigger('to.owl.carousel', $(this).data( 'position' ) ); 
+//   $owl.trigger('to.owl.carousel', $(this).data( 'position' ) );
 // });
