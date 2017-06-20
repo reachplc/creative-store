@@ -24,7 +24,7 @@ do_action( 'foundationpress_before_searchform' ); ?>
 // line 15
 //		<div class="input-group-button">
 //			<input type="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'foundationpress' ); ? >" class="button">
-//		</div> -- remove space between ? and > on previous line! 
+//		</div> -- remove space between ? and > on previous line!
 
 
 // <i class="fa fa-search" aria-hidden="true"></i>

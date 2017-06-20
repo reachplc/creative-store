@@ -41,6 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<tr>
 			<th><?php echo wc_attribute_label( $attribute->get_name() ); ?></th>
 			<td><?php
+
 				$values = array();
 
 				if ( $attribute->is_taxonomy() ) {

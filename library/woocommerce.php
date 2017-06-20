@@ -82,8 +82,14 @@ function my_woocommerce_continue_shopping_redirect( $return_to ) {
 }
 add_filter( 'woocommerce_continue_shopping_redirect', 'my_woocommerce_continue_shopping_redirect', 20 );
 
+// /* Function that returns custom product hyperlink */
+// function wc_cart_item_name_novar( $link_text, $product_data ) {
+//    $title = get_the_title($product_data['product_id']);
+// 	return $title;
+// }
+// /* Filter to override cart_item_name */
+// add_filter( 'woocommerce_cart_item_name', 'woocommerce_cart_item_name_novar', 10, 2 );
 
 // Add the img wrap
 // add_action( 'woocommerce_before_shop_loop_item_title', create_function('', 'echo "<figure class=\"tilter__figure\">";'), 5, 2);
 // add_action( 'woocommerce_after_shop_loop_item_title',create_function('', 'echo "</figure>";'), 12, 2);
-

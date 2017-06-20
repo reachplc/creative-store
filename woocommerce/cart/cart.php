@@ -78,7 +78,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_name() ), $cart_item, $cart_item_key );
 								}
 								// Meta data
-								echo WC()->cart->get_item_data( $cart_item );
+								// echo WC()->cart->get_item_data( $cart_item );
 								// Backorder notification
 								if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
 									echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>';

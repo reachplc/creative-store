@@ -1,59 +1,95 @@
 $(document).ready(function(){
 
-   $('.frontpage-caro .products').addClass('owl-carousel');
-   $('.frontpage-caro .products').find('li').removeClass().addClass('product-category product');
+    $('.columns-4').addClass("homepage_carousel");
 
-	var carousel = $('.owl-carousel');
-
-	carousel.owlCarousel({
-		loop:true,
-		nav:true,
-		items: 5,
-		center: true,
-      dots: false,
-		margin: 15,
-   	smartSpeed:450,
-   	lazyLoad: true,
-   	responsive: {
-   		0:{
-   				items: 3
-   		},
-   		750: {
-   			items: 4
-   		},
-   		1000: {
-   			items: 6
-   		}
-   	}
-	});
-
-
-   $(".owl-item:not(.center)").on('click', function(){
-       var target = jQuery(this).index();
-       event.preventDefault();
-    //    $(this).next('div').slideToggle(200);
-      // $('.owl-carousel').goTo(this);
-      $('.owl-carousel').trigger('to.owl.carousel', target)
-      return false;
-
-    //   event.preventDefault();
-    //   .owlCarousel.goTo(3);
-    //   console.log("hello");
-
-   })
+    $('.homepage_carousel').addClass('my-flipster');
+    $('.homepage_carousel li.product a:nth-child(2n)').remove();
+    $('.homepage_carousel .woocommerce').removeClass("woocommerce");
+    $('.homepage_carousel ul').removeClass("products");
+    $('.homepage_carousel ul li').removeClass("product");
+    $('.homepage_carousel').removeClass("woocommerce");
+    $('.homepage_carousel').removeClass("columns-4");
 
 
 
 
+    $('.my-flipster').flipster({
+        itemContainer: 'ul',
+        // [string|object]
+        // Selector for the container of the flippin' items.
 
+        itemSelector: 'li',
+        // [string|object]
+        // Selector for children of `itemContainer` to flip
 
+        start: 'center',
+        // ['center'|number]
+        // Zero based index of the starting item, or use 'center' to start in the middle
 
+        fadeIn: 400,
+        // [milliseconds]
+        // Speed of the fade in animation after items have been setup
 
+        loop: true,
+        // [true|false]
+        // Loop around when the start or end is reached
+
+        autoplay: false,
+        // [false|milliseconds]
+        // If a positive number, Flipster will automatically advance to next item after that number of milliseconds
+
+        pauseOnHover: true,
+        // [true|false]
+        // If true, autoplay advancement will pause when Flipster is hovered
+
+        style: 'flat',
+        // [coverflow|carousel|flat|...]
+        // Adds a class (e.g. flipster--coverflow) to the flipster element to switch between display styles
+        // Create your own theme in CSS and use this setting to have Flipster add the custom class
+
+        spacing: -0.1,
+        // [number]
+        // Space between items relative to each item's width. 0 for no spacing, negative values to overlap
+
+        click: true,
+        // [true|false]
+        // Clicking an item switches to that item
+
+        keyboard: true,
+        // [true|false]
+        // Enable left/right arrow navigation
+
+        scrollwheel: true,
+        // [true|false]
+        // Enable mousewheel/trackpad navigation; up/left = previous, down/right = next
+
+        touch: true,
+        // [true|false]
+        // Enable swipe navigation for touch devices
+
+        nav: false,
+        // [true|false|'before'|'after']
+        // If not false, Flipster will build an unordered list of the items
+        // Values true or 'before' will insert the navigation before the items, 'after' will append the navigation after the items
+
+        buttons: true,
+        // [true|false|'custom']
+        // If true, Flipster will insert Previous / Next buttons with SVG arrows
+        // If 'custom', Flipster will not insert the arrows and will instead use the values of `buttonPrev` and `buttonNext`
+
+        buttonPrev: 'Previous',
+        // [text|html]
+        // Changes the text for the Previous button
+
+        buttonNext: 'Next',
+        // [text|html]
+        // Changes the text for the Next button
+
+        onItemSwitch: false
+        // [function]
+        // Callback function when items are switched
+        // Arguments received: [currentItem, previousItem]
+    });
 
 
 });
-
-
-// $(document).on('click', '.owl-item', function() {
-//   $owl.trigger('to.owl.carousel', $(this).data( 'position' ) );
-// });

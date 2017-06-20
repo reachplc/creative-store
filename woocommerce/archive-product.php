@@ -143,20 +143,22 @@ get_header(); ?>
 
 </div>
 
-<div class="greyPage frontpage-caro">
+<div class="greyPage">
 	<div class="row">
 		<div class="small-12 columns">
 			<h2 class="coll-text"><span>Recently Added</span></h2>
 			<h4>We add brand new templates every week but remember it’s first come first served, so check back regularly!</h4>
 			<h4 class="temp-instruct">Select a design theme below to view digital and print templates.</h4>
 
-			<?php echo do_shortcode('[recent_products per_page="12"]'); ?>
-
+			<div class="flpcontainer">
+				<?php echo do_shortcode('[recent_products per_page="12"]'); ?>
+			</div>
 		</div>
 	</div>
 </div>
 
-</div>
+
+
 
 <div class="assetpreload">
 	<img src="/app/themes/FoundationPress/assets/images/cs2/123/1-on.png" style="display: none;">
@@ -171,5 +173,11 @@ get_header(); ?>
 	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_on.gif' style="display:none;">
 	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/services_on.gif' style="display:none;">
 </div>
+<script>
+    $('.my-flipster').flipster();
+
+	$('body').removeClass("woocommerce");
+	$('body').removeClass("woocommerce-page");
+</script>
 
 <?php get_footer();
