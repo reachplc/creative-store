@@ -25,8 +25,8 @@ get_header(); ?>
 <div role="banner" style="background-color: #000;">
     <div class="vid hp-video">
         <video class="videoheader" autoplay loop muted>
-          <source src="/app/themes/FoundationPress/assets/images/cs2/hero-vid5.mp4" type="video/mp4">
-          <img src="/app/themes/FoundationPress/assets/images/cs2/hero-off.jpg">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/hero-vid5.mp4" type="video/mp4">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/hero-off.jpg">
         </video>
     </div>
 </div>
@@ -74,56 +74,56 @@ get_header(); ?>
 		<div class="inner-wrap">
 			<div class="cat-thumb">
 				<a href="/product-category/education/">
-					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/education_off.jpg';">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/education_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/education_on.gif';" onclick="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/education_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/education_off.jpg';">
 					<h2>Education</h2>
 				</a>
 			</div>
 
 			<div class="cat-thumb">
 				<a href="/product-category/business/">
-					<img class="ico-business" src="/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif';"onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_off.jpg';">
+					<img class="ico-business" src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_off.jpg';">
 					<h2>Business</h2>
 				</a>
 			</div>
 
 			<div class="cat-thumb">
 				<a href="/product-category/leisure/">
-					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/leisure_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_off.jpg';">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/leisure_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/leisure_on.gif';" onclick="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/leisure_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/leisure_off.jpg';">
 					<h2>Leisure</h2>
 				</a>
 			</div>
 
 			<div class="cat-thumb">
 				<a href="/product-category/motors/">
-					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/motors_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_off.jpg';">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/motors_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/motors_on.gif';" onclick="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/motors_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/motors_off.jpg';">
 					<h2>Motors</h2>
 				</a>
 			</div>
 
 			<div class="cat-thumb">
 				<a href="/product-category/property/">
-					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/property_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/property_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/property_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/property_off.jpg';">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/property_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/property_on.gif';" onclick="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/property_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/property_off.jpg';">
 					<h2>Property</h2>
 				</a>
 			</div>
 
 			<div class="cat-thumb">
 				<a href="/product-category/recruitment/">
-					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_off.jpg';">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/recruitment_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/recruitment_on.gif';" onclick="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/recruitment_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/recruitment_off.jpg';">
 					<h2>Recruitment</h2>
 				</a>
 			</div>
 
 			<div class="cat-thumb">
 				<a href="/product-category/retail/">
-					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_off.jpg';">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/retail_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/retail_on.gif';" onclick="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/retail_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/retail_off.jpg';">
 					<h2>Retail</h2>
 				</a>
 			</div>
 
 			<div class="cat-thumb">
 				<a href="/product-category/services/">
-					<img src="/app/themes/FoundationPress/assets/images/cs2/ico/services_off.jpg" onmouseover="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/services_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/services_on.gif';" onmouseout="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/services_off.jpg';">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/services_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/services_on.gif';" onclick="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/services_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/services_off.jpg';">
 					<h2>Services</h2>
 				</a>
 			</div>
@@ -161,21 +161,20 @@ get_header(); ?>
 
 
 <div class="assetpreload">
-	<img src="/app/themes/FoundationPress/assets/images/cs2/123/1-on.png" style="display: none;">
-	<img src="/app/themes/FoundationPress/assets/images/cs2/123/2-on.png" style="display: none;">
-	<img src="/app/themes/FoundationPress/assets/images/cs2/123/3-on.png" style="display: none;">
-	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/education_on.gif' style="display:none;">
-	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif' style="display:none;">
-	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/leisure_on.gif' style="display:none;">
-	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/motors_on.gif' style="display:none;">
-	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/property_on.gif' style="display:none;">
-	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/recruitment_on.gif' style="display:none;">
-	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/retail_on.gif' style="display:none;">
-	<img src='/app/themes/FoundationPress/assets/images/cs2/ico/services_on.gif' style="display:none;">
+	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/123/1-on.png" style="display: none;">
+	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/123/2-on.png" style="display: none;">
+	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/123/3-on.png" style="display: none;">
+	<img src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/education_on.gif' style="display:none;">
+	<img src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_on.gif' style="display:none;">
+	<img src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/leisure_on.gif' style="display:none;">
+	<img src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/motors_on.gif' style="display:none;">
+	<img src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/property_on.gif' style="display:none;">
+	<img src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/recruitment_on.gif' style="display:none;">
+	<img src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/retail_on.gif' style="display:none;">
+	<img src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/services_on.gif' style="display:none;">
 </div>
 <script>
-    $('.my-flipster').flipster();
-
+  $('.my-flipster').flipster();
 	$('body').removeClass("woocommerce");
 	$('body').removeClass("woocommerce-page");
 </script>

@@ -54,14 +54,21 @@ function my_woocommerce_add_to_cart_fragments( $fragments ) {
 /**
  * Limits search result to a specific post type.
  */
-function searchfilter($query) {
-   if ($query->is_search && !is_admin() ) {
-      $query->set('post_type',array('product'));
-   }
-   return $query;
-}
-
-add_filter('pre_get_posts','searchfilter');
+// function searchfilter($query) {
+//    if ($query->is_search && !is_admin() ) {
+//       $query->set('post_type',array('product'));
+//    }
+//
+// 	//  echo '<pre style="background-color: #343434; color: #fff;">';
+// 	//  var_dump($query);
+// 	//  echo '</pre>';
+//
+// 	 return $query;
+//
+//
+// }
+//
+// add_filter('pre_get_posts','searchfilter');
 
 // Display 12 products per page.
 // add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );

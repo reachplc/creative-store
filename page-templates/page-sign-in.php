@@ -27,14 +27,9 @@ get_header(); ?>
 					<article class="module login-form drop-shadow">
 
 
-						<img class="login-logo" src="/app/themes/FoundationPress/assets/images/cs2/sign-in.png">
+						<img class="login-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/sign-in.png">
 
-						<section class="info">
-
-
-
-
-						</section>
+						<section class="info"></section>
 
 							<?php if ( true === $login_status ) : ?>
 							<section class="c-alert c-alert--message c-alert--warning c-alert--type u-stack-l" role="alert">

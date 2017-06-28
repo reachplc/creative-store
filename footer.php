@@ -16,12 +16,12 @@
 			<footer id="footer">
 				<div class="row">
 				<div class="csfooter">
-				
+
 				<!-- <h4>Trinity Mirror Creative</h4> -->
-				<a href="http://digitalhub.trinitymirror.com/tmcreative/"><img class="tmc-logo" src="/app/themes/FoundationPress/assets/images/cs2/tmclogo.jpg"></a>
+				<a href="http://digitalhub.trinitymirror.com/tmcreative/"><img class="tmc-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/tmclogo.jpg"></a>
 
 				<span class="contact-details"><span class="bluetext" style="font-size: 1.2rem;">t: </span>
-				 <a href="tel:01614931600">0161 493 1600</a> 
+				 <a href="tel:01614931600">0161 493 1600</a>
 				</span>
 
 				 <span class="contact-details" style="margin-right: 20px;"><span class="bluetext" style="font-size: 1.2rem;">e: </span>
