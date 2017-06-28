@@ -32,15 +32,12 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 
 <table class="td" cellspacing="0" cellpadding="6" style="width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;" border="1">
 	<thead>
-		<tr>
-			<th class="td" scope="col" style="text-align:<?php echo $text_align; ?>;"><?php _e( 'Template Reference Number', 'woocommerce' ); ?></th>
-		</tr>
 	</thead>
 	<tbody>
 		<?php echo wc_get_email_order_items( $order, array(
 			'show_sku'      => $sent_to_admin,
-			'show_image'    => false,
-			'image_size'    => array( 32, 32 ),
+			'show_image'    => true,
+			'image_size'    => array( 64, 82 ),
 			'plain_text'    => $plain_text,
 			'sent_to_admin' => $sent_to_admin,
 		) ); ?>
