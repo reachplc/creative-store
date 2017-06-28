@@ -33,7 +33,7 @@
 
 	<?php
 		if ( is_user_logged_in() ) {
-		    ?> 
+		    ?>
 		    <header id="masthead" class="site-header" role="banner">
 				<div class="title-bar" data-responsive-toggle="site-navigation">
 					<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
@@ -66,17 +66,35 @@
 			</header>
 
 		    <?php
-		} 
+		}
 		else {
-		    ?> 
+		    ?>
 
 		    <?php
 		}
 
-		?>
 
 
-<?php if (is_page( 'accounts/create')): ?>
+$user = wp_get_current_user();
+if ( in_array( 'Visitor', (array) $user->roles ) ) {
+    ?>
+	<style>
+		.woocommerce-variation-add-to-cart {
+			display: none !important;
+		}
+
+		.wc-proceed-to-checkout {
+			display: none !important;
+		}
+
+		#post-26 > div > div > div > p:nth-child(2), #post-26 > div > div > nav {
+			display: none;
+		}
+	</style>
+	<?php
+}
+
+if (is_page( 'accounts/create')): ?>
 <style>
 
 	#page-full-width {
@@ -91,10 +109,3 @@
 </style>
 
 <?php endif; ?>
-
-
-
-
-
-
-
