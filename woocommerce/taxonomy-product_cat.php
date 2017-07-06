@@ -34,7 +34,6 @@ get_header(); ?>
 	</div>
 </section>
 
-
 <div class="row" style="margin-bottom: 60px;">
 	<div class="small-12 large-12 columns" role="main">
 		<div class="cat-page">
@@ -46,51 +45,6 @@ get_header(); ?>
 				</div>
 			</article>
 		<?php endwhile;?>
-
-		<?php
-
-			$user_region = tm_get_user_region();
-			$current_category = get_queried_object();
-			$paged = get_query_var( 'paged') ? get_query_var('paged') : 1;
-			$post__in = array();
-
-			$args_count = array(
-				'post_type' 	=> 'product',
-				'post_status'=> 'publish',
-				'posts_per_page'=> -1, //Change to all later
-				'orderby' => 'title',
-				'order'=> 'ASC',
-				'paged'=> $paged,
-					'tax_query' => array(
-					array(
-						'taxonomy' => 'product_cat',
-						'field' => 'term_id',
-						'terms' => $current_category->term_id,
-					)
-				)
-			);
-
-			$category_total =  get_posts( $args_count );
-			$product_count = $category_total->post_count;
-
-			foreach ($category_total as $total) {
-				//Product object
-				$product_s = wc_get_product($total->ID);
-
-				//Get stock status
-				$product_variations = $product_s->get_available_variations();
-
-				foreach ($product_variations as $variation) {
-					//$product_region = $variation['attributes']['attribute_pa_regions'];
-					$product_region = $variation['attributes']['attribute_pa_regions'];
-
-					//if($user_region === $product_region && $variation['is_in_stock']) {
-					if($user_region === $product_region && $variation['is_in_stock']) {
-						$post__in[] = $total->ID;
-					}
-				}
-			}
-		?>
 
 		<?php do_action( 'foundationpress_after_content' ); ?>
 		</div>
