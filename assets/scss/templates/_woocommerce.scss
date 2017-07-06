@@ -556,7 +556,7 @@ div > div > form > table > tbody > tr > td.product-remove {
 }
 
 #post-24 > div > div > div > ul {
-	width: 262px;
+	width: 90px;
 	margin: 30px auto;
 	color: #fff;
 }
@@ -573,6 +573,11 @@ div > div > form > table > tbody > tr > td.product-remove {
 
 #post-24 > div > div > div > section > table > tfoot, #post-24 > div > div > div > section > table > thead {
 	display: none;
+}
+
+.woocommerce-order-overview__order.order {
+	float: none!important;
+	display: none!important;
 }
 .woocommerce-order-details h2 {
 	margin-top: 20px;

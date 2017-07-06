@@ -21,7 +21,7 @@
 				<a href="http://digitalhub.trinitymirror.com/tmcreative/"><img class="tmc-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/tmclogo.jpg"></a>
 
 				<span class="contact-details"><span class="bluetext" style="font-size: 1.2rem;">t: </span>
-				 <a href="tel:01614931600">0161 493 1600</a>
+				 <a href="tel:01612112089">0161 211 2089</a>
 				</span>
 
 				 <span class="contact-details" style="margin-right: 20px;"><span class="bluetext" style="font-size: 1.2rem;">e: </span>
