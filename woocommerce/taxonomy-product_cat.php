@@ -90,22 +90,6 @@ get_header(); ?>
 					}
 				}
 			}
-
-			//TODO CRON JOB
-
-			if(count($post__in) < 36) {
-				echo '<pre style="background-color: #343434; color: #fff; padding: 20px">';
-				var_dump( 'Your have: ' . count($post__in) .  ' items in stock for ' . $user_region . ' for the ' . $current_category->slug . ' category');
-				var_dump('This is where you can send and email');
-				echo '</pre>';
-			} else {
-
-				echo '<pre style="background-color: #343434; color: #fff; padding: 20px">';
-				var_dump( 'Your have: ' . count($post__in) .  ' items in stock for ' . $user_region . ' for the ' . $current_category->slug . ' category');
-
-				echo '</pre>';
-
-			}
 		?>
 
 		<?php do_action( 'foundationpress_after_content' ); ?>
