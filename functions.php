@@ -50,5 +50,8 @@ require_once( 'library/responsive-images.php' );
 /** WooCommerce Specific Modifications */
 require_once( 'library/woocommerce.php' );
 
+/** CT Regional stock check */
+require_once( 'library/regional-check.php' );
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
