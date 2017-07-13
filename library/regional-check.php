@@ -1,11 +1,18 @@
 <?php
 
-/*Summary of action
-1: wp_control knows of each action
-2: Each action triggers a category check
-3: wp_control know what time to run each check
-4: WP Cron ONLY if a visitor visits the site
-5: https://cron-job.org Visits the site they the magic happends
+/*
+  Summary of actions
+  1: wp_control knows each action to trigger a function
+
+  2: Each action triggers a category check
+
+  3: wp_control know what time to run each check
+
+  4: WP Cron ONLY if a visitor visits the site
+
+  5: https://cron-job.org Visits the site then the magic happends
+
+  // TODO refactor
 */
 
 add_action('regional_check_business', 'CS_category_business');
