@@ -49,30 +49,6 @@ function my_woocommerce_add_to_cart_fragments( $fragments ) {
 	return $fragments;
 }
 
-
-
-/**
- * Limits search result to a specific post type.
- */
-// function searchfilter($query) {
-//    if ($query->is_search && !is_admin() ) {
-//       $query->set('post_type',array('product'));
-//    }
-//
-// 	//  echo '<pre style="background-color: #343434; color: #fff;">';
-// 	//  var_dump($query);
-// 	//  echo '</pre>';
-//
-// 	 return $query;
-//
-//
-// }
-//
-// add_filter('pre_get_posts','searchfilter');
-
-// Display 12 products per page.
-// add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
-
 add_filter( 'woocommerce_checkout_fields', 'webendev_woocommerce_checkout_fields' );
 /**
  * Change Order Notes Placeholder Text - WooCommerce
@@ -88,15 +64,3 @@ function my_woocommerce_continue_shopping_redirect( $return_to ) {
 	return get_permalink( wc_get_page_id( 'shop' ) );
 }
 add_filter( 'woocommerce_continue_shopping_redirect', 'my_woocommerce_continue_shopping_redirect', 20 );
-
-// /* Function that returns custom product hyperlink */
-// function wc_cart_item_name_novar( $link_text, $product_data ) {
-//    $title = get_the_title($product_data['product_id']);
-// 	return $title;
-// }
-// /* Filter to override cart_item_name */
-// add_filter( 'woocommerce_cart_item_name', 'woocommerce_cart_item_name_novar', 10, 2 );
-
-// Add the img wrap
-// add_action( 'woocommerce_before_shop_loop_item_title', create_function('', 'echo "<figure class=\"tilter__figure\">";'), 5, 2);
-// add_action( 'woocommerce_after_shop_loop_item_title',create_function('', 'echo "</figure>";'), 12, 2);

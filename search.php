@@ -27,10 +27,10 @@ get_header(); ?>
 					'post_type'        	=> 'product',
 					'post_status'       => 'publish',
 					'posts_per_page'		=> 12,
-					'orderby'           => 'title', //DONT CHANGE
+					'orderby'           => 'title',
 					'order'             => 'ASC',
 					's' 								=> $search,
-					'post__not_in'			=>	$post__in,					
+					'post__not_in'			=>	$post__in,
 					'exclude'						=> $post__in,
 					'paged' 						=> $paged,
 				);
@@ -52,7 +52,6 @@ get_header(); ?>
 							}
 						}
 					}
-
 				 ?>
 
 					<?php
@@ -71,50 +70,25 @@ get_header(); ?>
 
 						$query = new WP_Query($argss); ?>
 
-				<?php if(have_posts()) :?>
+				<?php if($query->have_posts()) :?>
 
 					<?php while ($query->have_posts() ) : $query->the_post();?>
 						<?php get_template_part('template-parts/content', get_post_format() ); ?>
 					<?php endwhile; ?>
 
-				<?php else: ?>
-					<?php get_template_part('template-parts/content', 'none'); ?>
+				<?php else: $hide_me = true; ?>
+					<div class="search-no-results">
+						<?php get_template_part('template-parts/content', 'none'); ?>
+					</div>
 				<?php endif; ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			<?php
-				if (function_exists('foundationpress_pagination')) :
-					foundationpress_pagination();
-				elseif (is_paged()) :
+				if(!$hide_me) {
+					if (function_exists('foundationpress_pagination')) {
+						foundationpress_pagination();
+					}
+				}
 			?>
-				<nav id="post-nav">
-				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-				</nav>
-			<?php endif; ?>
 
 	</div>
 </div>

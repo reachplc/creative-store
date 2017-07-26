@@ -28,7 +28,7 @@ add_action('regional_check_electrical', 'CS_category_electrical');
 add_action('regional_check_furniture_home', 'CS_category_furniture_home');
 add_action('regional_check_glazing', 'CS_category_glazing');
 add_action('regional_check_kitchens_bedrooms_bathrooms', 'CS_category_kitchens_bedrooms_bathrooms');
-add_action('regional_check_business_services', 'CS_category_services');
+add_action('regional_check_services', 'CS_category_services');
 
 // Business category Check
 function CS_category_business() {

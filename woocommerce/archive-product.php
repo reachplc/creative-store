@@ -81,7 +81,7 @@ get_header(); ?>
 
 			<div class="cat-thumb">
 				<a href="/product-category/business/">
-					<img class="ico-business" src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_off.jpg';">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_off.jpg" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_on.gif';" onclick="this.src='/app/themes/FoundationPress/assets/images/cs2/ico/business_on.gif';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/cs2/ico/business_off.jpg';">
 					<h2>Business</h2>
 				</a>
 			</div>
